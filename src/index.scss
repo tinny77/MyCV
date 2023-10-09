@@ -57,11 +57,11 @@ body {
         flex-direction: column;
         scroll-snap-align: start;
 
-        :nth-child(odd) {
+        &:nth-child(odd) {
             background-color: var(--dark2);
         }
 
-        :nth-child(even) {
+        &:nth-child(even) {
             backgorund-color: var(--dark2)
         }
     }
