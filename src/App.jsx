@@ -1,15 +1,25 @@
-import react, { useState, useEffect } from 'react';
-import LinkButtons from './LinkButtons.jsx';
-import Skills from './Skills.jsx';
-import Contact from './Contact.jsx';
+import { useState, useEffect } from 'react';
+import LinkButtons from './LinkButtons';
+import Skills from './Skills';
+import Contact from './Contact';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
-	const thisYear = new Date().getFullYear();
-	const myExperienceYears = thisYear - 2007;
-	const myAge = thisYear - 1981;
 	const [isScrolled, setIsScrolled] = useState(true);
 	const [isScrolledVisible, setIsScrolledVisible] = useState(true);
+
+	const getYearDiffWithMonth = (endDate, startDate) => {
+		const ms = endDate.getTime() - startDate.getTime();
+		const date = new Date(ms);
+		return Math.abs(date.getUTCFullYear() - 1970);
+	};
+
+	const thisYear = new Date();
+	const myExperienceYears = getYearDiffWithMonth(
+		thisYear,
+		new Date('2006-03-01')
+	);
+	const myAge = getYearDiffWithMonth(thisYear, new Date('1981-07-05'));
 
 	useEffect(() => {
 		const handlescroll = () => {
@@ -25,23 +35,18 @@ function App() {
 		<>
 			<Router>
 				<section id="main">
-					<img src="./foto.png" className="mypic" />
 					<h1>Filippo Tinnirello</h1>
 					<h3>Frontend & Wordpress developer</h3>
-					<p className="text-block">
+					<p className="text-block lead">
 						I'm an experienced Frontend Developer with over {myExperienceYears}{' '}
 						years of expertise in CSS, HTML, and JavaScript, known for my
 						mastery in responsive design and precise coding to transform designs
 						into dynamic, user-friendly websites for seamless experiences across
 						all devices.
 					</p>
-					<p className="text-block">
-						I also possess advanced skills in various technologies, including
-						React, PHP, MySQL, Npm, and Sass.
-					</p>
-					<p className="text-block">
-						I'm specialized in WordPress theme development, with a focus on the
-						Gutenberg block editor and React integration.
+					<p className="text-block lead">
+						I'm specialized in WordPress theme development, with a focus on
+						React integration within the new Gutenberg block editor.
 					</p>
 					<LinkButtons />
 				</section>

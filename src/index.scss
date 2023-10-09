@@ -57,16 +57,17 @@ body {
         flex-direction: column;
         scroll-snap-align: start;
 
-        &:nth-child(odd) {
+        /*&:nth-of-type(odd) {
             background-color: var(--dark2);
         }
 
-        &:nth-child(even) {
+        &:nth-of-type(even) {
             backgorund-color: var(--dark2)
-        }
+        }*/
     }
 }
 
+/*
 .mypic {
     border-radius: 100%;
     width: 15rem;
@@ -75,7 +76,7 @@ body {
     margin: 5px;
     border: solid 2px white;
     display: none;
-}
+}*/
 
 h1,
 h2 {
@@ -124,6 +125,10 @@ form,
     }
 }
 
+.lead {
+    font-size: 125%
+}
+
 .buttons {
     margin-top: 1rem;
     display: grid;
@@ -160,6 +165,95 @@ form,
         font-size: 0.8rem;
     }
 }
+
+/* Skills */
+#skills {
+    .row .col-6 {
+        display: flex;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+        width: 100%;
+
+        .card-title.h5 {
+            font-size: 1.15rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .label {
+            display: block;
+            text-align: left;
+        }
+
+        .progress {
+            --bs-progress-height: 0.25rem;
+
+            --bs-progress-border-radius: 0;
+
+            --bs-progress-bar-color: #fff;
+            margin-bottom: 0.75rem;
+            margin-top: 0.25rem;
+            background-color: none;
+
+            .progress-bar {
+                align-items: flex-start;
+                padding-left: 1rem;
+                color: rgba(255, 255, 255, 0);
+
+                &:not(.bg-success) {
+                    --bs-progress-bar-bg: var(--bs-green);
+                }
+            }
+        }
+
+
+    }
+
+}
+
+/* Contact form */
+.col-form-label {
+    text-align: left;
+}
+
+textarea {
+    min-height: 10rem;
+    max-height: 15rem;
+    resize: vertical;
+}
+
+#portfolio,
+#experience {
+    display: none;
+}
+
+/* Mobile adaption */
+
+@include mobile {
+    body {
+        font-size: 13px;
+        scroll-snap-type: unset;
+
+        section:not(:first-of-type) {
+            min-height: unset;
+            margin-top: 10rem;
+
+        }
+    }
+}
+
+@include mobile-xs {
+    .buttons {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 1rem;
+    }
+}
+
+
+
+/* Scroll down mouse animation */
 
 .scroll-down {
     position: absolute;
@@ -211,104 +305,5 @@ form,
     100% {
         transform: translateY(15px);
         opacity: 0;
-    }
-}
-
-/* Skills */
-#skills {
-    .row .col-6 {
-        display: flex;
-    }
-
-    .card {
-        margin-bottom: 1rem;
-        width: 100%;
-
-        .card-title.h5 {
-            font-size: 1.15rem;
-            margin-bottom: 0.85rem;
-        }
-
-        .label {
-            display: none;
-        }
-
-        .progress {
-            --bs-progress-height: 0.85rem;
-            --bs-progress-border-radius: 0;
-            margin-top: 1rem;
-            --bs-progress-bar-color: #fff;
-            background-color: none;
-
-            .progress-bar {
-                align-items: flex-start;
-                padding-left: 1rem;
-
-                &:not(.bg-success) {
-                    --bs-progress-bar-bg: var(--bs-green);
-                }
-            }
-        }
-
-
-    }
-
-    @media (max-width: 1199.98px) {
-        .card {
-            .label {
-                display: block;
-                text-align: left;
-                font-size: 12px;
-                line-height: 1;
-            }
-
-            .progress {
-                --bs-progress-height: 0.25rem;
-                margin-bottom: 0.75rem;
-                margin-top: 0.25rem;
-
-                .progress-bar {
-                    color: rgba(255, 255, 255, 0);
-                }
-            }
-        }
-    }
-}
-
-/* Form */
-
-.col-form-label {
-    text-align: left;
-}
-
-textarea {
-    min-height: 10rem;
-    max-height: 15rem;
-    resize: vertical;
-}
-
-#portfolio,
-#experience {
-    display: none;
-}
-
-@include mobile {
-    body {
-        font-size: 13px;
-        scroll-snap-type: unset;
-
-        section:not(:first-of-type) {
-            min-height: unset;
-            margin-top: 10rem;
-
-        }
-    }
-}
-
-@include mobile-xs {
-    .buttons {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-row-gap: 1rem;
     }
 }

@@ -3,18 +3,18 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import MySkills from './MySkills';
+import skills from './assets/mySkills.js';
 
 const getSkillsGroups = () => {
 	return (
 		<>
-			{Object.keys(MySkills).map((category) => (
+			{Object.keys(skills).map((category) => (
 				<Col xs={6} lg={4} key={category}>
 					<Card>
 						<Card.Body>
 							<Card.Title>{category.replaceAll('_', ' ')}</Card.Title>
-							<Card.Text>
-								{MySkills[category]
+							<Card.Body>
+								{skills[category]
 									.sort((a, b) => (a.amount > b.amount ? -1 : 1))
 									.map((skill) => (
 										<span key={skill.id}>
@@ -26,7 +26,7 @@ const getSkillsGroups = () => {
 											/>
 										</span>
 									))}
-							</Card.Text>
+							</Card.Body>
 						</Card.Body>
 					</Card>
 				</Col>

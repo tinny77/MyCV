@@ -1,28 +1,4 @@
-const MySkills = {
-	Wordpress: [
-		{
-			id: 'wp-theme',
-			name: 'Custom theme development',
-			amount: 90,
-		},
-		{
-			id: 'wp-php',
-			name: 'PHP for Wordpress',
-			amount: 85,
-		},
-		{
-			id: 'wp-gutenberg',
-			name: 'Gutenberg Editor',
-			amount: 65,
-			class: 'success',
-		},
-		{
-			id: 'wp-plugin',
-			name: 'Custom plugin development',
-			amount: 50,
-			class: 'success',
-		},
-	],
+const skills = {
 	Languages: [
 		{
 			id: 'html',
@@ -79,7 +55,30 @@ const MySkills = {
 			amount: 100,
 		},
 	],
-
+	Wordpress: [
+		{
+			id: 'wp-theme',
+			name: 'Custom theme development',
+			amount: 90,
+		},
+		{
+			id: 'wp-php',
+			name: 'PHP for Wordpress',
+			amount: 85,
+		},
+		{
+			id: 'wp-gutenberg',
+			name: 'Gutenberg Editor',
+			amount: 65,
+			class: 'success',
+		},
+		{
+			id: 'wp-plugin',
+			name: 'Custom plugin development',
+			amount: 50,
+			class: 'success',
+		},
+	],
 	Tools_and_bundlers: [
 		{
 			id: 'webpack',
@@ -107,30 +106,6 @@ const MySkills = {
 			amount: 85,
 		},
 	],
-
-	Optimization: [
-		{
-			id: 'mobile',
-			name: 'Mobile-first development',
-			amount: 100,
-		},
-		{
-			id: 'performance',
-			name: 'Performance optimization',
-			amount: 95,
-		},
-		{
-			id: 'crossbrowser',
-			name: 'Cross-browser compatibility testing',
-			amount: 100,
-		},
-		{
-			id: 'responsive',
-			name: 'Responsive design principles',
-			amount: 100,
-		},
-	],
-
 	Graphic_tools: [
 		{
 			id: 'ps',
@@ -153,6 +128,28 @@ const MySkills = {
 			amount: 70,
 		},
 	],
+	Optimization: [
+		{
+			id: 'mobile',
+			name: 'Mobile-first development',
+			amount: 100,
+		},
+		{
+			id: 'performance',
+			name: 'Performance optimization',
+			amount: 95,
+		},
+		{
+			id: 'crossbrowser',
+			name: 'Cross-browser compatibility testing',
+			amount: 100,
+		},
+		{
+			id: 'responsive',
+			name: 'Responsive design principles',
+			amount: 100,
+		},
+	],
 };
 
-export default MySkills;
+export default skills;
