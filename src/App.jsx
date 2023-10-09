@@ -1,0 +1,132 @@
+import react, { useState, useEffect } from 'react';
+import LinkButtons from './LinkButtons.jsx';
+import Skills from './Skills.jsx';
+import Contact from './Contact.jsx';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+function App() {
+	const thisYear = new Date().getFullYear();
+	const myExperienceYears = thisYear - 2007;
+	const myAge = thisYear - 1981;
+	const [isScrolled, setIsScrolled] = useState(true);
+	const [isScrolledVisible, setIsScrolledVisible] = useState(true);
+
+	useEffect(() => {
+		const handlescroll = () => {
+			setIsScrolled(window.scrollY > 0);
+			setIsScrolledVisible(false);
+		};
+		setTimeout(() => setIsScrolled(false), 8000);
+		window.addEventListener('scroll', handlescroll);
+		return () => window.removeEventListener('scroll', handlescroll);
+	}, []);
+
+	return (
+		<>
+			<Router>
+				<section id="main">
+					<img src="./foto.png" className="mypic" />
+					<h1>Filippo Tinnirello</h1>
+					<h3>Frontend & Wordpress developer</h3>
+					<p className="text-block">
+						I'm an experienced Frontend Developer with over {myExperienceYears}{' '}
+						years of expertise in CSS, HTML, and JavaScript, known for my
+						mastery in responsive design and precise coding to transform designs
+						into dynamic, user-friendly websites for seamless experiences across
+						all devices.
+					</p>
+					<p className="text-block">
+						I also possess advanced skills in various technologies, including
+						React, PHP, MySQL, Npm, and Sass.
+					</p>
+					<p className="text-block">
+						I'm specialized in WordPress theme development, with a focus on the
+						Gutenberg block editor and React integration.
+					</p>
+					<LinkButtons />
+				</section>
+				<div
+					className={
+						!isScrolled && isScrolledVisible
+							? 'scroll-down'
+							: 'scroll-down hidden'
+					}
+				>
+					<div className="mousey">
+						<div className="scroller"></div>
+					</div>
+				</div>
+				<section id="about">
+					<h2>About me</h2>
+					<p className="text-block">
+						I am a {myAge} year old front-end developer living in Verona, Italy.
+					</p>
+					<p className="text-block">
+						Throughout my extensive experience as a web developer, I have honed
+						my skills in critical front-end technologies such as HTML, CSS, and
+						JavaScript. My journey commenced with mastering these languages,
+						focusing on crafting engaging user interfaces. As technologies
+						evolved, I shifted my focus towards the WordPress ecosystem, gaining
+						expertise in PHP and essential modern tools and frameworks,
+						including package managers, module bundlers, CSS preprocessors.
+					</p>
+					<p className="text-block">
+						With a passion for CSS that traces back to the era of table-based
+						layouts, I excel at transforming wireframes and designs into
+						functional interfaces, generating well-structured and efficient
+						code. I relish the process of crafting functional digital interfaces
+						from wireframes or mockups, employing well-organized and practical
+						code. Proficient in debugging and performance monitoring tools like
+						Lighthouse, I specialize in testing for responsive behavior across
+						various resolutions and mobile devices, ensuring an optimal
+						experience for all users.
+					</p>
+					<p className="text-block">
+						Additionally, I am well-versed in SEO strategies and best practices
+						for website optimization. I have a particular affinity for Bootstrap
+						and find joy in customizing it for specific projects. However, I am
+						equally comfortable starting with a reset.css and a blank
+						stylesheet, tailoring solutions to each unique project's needs.
+					</p>
+					<p className="text-block">
+						I am deeply passionate about staying at the forefront of web
+						development trends and technologies.
+					</p>
+					<p className="text-block">
+						Outside of coding, my interests include sports like football and F1.
+						I avidly follow technology news, with a particular focus on the
+						Apple ecosystem. I also have a deep appreciation for English music,
+						especially the iconic sounds of Oasis and the solo work of Liam
+						Gallagher.
+					</p>
+				</section>
+				<section id="experience">
+					<h2>My experience</h2>
+					BLA BLA BLA
+					<br />
+					BLA BLA BLA
+					<br />
+					<br />
+				</section>
+				<section id="skills">
+					<h2>My Skills</h2>
+					<Skills />
+				</section>
+				<section id="portfolio">
+					<h2>Portfolio</h2>
+					BLA BLA BLA
+					<br />
+					BLA BLA BLA
+					<br />
+					<br />
+				</section>
+				<section id="contact">
+					<h2>Contact me</h2>
+					<Contact />
+				</section>
+			</Router>
+		</>
+	);
+}
+
+export default App;
