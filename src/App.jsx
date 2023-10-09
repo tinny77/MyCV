@@ -3,6 +3,7 @@ import LinkButtons from './LinkButtons';
 import Skills from './Skills';
 import Contact from './Contact';
 import { BrowserRouter as Router } from 'react-router-dom';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function App() {
 	const [isScrolled, setIsScrolled] = useState(true);
@@ -36,7 +37,9 @@ function App() {
 			<Router>
 				<section id="main">
 					<h1>Filippo Tinnirello</h1>
+
 					<h3>Frontend & Wordpress developer</h3>
+
 					<p className="text-block lead">
 						I'm an experienced Frontend Developer with over {myExperienceYears}{' '}
 						years of expertise in CSS, HTML, and JavaScript, known for my
@@ -45,16 +48,15 @@ function App() {
 						all devices.
 					</p>
 					<p className="text-block lead">
-						I'm specialized in WordPress theme development, with a focus on
-						React integration within the new Gutenberg block editor.
+						I'm specialized in WordPress theme development, and I'm currently
+						focusing on React integration within the new Gutenberg block editor.
 					</p>
+
 					<LinkButtons />
 				</section>
 				<div
 					className={
-						!isScrolled && isScrolledVisible
-							? 'scroll-down'
-							: 'scroll-down hidden'
+						'scroll-down' + !isScrolled && isScrolledVisible ? '' : ' hidden'
 					}
 				>
 					<div className="mousey">
@@ -62,72 +64,91 @@ function App() {
 					</div>
 				</div>
 				<section id="about">
-					<h2>About me</h2>
-					<p className="text-block">
-						I am a {myAge} year old front-end developer living in Verona, Italy.
-					</p>
-					<p className="text-block">
-						Throughout my extensive experience as a web developer, I have honed
-						my skills in critical front-end technologies such as HTML, CSS, and
-						JavaScript. My journey commenced with mastering these languages,
-						focusing on crafting engaging user interfaces. As technologies
-						evolved, I shifted my focus towards the WordPress ecosystem, gaining
-						expertise in PHP and essential modern tools and frameworks,
-						including package managers, module bundlers, CSS preprocessors.
-					</p>
-					<p className="text-block">
-						With a passion for CSS that traces back to the era of table-based
-						layouts, I excel at transforming wireframes and designs into
-						functional interfaces, generating well-structured and efficient
-						code. I relish the process of crafting functional digital interfaces
-						from wireframes or mockups, employing well-organized and practical
-						code. Proficient in debugging and performance monitoring tools like
-						Lighthouse, I specialize in testing for responsive behavior across
-						various resolutions and mobile devices, ensuring an optimal
-						experience for all users.
-					</p>
-					<p className="text-block">
-						Additionally, I am well-versed in SEO strategies and best practices
-						for website optimization. I have a particular affinity for Bootstrap
-						and find joy in customizing it for specific projects. However, I am
-						equally comfortable starting with a reset.css and a blank
-						stylesheet, tailoring solutions to each unique project's needs.
-					</p>
-					<p className="text-block">
-						I am deeply passionate about staying at the forefront of web
-						development trends and technologies.
-					</p>
-					<p className="text-block">
-						Outside of coding, my interests include sports like football and F1.
-						I avidly follow technology news, with a particular focus on the
-						Apple ecosystem. I also have a deep appreciation for English music,
-						especially the iconic sounds of Oasis and the solo work of Liam
-						Gallagher.
-					</p>
+					<ScrollAnimation animateIn="fadeIn" delay={1000}>
+						<h2>About me</h2>
+					</ScrollAnimation>
+					<ScrollAnimation animateIn="fadeIn" delay={2000}>
+						<p className="text-block">
+							I am a {myAge} year old front-end developer living in Verona,
+							Italy.
+						</p>
+						<p className="text-block">
+							Throughout my extensive experience as a web developer, I have
+							honed my skills in critical front-end technologies such as HTML,
+							CSS, and JavaScript. My journey commenced with mastering these
+							languages, focusing on crafting engaging user interfaces. As
+							technologies evolved, I shifted my focus towards the WordPress
+							ecosystem, gaining expertise in PHP and essential modern tools and
+							frameworks, including package managers, module bundlers, CSS
+							preprocessors.
+						</p>
+						<p className="text-block">
+							With a passion for CSS that traces back to the era of table-based
+							layouts, I excel at transforming wireframes and designs into
+							functional interfaces, generating well-structured and efficient
+							code. I relish the process of crafting functional digital
+							interfaces from wireframes or mockups, employing well-organized
+							and practical code. Proficient in debugging and performance
+							monitoring tools like Lighthouse, I specialize in testing for
+							responsive behavior across various resolutions and mobile devices,
+							ensuring an optimal experience for all users.
+						</p>
+						<p className="text-block">
+							Additionally, I am well-versed in SEO strategies and best
+							practices for website optimization. I have a particular affinity
+							for Bootstrap and find joy in customizing it for specific
+							projects. However, I am equally comfortable starting with a
+							reset.css and a blank stylesheet, tailoring solutions to each
+							unique project's needs.
+						</p>
+						<p className="text-block">
+							I am deeply passionate about staying at the forefront of web
+							development trends and technologies.
+						</p>
+						<p className="text-block">
+							Outside of coding, my interests include sports like football and
+							F1. I avidly follow technology news, with a particular focus on
+							the Apple ecosystem. I also have a deep appreciation for English
+							music, especially the iconic sounds of Oasis and the solo work of
+							Liam Gallagher.
+						</p>
+					</ScrollAnimation>
 				</section>
 				<section id="experience">
-					<h2>My experience</h2>
-					BLA BLA BLA
-					<br />
-					BLA BLA BLA
-					<br />
-					<br />
+					<ScrollAnimation animateIn="fadeIn" delay={1000}>
+						<h2>My experience</h2>
+					</ScrollAnimation>
+					<ScrollAnimation animateIn="fadeIn" delay={2000}>
+						BLA BLA BLA
+						<br />
+						BLA BLA BLA
+						<br />
+						<br />
+					</ScrollAnimation>
 				</section>
 				<section id="skills">
 					<h2>My Skills</h2>
 					<Skills />
 				</section>
 				<section id="portfolio">
-					<h2>Portfolio</h2>
-					BLA BLA BLA
-					<br />
-					BLA BLA BLA
-					<br />
-					<br />
+					<ScrollAnimation animateIn="fadeIn" delay={1000}>
+						<h2>Portfolio</h2>
+					</ScrollAnimation>
+					<ScrollAnimation animateIn="fadeIn" delay={2000}>
+						BLA BLA BLA
+						<br />
+						BLA BLA BLA
+						<br />
+						<br />
+					</ScrollAnimation>
 				</section>
 				<section id="contact">
-					<h2>Contact me</h2>
-					<Contact />
+					<ScrollAnimation animateIn="fadeIn" delay={1000}>
+						<h2>Contact me</h2>
+					</ScrollAnimation>
+					<ScrollAnimation animateIn="fadeIn" delay={2000}>
+						<Contact />
+					</ScrollAnimation>
 				</section>
 			</Router>
 		</>

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { GrLinkedin, GrGithub, GrDocumentPdf, GrMail } from 'react-icons/gr';
 import { Tooltip } from 'react-tooltip';
@@ -38,7 +38,13 @@ export default function LinkButtons() {
 				<GrDocumentPdf />
 			</a>
 			<Tooltip id="btn-cv" />
-			<HashLink to="/#contact" smooth={true}>
+			<HashLink
+				to="/#contact"
+				smooth={true}
+				data-tooltip-id="btn-contact"
+				data-tooltip-content="Contact me"
+				data-tooltip-place="bottom"
+			>
 				<GrMail />
 			</HashLink>
 			<Tooltip id="btn-contact" />

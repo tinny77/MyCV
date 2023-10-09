@@ -117,6 +117,7 @@ form,
 .text-block {
     width: min(100%, 60rem);
     text-wrap: balance;
+    margin-inline: auto;
 
     @media (min-width: 1200px) and (min-height: 800px) {
         &:not(:last-of-type) {
@@ -269,28 +270,32 @@ textarea {
     &.hidden {
         opacity: 0;
     }
+
+    .mousey {
+        width: 3px;
+        padding: 10px 15px;
+        height: 35px;
+        border: 2px solid #fff;
+        border-radius: 25px;
+        opacity: 0.75;
+        box-sizing: content-box;
+
+        .scroller {
+            width: 3px;
+            height: 10px;
+            border-radius: 25%;
+            background-color: #fff;
+            animation-name: scroll;
+            animation-duration: 2.2s;
+            animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+            animation-iteration-count: infinite;
+        }
+    }
 }
 
-.mousey {
-    width: 3px;
-    padding: 10px 15px;
-    height: 35px;
-    border: 2px solid #fff;
-    border-radius: 25px;
-    opacity: 0.75;
-    box-sizing: content-box;
-}
 
-.scroller {
-    width: 3px;
-    height: 10px;
-    border-radius: 25%;
-    background-color: #fff;
-    animation-name: scroll;
-    animation-duration: 2.2s;
-    animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
-    animation-iteration-count: infinite;
-}
+
+
 
 @keyframes scroll {
     0% {
