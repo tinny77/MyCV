@@ -29,11 +29,10 @@ export default function LinkButtons() {
 			<a
 				href="./Filippo_Tinnirello_Resume.pdf"
 				target="_blank"
-				download="Filippo Tinnirello CV.pdf"
+				download
 				data-tooltip-id="btn-cv"
 				data-tooltip-content="Download my CV"
 				data-tooltip-place="bottom"
-				className="disabled"
 			>
 				<GrDocumentPdf />
 			</a>
