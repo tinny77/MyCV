@@ -67,10 +67,10 @@ function App() {
 					</div>
 				</div>
 				<section id="about">
-					<ScrollAnimation animateIn="fadeIn" delay={1000}>
+					<ScrollAnimation animateIn="fadeIn" delay={500}>
 						<h2>About me</h2>
 					</ScrollAnimation>
-					<ScrollAnimation animateIn="fadeIn" delay={2000}>
+					<ScrollAnimation animateIn="fadeIn" delay={1000}>
 						<p className="text-block">
 							I am a {myAge} year old front-end developer living in Verona,
 							Italy.
@@ -118,10 +118,10 @@ function App() {
 					</ScrollAnimation>
 				</section>
 				<section id="experience">
-					<ScrollAnimation animateIn="fadeIn" delay={1000}>
+					<ScrollAnimation animateIn="fadeIn" delay={500}>
 						<h2>My experience</h2>
 					</ScrollAnimation>
-					<ScrollAnimation animateIn="fadeIn" delay={2000}>
+					<ScrollAnimation animateIn="fadeIn" delay={1000}>
 						BLA BLA BLA
 						<br />
 						BLA BLA BLA
@@ -130,14 +130,18 @@ function App() {
 					</ScrollAnimation>
 				</section>
 				<section id="skills">
-					<h2>My Skills</h2>
-					<Skills />
+					<ScrollAnimation animateIn="fadeIn" delay={500}>
+						<h2>My Skills</h2>
+					</ScrollAnimation>
+					<ScrollAnimation animateIn="fadeIn" delay={1000}>
+						<Skills />
+					</ScrollAnimation>
 				</section>
 				<section id="portfolio">
-					<ScrollAnimation animateIn="fadeIn" delay={1000}>
+					<ScrollAnimation animateIn="fadeIn" delay={500}>
 						<h2>Portfolio</h2>
 					</ScrollAnimation>
-					<ScrollAnimation animateIn="fadeIn" delay={2000}>
+					<ScrollAnimation animateIn="fadeIn" delay={1000}>
 						BLA BLA BLA
 						<br />
 						BLA BLA BLA
@@ -146,10 +150,10 @@ function App() {
 					</ScrollAnimation>
 				</section>
 				<section id="contact">
-					<ScrollAnimation animateIn="fadeIn" delay={1000}>
+					<ScrollAnimation animateIn="fadeIn" delay={500}>
 						<h2>Contact me</h2>
 					</ScrollAnimation>
-					<ScrollAnimation animateIn="fadeIn" delay={2000}>
+					<ScrollAnimation animateIn="fadeIn" delay={1000}>
 						<Contact />
 					</ScrollAnimation>
 				</section>
