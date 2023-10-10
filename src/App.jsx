@@ -82,18 +82,15 @@ function App() {
 						<p className="text-block">
 							Throughout my extensive experience as a web developer, I have
 							honed my skills in critical front-end technologies such as HTML,
-							CSS, and JavaScript. My journey commenced with mastering these
+							CSS (and preprocessors), and JavaScript (ES6+). My journey commenced with mastering these
 							languages, focusing on crafting engaging user interfaces. As
 							technologies evolved, I shifted my focus towards the WordPress
-							ecosystem, gaining expertise in PHP and essential modern tools and
-							frameworks, including package managers, module bundlers, CSS
-							preprocessors.
+							ecosystem, gaining expertise in PHP and essential modern tools like React, SSGs, package managers, module bundlers.
+ .
 						</p>
 						<p className="text-block">
 							With a passion for CSS that traces back to the era of table-based
-							layouts, I excel at transforming wireframes and designs into
-							functional interfaces, generating well-structured and efficient
-							code. I relish the process of crafting functional digital
+							layouts, I relish the process of crafting functional digital
 							interfaces from wireframes or mockups, employing well-organized
 							and practical code. Proficient in debugging and performance
 							monitoring tools like Lighthouse, I specialize in testing for
