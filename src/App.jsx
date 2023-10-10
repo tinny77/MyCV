@@ -36,9 +36,13 @@ function App() {
 		<>
 			<Router>
 				<section id="main">
-					<video autoPlay loop>
-						<source src="./myPic.mp4" type="video/mp4" />
-					</video>
+					<div className="videoframe">
+						<video autoPlay loop poster="./myPic.png">
+							<source src="./myPic.mp4" type="video/mp4" />
+							<source src="./myPic.webm" type="video/webm" />
+						</video>
+					</div>
+
 					<h1>Filippo Tinnirello</h1>
 
 					<h3>Frontend & Wordpress developer</h3>

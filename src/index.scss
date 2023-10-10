@@ -74,16 +74,25 @@ body {
     }
 }
 
-/*
-.mypic {
-    border-radius: 100%;
-    width: 15rem;
-    height: 15rem;
-    filter: saturate(0) contrast(1.5);
-    margin: 5px;
-    border: solid 2px white;
-    display: none;
-}*/
+.videoframe {
+    border-radius: 60px;
+    aspect-ratio: 1/1;
+    position: relative;
+    overflow: hidden;
+    width: min(250px, 50vw);
+    object-fit: cover;
+
+    video {
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+}
+
+
 
 h1,
 h2 {
@@ -125,10 +134,6 @@ form,
     font-size: 125%
 }
 
-video {
-    width: min(250px, 50vw);
-    margin: -1rem auto 1rem;
-}
 
 .buttons {
     margin-top: 1rem;
@@ -250,9 +255,12 @@ form {
         font-size: 13px;
         scroll-snap-type: unset;
 
-        section:not(:first-of-type) {
+        #about,
+        #skills,
+        #contact {
             min-height: unset;
-            margin-top: 10rem;
+            padding-top: 10rem;
+            padding-bottom: 10rem;
 
         }
     }
