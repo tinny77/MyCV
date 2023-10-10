@@ -10,15 +10,19 @@
     }
 }
 
+
+
 :root {
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
-    --dark1: #222;
-    --dark2: #121517;
-    --accent: #e53a36;
+    //--dark1: #222;
+    //--dark2: #121517;
+    --dark1: #34376a;
+    --dark2: #2E3060;
+    --accent: #a43b5a;
     --bs-body-bg: var(--dark1);
     --bs-body-color: #fff;
     --bs-success-rgb: 51, 122, 183;
@@ -38,7 +42,7 @@ html {
 
 body {
     margin: 0;
-    padding-inline: 2rem;
+
     height: 100svh;
     text-align: center;
     font-family: 'Open Sans', Inter, system-ui, Avenir, Helvetica, Arial,
@@ -47,7 +51,7 @@ body {
     line-height: 1.5;
     font-weight: 400;
     color: rgba(161, 161, 170);
-    background-color: var(--dark2);
+    background-color: var(--dark1);
 
     section {
         display: flex;
@@ -56,14 +60,17 @@ body {
         min-height: 100%;
         flex-direction: column;
         scroll-snap-align: start;
+        padding-inline: 2rem;
 
-        /*&:nth-of-type(odd) {
+        &#about,
+        &#contact {
             background-color: var(--dark2);
         }
 
-        &:nth-of-type(even) {
-            backgorund-color: var(--dark2)
-        }*/
+        &:nth-child(odd) {
+            background-color: var(--dark1);
+        }
+
     }
 }
 
@@ -81,23 +88,11 @@ body {
 h1,
 h2 {
     line-height: 1.25;
-    font-family: 'Cairo Play', sans-serif;
+    font-family: 'Cairo', sans-serif;
     font-weight: 900;
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #fff;
-}
-
-/* Workaround for unsupported font on iOS devices in Safari */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-    @supports (-webkit-overflow-scrolling: touch) {
-
-        h1,
-        h2 {
-            font-family: 'Cairo', sans-serif;
-            font-weight: 900;
-        }
-    }
 }
 
 h1 {
@@ -128,6 +123,11 @@ form,
 
 .lead {
     font-size: 125%
+}
+
+video {
+    width: min(250px, 50vw);
+    margin: -1rem auto 1rem;
 }
 
 .buttons {
@@ -174,8 +174,10 @@ form,
     }
 
     .card {
+        --bs-card-bg: var(--dark2);
         margin-bottom: 1rem;
         width: 100%;
+        border: 0;
 
         .card-title.h5 {
             font-size: 1.15rem;
@@ -214,15 +216,27 @@ form,
 }
 
 /* Contact form */
-.col-form-label {
-    text-align: left;
+form {
+    ::placeholder {
+        color: #eee
+    }
+
+    .col-form-label {
+        text-align: left;
+    }
+
+    textarea {
+        min-height: 10rem;
+        max-height: 15rem;
+        resize: vertical;
+    }
+
+    input.btn[type='submit'] {
+        background-color: var(--accent);
+        border-color: var(--accent);
+    }
 }
 
-textarea {
-    min-height: 10rem;
-    max-height: 15rem;
-    resize: vertical;
-}
 
 #portfolio,
 #experience {

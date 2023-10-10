@@ -74,7 +74,7 @@ export default function Contact() {
 				<Button
 					as="input"
 					type="submit"
-					value="Submit"
+					value="Send"
 					variant="danger"
 					className="mt-2"
 					disabled={state.submitting}

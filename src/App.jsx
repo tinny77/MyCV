@@ -18,7 +18,7 @@ function App() {
 	const thisYear = new Date();
 	const myExperienceYears = getYearDiffWithMonth(
 		thisYear,
-		new Date('2006-03-01')
+		new Date('2006-10-01')
 	);
 	const myAge = getYearDiffWithMonth(thisYear, new Date('1981-07-05'));
 
@@ -36,6 +36,9 @@ function App() {
 		<>
 			<Router>
 				<section id="main">
+					<video autoPlay loop>
+						<source src="./myPic.mp4" type="video/mp4" />
+					</video>
 					<h1>Filippo Tinnirello</h1>
 
 					<h3>Frontend & Wordpress developer</h3>
@@ -153,6 +156,6 @@ function App() {
 			</Router>
 		</>
 	);
-}
+};
 
 export default App;
