@@ -20,6 +20,15 @@ function App() {
 	const myExperienceYears = getYearsDiff(thisYear, new Date('2006-09'));
 	const myAge = getYearsDiff(thisYear, new Date('1981-07-05'));
 
+	const animateBars = () => {
+		const progressBars = document.querySelectorAll('.progress-bar');
+		progressBars.forEach((progressBar) => {
+			setTimeout(() => {
+				progressBar.classList.add('animated');
+			}, 1000);
+		});
+	};
+
 	useEffect(() => {
 		const handlescroll = () => {
 			setIsScrolled(window.scrollY > 0);
@@ -119,7 +128,11 @@ function App() {
 				<ScrollAnimation animateIn="fadeIn" delay={500}>
 					<h2>My Skills</h2>
 				</ScrollAnimation>
-				<ScrollAnimation animateIn="fadeIn" delay={1000}>
+				<ScrollAnimation
+					animateIn="fadeIn"
+					delay={500}
+					afterAnimatedIn={animateBars}
+				>
 					<Skills />
 				</ScrollAnimation>
 			</section>

@@ -226,14 +226,17 @@ h3 {
             --bs-progress-height: 0.25rem;
             --bs-progress-border-radius: 0;
             --bs-progress-bar-color: rgba(255, 255, 255, 0);
+            --bs-progress-bar-transition: width 1s ease;
             margin-bottom: 0.75rem;
             margin-top: 0.25rem;
             background-color: none;
 
             .progress-bar {
-                align-items: flex-start;
-                padding-left: 1rem;
                 color: rgba(255, 255, 255, 0);
+
+                &:not(.animated) {
+                    width: 0 !important;
+                }
 
                 &:not(.bg-success) {
                     --bs-progress-bar-bg: var(--bs-green);
@@ -281,8 +284,8 @@ form {
         #experience,
         #contact {
             min-height: unset;
-            padding-top: 2.5rem;
-            padding-bottom: 2.5rem;
+            padding-top: 10rem;
+            padding-bottom: 10rem;
 
         }
 

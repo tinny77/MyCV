@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
-import ScrollAnimation from 'react-animate-on-scroll';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function Experience() {
 	return (
