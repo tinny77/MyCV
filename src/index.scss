@@ -60,10 +60,11 @@ body {
         min-height: 100%;
         flex-direction: column;
         scroll-snap-align: start;
-        padding-inline: 2rem;
+        padding-inline: 1vw;
 
         &#about,
-        &#contact {
+        &#experience,
+        #contact {
             background-color: var(--dark2);
         }
 
@@ -119,9 +120,9 @@ h3 {
 
 
 
-form,
+
 .text-block {
-    width: min(100%, 60rem);
+    width: min(90%, 60rem);
     text-wrap: balance;
     margin-inline: auto;
 
@@ -130,11 +131,13 @@ form,
             margin-bottom: max(2rem, 2vh);
         }
     }
+
+    &.lead {
+        font-size: 125%
+    }
+
 }
 
-.lead {
-    font-size: 125%
-}
 
 
 .buttons {
@@ -171,6 +174,28 @@ form,
 
     .react-tooltip {
         font-size: 0.8rem;
+    }
+}
+
+/* Experience */
+
+#experience {
+
+
+    .card {
+        --bs-card-bg: var(--dark1);
+        margin-bottom: 1rem;
+        width: 100%;
+        border: 0;
+        text-align: left;
+
+        .card-title.h5 {
+            padding-top: var(--bs-card-spacer-y);
+            padding-left: var(--bs-card-spacer-x);
+            padding-bottom: 0;
+            margin-bottom: 0;
+            font-weight: 800;
+        }
     }
 }
 
@@ -223,9 +248,10 @@ form,
 
 /* Contact form */
 form {
-    ::placeholder {
-        color: #eee
-    }
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 2rem;
 
     .col-form-label {
         text-align: left;
@@ -243,12 +269,6 @@ form {
     }
 }
 
-
-#portfolio,
-#experience {
-    display: none;
-}
-
 /* Mobile adaption */
 
 @include mobile {
@@ -264,6 +284,10 @@ form {
             padding-bottom: 10rem;
 
         }
+
+        .card {
+            --bs-card-spacer-x: 0.5rem;
+        }
     }
 }
 
@@ -277,7 +301,7 @@ form {
 
 
 
-/* Scroll down mouse animation */
+/* Scroll down icon mouse animation */
 
 .scroll-down {
     position: absolute;
@@ -285,7 +309,7 @@ form {
     bottom: 2rem;
     left: 0;
     margin: auto;
-    transition: opacity 1s;
+    transition: opacity 2s;
     opacity: 0.95;
     width: 34px;
     height: 55px;
@@ -315,10 +339,6 @@ form {
         }
     }
 }
-
-
-
-
 
 @keyframes scroll {
     0% {

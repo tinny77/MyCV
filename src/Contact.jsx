@@ -17,7 +17,7 @@ export default function Contact() {
 	}
 	return (
 		<>
-			<p>
+			<p className="text-block">
 				Feel free to drop me a message using the form below.
 				<br />
 				Looking forward to connecting and discussing exciting opportunities
