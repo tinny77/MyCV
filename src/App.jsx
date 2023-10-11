@@ -40,6 +40,7 @@ function App() {
 						<video autoPlay loop poster="./myPic.png">
 							<source src="./myPic.mp4" type="video/mp4" />
 							<source src="./myPic.webm" type="video/webm" />
+							<source src="./myPic.mov" type="video/quicktime" />
 						</video>
 					</div>
 
@@ -82,11 +83,12 @@ function App() {
 						<p className="text-block">
 							Throughout my extensive experience as a web developer, I have
 							honed my skills in critical front-end technologies such as HTML,
-							CSS (and preprocessors), and JavaScript (ES6+). My journey commenced with mastering these
-							languages, focusing on crafting engaging user interfaces. As
-							technologies evolved, I shifted my focus towards the WordPress
-							ecosystem, gaining expertise in PHP and essential modern tools like React, SSGs, package managers, module bundlers.
- .
+							CSS (and preprocessors), and JavaScript (ES6+). My journey
+							commenced with mastering these languages, focusing on crafting
+							engaging user interfaces. As technologies evolved, I shifted my
+							focus towards the WordPress ecosystem, gaining expertise in PHP
+							and essential modern tools like React, SSGs, package managers,
+							module bundlers.
 						</p>
 						<p className="text-block">
 							With a passion for CSS that traces back to the era of table-based
