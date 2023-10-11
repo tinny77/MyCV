@@ -16,7 +16,7 @@ export default function LinkButtons() {
 				<GrLinkedin />
 			</a>
 			<Tooltip id="btn-linkedin" />
-			<a
+			{/* `			<a
 				className="disabled"
 				target="_blank"
 				data-tooltip-id="btn-github"
@@ -25,7 +25,7 @@ export default function LinkButtons() {
 			>
 				<GrGithub />
 			</a>
-			<Tooltip id="btn-github" />
+			<Tooltip id="btn-github" />` */}
 			<a
 				href="./Filippo_Tinnirello_Resume.pdf"
 				target="_blank"

@@ -140,7 +140,7 @@ form,
 .buttons {
     margin-top: 1rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: clamp(2rem, calc(2rem + ((1vw - 0.85rem) * 6.6667)), 3rem);
 
@@ -194,14 +194,13 @@ form,
         .label {
             display: block;
             text-align: left;
+            font-size: 0.9rem;
         }
 
         .progress {
             --bs-progress-height: 0.25rem;
-
             --bs-progress-border-radius: 0;
-
-            --bs-progress-bar-color: #fff;
+            --bs-progress-bar-color: rgba(255, 255, 255, 0);
             margin-bottom: 0.75rem;
             margin-top: 0.25rem;
             background-color: none;

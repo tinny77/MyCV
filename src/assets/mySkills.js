@@ -29,7 +29,7 @@ const skills = {
 		{
 			id: 'react',
 			name: 'React',
-			amount: 65,
+			amount: 70,
 			class: 'success',
 		},
 		{
@@ -48,11 +48,6 @@ const skills = {
 			name: 'Tailwind CSS',
 			amount: 85,
 			class: 'success',
-		},
-		{
-			id: 'sass',
-			name: 'Sass',
-			amount: 100,
 		},
 	],
 	Wordpress: [
@@ -83,11 +78,6 @@ const skills = {
 		{
 			id: 'webpack',
 			name: 'Webpack',
-			amount: 95,
-		},
-		{
-			id: 'parcel',
-			name: 'Parcel',
 			amount: 95,
 		},
 		{
