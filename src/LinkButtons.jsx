@@ -26,6 +26,16 @@ export default function LinkButtons() {
 				<GrGithub />
 			</a>
 			<Tooltip id="btn-github" />` */}
+			<HashLink
+				to="/#contact"
+				smooth={true}
+				data-tooltip-id="btn-contact"
+				data-tooltip-content="Contact me"
+				data-tooltip-place="bottom"
+			>
+				<GrMail />
+			</HashLink>
+			<Tooltip id="btn-contact" />
 			<a
 				href="./Filippo_Tinnirello_Resume.pdf"
 				target="_blank"
@@ -37,16 +47,6 @@ export default function LinkButtons() {
 				<GrDocumentPdf />
 			</a>
 			<Tooltip id="btn-cv" />
-			<HashLink
-				to="/#contact"
-				smooth={true}
-				data-tooltip-id="btn-contact"
-				data-tooltip-content="Contact me"
-				data-tooltip-place="bottom"
-			>
-				<GrMail />
-			</HashLink>
-			<Tooltip id="btn-contact" />
 		</div>
 	);
 }

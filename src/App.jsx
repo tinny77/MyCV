@@ -37,7 +37,8 @@ function App() {
 			<Router>
 				<section id="main">
 					<div className="videoframe">
-						<video autoPlay loop poster="./myPic.png">
+						<video autoPlay loop muted poster="./myPic.png">
+							<source src="./myPic.gif" type="video/gif" />
 							<source src="./myPic.mp4" type="video/mp4" />
 							<source src="./myPic.webm" type="video/webm" />
 							<source src="./myPic.mov" type="video/quicktime" />
