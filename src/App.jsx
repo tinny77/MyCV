@@ -25,7 +25,7 @@ function App() {
 		progressBars.forEach((progressBar) => {
 			setTimeout(() => {
 				progressBar.classList.add('animated');
-			}, 1000);
+			}, 750);
 		});
 	};
 
@@ -55,17 +55,13 @@ function App() {
 				<h3>Frontend & Wordpress developer</h3>
 
 				<p className="text-block lead">
-					I'm an experienced Frontend Developer with over {myExperienceYears}{' '}
-					years of expertise in CSS, HTML, and JavaScript, known for my mastery
-					in responsive design and precise coding to transform designs into
-					dynamic, user-friendly websites for seamless experiences across all
-					devices.
+					With {myExperienceYears}
+					{'+'} years in Frontend Development, I'm driven by a passion for web
+					development and thrive on the challenges it presents. With a strong
+					foundation in CSS, HTML, and JavaScript, coupled with deep expertise
+					in WordPress, I'm poised to bring your digital projects to life with
+					precision and creativity
 				</p>
-				<p className="text-block lead">
-					I'm specialized in WordPress theme development, and I'm currently
-					focusing on React integration within the new Gutenberg block editor.
-				</p>
-
 				<LinkButtons />
 			</section>
 
@@ -84,35 +80,40 @@ function App() {
 				</ScrollAnimation>
 				<ScrollAnimation animateIn="fadeIn" delay={1000}>
 					<p className="text-block">
-						I am a {myAge} year old front-end developer living in Verona, Italy.
+						I am a {myAge}-year-old front-end developer based in Verona, Italy.
 					</p>
 					<p className="text-block">
-						Throughout my extensive experience as a web developer, I have honed
-						my skills in critical front-end technologies such as HTML, CSS (and
-						preprocessors), and JavaScript (ES6+). My journey commenced with
-						mastering these languages, focusing on crafting engaging user
-						interfaces. As technologies evolved, I shifted my focus towards the
-						WordPress ecosystem, gaining expertise in PHP and essential modern
-						tools like React, SSGs, package managers, module bundlers.
+						My journey in web development began in 2006. Back then, I was
+						immersed in mastering the intricacies of HTML, CSS, and JavaScript.
+						Over time, I transitioned my focus towards WordPress, honing my
+						skills in front-end technologies. From customizing existing themes
+						to developing new ones, I've been deeply involved in the WordPress
+						ecosystem.
+						<br />
+						All these years of front-end development equipped me with a keen eye
+						for detail and a knack for creating seamless, user-friendly
+						websites.
 					</p>
 					<p className="text-block">
-						With a passion for CSS that traces back to the era of table-based
-						layouts, I relish the process of crafting functional digital
-						interfaces from wireframes or mockups, employing well-organized and
-						practical code. Proficient in debugging and performance monitoring
-						tools like Lighthouse, I specialize in testing for responsive
-						behavior across various resolutions and mobile devices, ensuring an
-						optimal experience for all users.
+						In 2023, I took a leap, temporarily stepping away to dedicate myself
+						to an intensive period of learning. During this time, I immersed
+						myself in the latest knowledge and trends, delving deep into the
+						realm of JavaScript, particularly focusing on the nuances of React
+						and related technologies.
+						<br />
+						This dedicated period of study allowed me to not only catch up but
+						to surge ahead, gaining a comprehensive understanding of the
+						ever-evolving landscape of web development. It was a period of
+						full-time commitment to honing my skills and delving into the
+						intricacies that shape the digital world.
 					</p>
 					<p className="text-block">
-						Additionally, I am well-versed in SEO strategies and best practices
-						for website optimization. I have a particular affinity for Bootstrap
-						and find joy in customizing it for specific projects. However, I am
-						equally comfortable starting with a reset.css and a blank
-						stylesheet, tailoring solutions to each unique project's needs.
-					</p>
-					<p className="text-block">
-					When I'm not coding, you'll often find me hitting the gym or taking relaxing walks while tuning into podcasts.<br/>I'm a big fan of football and F1, and I'm always in the loop with the latest tech news, especially in the Apple world. And when it comes to music, I'm all about Oasis and Liam Gallagher's solo work!
+						Beyond the screen, you'll often find me hitting the gym, taking
+						leisurely walks, and tuning into podcasts. Football and F1 are my
+						go-to sports, and I'm always eager to dive into the latest in tech,
+						especially within the Apple ecosystem. And when it comes to music,
+						the iconic sounds of Oasis and Liam Gallagher's solo work hold a
+						special place in my heart.
 					</p>
 				</ScrollAnimation>
 			</section>
