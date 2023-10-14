@@ -112,10 +112,6 @@ function App() {
 						stylesheet, tailoring solutions to each unique project's needs.
 					</p>
 					<p className="text-block">
-						I am deeply passionate about staying at the forefront of web
-						development trends and technologies.
-					</p>
-					<p className="text-block">
 					When I'm not coding, you'll often find me hitting the gym or taking relaxing walks while tuning into podcasts.<br/>I'm a big fan of football and F1, and I'm always in the loop with the latest tech news, especially in the Apple world. And when it comes to music, I'm all about Oasis and Liam Gallagher's solo work!
 					</p>
 				</ScrollAnimation>
