@@ -116,11 +116,7 @@ function App() {
 						development trends and technologies.
 					</p>
 					<p className="text-block">
-						Outside of coding, my interests include sports like football and F1.
-						I avidly follow technology news, with a particular focus on the
-						Apple ecosystem. I also have a deep appreciation for English music,
-						especially the iconic sounds of Oasis and the solo work of Liam
-						Gallagher.
+					When I'm not coding, you'll often find me hitting the gym or taking relaxing walks while tuning into podcasts.<br/>I'm a big fan of football and F1, and I'm always in the loop with the latest tech news, especially in the Apple world. And when it comes to music, I'm all about Oasis and Liam Gallagher's solo work!
 					</p>
 				</ScrollAnimation>
 			</section>
