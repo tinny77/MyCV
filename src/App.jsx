@@ -52,14 +52,14 @@ function App() {
 
 				<h1>Filippo Tinnirello</h1>
 
-				<h3>Frontend & Wordpress developer</h3>
+				<h3>Front-end & Wordpress developer</h3>
 
 				<p className="text-block lead">
 					With {myExperienceYears}
 					{'+'} years in Frontend Development, I'm driven by a passion for web
 					development and thrive on the challenges it presents. With a strong
-					foundation in CSS, HTML, and JavaScript, coupled with deep expertise
-					in WordPress, I'm poised to bring your digital projects to life with
+					foundation in CSS, HTML, and JavaScript, coupled with solid expertise
+					in WordPress, I'm poised to bring digital projects to life with
 					precision and creativity
 				</p>
 				<LinkButtons />
@@ -112,7 +112,7 @@ function App() {
 						leisurely walks, and tuning into podcasts. Football and F1 are my
 						go-to sports, and I'm always eager to dive into the latest in tech,
 						especially within the Apple ecosystem. And when it comes to music,
-						the iconic sounds of Oasis and Liam Gallagher's solo work hold a
+						the iconic sounds of Oasis and Gallagher brothers solo works hold a
 						special place in my heart.
 					</p>
 				</ScrollAnimation>

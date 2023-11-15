@@ -16,11 +16,10 @@ export default function LinkButtons() {
 				<GrLinkedin />
 			</a>
 			<Tooltip id="btn-linkedin" />
-			{/* `			<a
-				className="disabled"
+			<a
 				target="_blank"
 				data-tooltip-id="btn-github"
-				data-tooltip-content="Visit my GitHub repo"
+				data-tooltip-content="Visit my GitHub"
 				data-tooltip-place="bottom"
 			>
 				<GrGithub />
