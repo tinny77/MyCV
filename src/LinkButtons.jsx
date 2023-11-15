@@ -24,7 +24,7 @@ export default function LinkButtons() {
 			>
 				<GrGithub />
 			</a>
-			<Tooltip id="btn-github" />` */}
+			<Tooltip id="btn-github" />
 			<HashLink
 				to="/#contact"
 				smooth={true}
