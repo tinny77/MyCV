@@ -10,8 +10,6 @@
     }
 }
 
-
-
 :root {
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -118,9 +116,6 @@ h3 {
     }
 }
 
-
-
-
 .text-block {
     width: min(90%, 60rem);
     text-wrap: balance;
@@ -138,12 +133,10 @@ h3 {
 
 }
 
-
-
 .buttons {
     margin-top: 1rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: clamp(2rem, calc(2rem + ((1vw - 0.85rem) * 6.6667)), 3rem);
 
@@ -321,6 +314,11 @@ form {
 
     &.hidden {
         opacity: 0;
+    }
+
+    @media (max-height: 800px) {
+        opacity: 0;
+        display: none;
     }
 
     .mousey {
