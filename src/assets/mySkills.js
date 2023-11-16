@@ -29,13 +29,13 @@ const skills = {
 		{
 			id: 'react',
 			name: 'React',
-			amount: 70,
+			amount: 75,
 			class: 'success',
 		},
 		{
-			id: 'nextjs',
-			name: 'Next.JS',
-			amount: 75,
+			id: 'vite',
+			name: 'Vite',
+			amount: 50,
 			class: 'success',
 		},
 		{
@@ -46,7 +46,7 @@ const skills = {
 		{
 			id: 'tailwind',
 			name: 'Tailwind CSS',
-			amount: 85,
+			amount: 70,
 			class: 'success',
 		},
 	],
@@ -54,12 +54,12 @@ const skills = {
 		{
 			id: 'wp-theme',
 			name: 'Custom theme development',
-			amount: 90,
+			amount: 95,
 		},
 		{
 			id: 'wp-php',
 			name: 'PHP for Wordpress',
-			amount: 85,
+			amount: 80,
 		},
 		{
 			id: 'wp-gutenberg',
@@ -70,7 +70,7 @@ const skills = {
 		{
 			id: 'wp-plugin',
 			name: 'Custom plugin development',
-			amount: 50,
+			amount: 40,
 			class: 'success',
 		},
 	],

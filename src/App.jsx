@@ -85,14 +85,15 @@ function App() {
 					<p className="text-block">
 						My journey in web development began in 2006. Back then, I was
 						immersed in mastering the intricacies of HTML, CSS, and JavaScript.
-						Over time, I transitioned my focus towards WordPress, honing my
-						skills in front-end technologies. From customizing existing themes
-						to developing new ones, I've been deeply involved in the WordPress
-						ecosystem.
 						<br />
 						All these years of front-end development equipped me with a keen eye
 						for detail and a knack for creating seamless, user-friendly
 						websites.
+						<br />
+						Over time, I transitioned my focus towards WordPress, honing my
+						skills in front-end technologies. From customizing existing themes
+						to developing new ones, I've been deeply involved in the WordPress
+						ecosystem.
 					</p>
 					<p className="text-block">
 						In 2023, I took a leap, temporarily stepping away to dedicate myself
