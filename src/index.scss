@@ -253,10 +253,28 @@ form {
         text-align: left;
     }
 
-    textarea {
+    input.form-control,
+    textarea.form-control {
+        border: 0;
+        background-color: var(--dark2);
+    }
+
+    textarea.form-control {
         min-height: 10rem;
         max-height: 15rem;
         resize: vertical;
+
+        &::placeholder {
+            color: rgb(161, 161, 170);
+        }
+
+        &:user-invalid {
+            background-color: var(--accent);
+
+            &::placeholder {
+                color: #fff;
+            }
+        }
     }
 
     input.btn[type='submit'] {
