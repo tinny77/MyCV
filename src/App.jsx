@@ -83,18 +83,35 @@ function App() {
 						I am a {myAge}-year-old front-end developer based in Verona, Italy.
 					</p>
 					<p className="text-block">
-						My journey in web development began in 2006. Back then, I was immersed in mastering the intricacies of HTML, CSS, and JavaScript.
-						All these years of front-end development equipped me with a keen eye for detail and a knack for creating seamless, user-friendly websites.
+						My journey in web development began in 2006. Back then, I was
+						immersed in mastering the intricacies of HTML, CSS, and JavaScript.
+						All these years of front-end development equipped me with a keen eye
+						for detail and a knack for creating seamless, user-friendly
+						websites.
 						<br />
-						Over time, I transitioned my focus towards WordPress, honing my skills in front-end technologies. From customizing existing themes to developing new ones, I've been deeply involved in the WordPress ecosystem.
+						Over time, I transitioned my focus towards WordPress, honing my
+						skills in front-end technologies. From customizing existing themes
+						to developing new ones, I've been deeply involved in the WordPress
+						ecosystem.
 					</p>
 					<p className="text-block">
-						In 2023, I took a leap, temporarily stepping away to dedicate myself to an intensive period of learning. During this time, I immersed myself in the latest knowledge and trends, delving deep into the realm of JavaScript, particularly focusing on the nuances of React and related technologies.
+						In 2023, I took a leap, temporarily stepping away to dedicate myself
+						to an intensive period of learning. During this period of full-time
+						commitment, I immersed myself in the latest knowledge and trends,
+						delving deep into the realm of JavaScript, particularly focusing on
+						the nuances of React and related technologies.
 						<br />
-						This dedicated period of study allowed me to not only catch up but to surge ahead, gaining a comprehensive understanding of the ever-evolving landscape of web development. It was a period of full-time commitment to honing my skills and delving into the intricacies that shape the digital world.
+						This dedicated period of study allowed me to not only catch up but
+						to surge ahead, gaining a comprehensive understanding of the
+						ever-evolving landscape of web development while honing my skills and delving into the
+						intricacies that shape the digital world.
 					</p>
 					<p className="text-block">
-						Beyond the screen, you'll often find me hitting the gym, taking leisurely walks, and tuning into podcasts. Football and F1 are my go-to sports, and I'm always eager to dive into the latest in tech, especially within the Apple ecosystem. And when it comes to music, the iconic sounds of Oasis and Gallagher brothers solo works hold a
+						Beyond the screen, you'll often find me hitting the gym, or taking
+						leisurely walks while tuning into podcasts. Football and F1 are my
+						go-to sports, and I'm always eager to dive into the latest in tech,
+						especially within the Apple ecosystem. And when it comes to music,
+						the iconic sounds of Oasis and Gallagher brothers solo works hold a
 						special place in my heart.
 					</p>
 				</ScrollAnimation>
