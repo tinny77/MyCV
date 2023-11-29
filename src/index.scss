@@ -257,12 +257,6 @@ form {
     textarea.form-control {
         border: 0;
         background-color: var(--dark2);
-    }
-
-    textarea.form-control {
-        min-height: 10rem;
-        max-height: 15rem;
-        resize: vertical;
 
         &::placeholder {
             color: rgb(161, 161, 170);
@@ -275,6 +269,12 @@ form {
                 color: #fff;
             }
         }
+    }
+
+    textarea.form-control {
+        min-height: 10rem;
+        max-height: 15rem;
+        resize: vertical;
     }
 
     input.btn[type='submit'] {
