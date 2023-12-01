@@ -30,7 +30,7 @@ export default function Experience() {
 									className="squared"
 								/>
 								<i className="devicon-wordpress-plain"></i>
-								<img src="/ACF-icon.png" />
+								<img src="/ACF-icon.png" className='squared' />
 								<i className="devicon-php-plain colored"></i>
 								<i className="devicon-mysql-plain "></i>
 								<i className="devicon-git-plain colored"></i>
@@ -80,7 +80,7 @@ export default function Experience() {
 								<i className="devicon-gulp-plain colored"></i>
 								<i className="devicon-npm-original-wordmark colored"></i>
 								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" />
-								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" className='squared' />
 								<i className="devicon-xd-plain colored squared"></i>
 								<img
 									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
