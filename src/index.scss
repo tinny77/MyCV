@@ -363,6 +363,10 @@ form {
         font-size: 13px;
         scroll-snap-type: unset;
 
+        .videoframe {
+            width: 96%
+        }
+
         #about,
         #skills,
         #experience,
