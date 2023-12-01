@@ -207,6 +207,47 @@ h3 {
             text-align: justify;
             text-overflow: ellipsis;
         }
+
+        .card-footer {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.65rem;
+
+            i[class*='devicon'] {
+                font-size: 2rem;
+
+
+                &:not(.colored) {
+                    color: #fff;
+                    opacity: 0.65;
+                }
+            }
+
+            i[class*='php'],
+            i[class*='sqlite'] {
+                font-size: 2.5rem
+            }
+
+            img {
+                height: 2rem
+            }
+
+            @include mobile {
+                i[class*='devicon'] {
+                    font-size: 1.5rem;
+                }
+
+                i[class*='php'],
+                i[class*='sqlite'] {
+                    font-size: 2rem
+                }
+
+                img {
+                    height: 1.5rem
+                }
+            }
+        }
     }
 }
 
