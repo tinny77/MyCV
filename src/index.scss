@@ -104,7 +104,7 @@ h3 {
     aspect-ratio: 1/1;
     position: relative;
     overflow: hidden;
-    width: min(250px, 25vh);
+    width: min(250px, 45vh);
     object-fit: cover;
 
     video {
@@ -362,10 +362,6 @@ form {
     body {
         font-size: 13px;
         scroll-snap-type: unset;
-
-        .videoframe {
-            width: 96%
-        }
 
         #about,
         #skills,
