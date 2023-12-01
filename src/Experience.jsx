@@ -27,6 +27,7 @@ export default function Experience() {
 								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
 								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
 								<i class="devicon-wordpress-plain "></i>
+								<img src="/public/ACF-icon.png" />
 								<i class="devicon-php-plain colored"></i>
 								<i class="devicon-mysql-plain "></i>
 								<i class="devicon-git-plain colored"></i>
@@ -63,6 +64,7 @@ export default function Experience() {
 								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
 								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
 								<i class="devicon-wordpress-plain"></i>
+								<img src="/public/ACF-icon.png" />
 								<i class="devicon-php-plain colored"></i>
 								<i class="devicon-mysql-plain "></i>
 								<i class="devicon-git-plain colored"></i>
@@ -96,6 +98,8 @@ export default function Experience() {
 								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
 								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
 								<i class="devicon-jquery-plain-wordmark"></i>
+								<i class="devicon-gulp-plain colored"></i>
+								<i class="devicon-grunt-line-wordmark colored"></i>
 								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
 								<i class="devicon-sqlite-plain-wordmark"></i>
 							</Card.Footer>
