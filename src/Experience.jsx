@@ -8,10 +8,9 @@ export default function Experience() {
 		<>
 			<Container fluid="lg">
 				<Col xs={12}>
-					<ScrollAnimation animateIn="fadeIn" delay={2250}>
 						<Card>
 							<Card.Body>
-								<Card.Title>Wordpress Developer @ Creativart (2023)</Card.Title>
+								<Card.Title>Wordpress Developer <span>Creativart (2023)</span></Card.Title>
 								<Card.Body>
 									Encompassed a range of WordPress-specific tasks, including
 									theme creation and customization using PHP, ACF, Elementor,
@@ -22,14 +21,13 @@ export default function Experience() {
 								</Card.Body>
 							</Card.Body>
 						</Card>
-					</ScrollAnimation>
 				</Col>
 				<Col xs={12}>
-					<ScrollAnimation animateIn="fadeIn" delay={2000}>
+
 						<Card>
 							<Card.Body>
 								<Card.Title>
-									Front-end and Wordpress Developer @ 24 Consulting (2018-2023)
+									Front-end and Wordpress Developer <span>24 Consulting (2018-2023)</span>
 								</Card.Title>
 								<Card.Body>
 									Created custom themes using PHP and ACF. Demonstrated
@@ -44,14 +42,14 @@ export default function Experience() {
 								</Card.Body>
 							</Card.Body>
 						</Card>
-					</ScrollAnimation>
+
 				</Col>
 				<Col xs={12}>
-					<ScrollAnimation animateIn="fadeIn" delay={1750}>
+
 						<Card>
 							<Card.Body>
 								<Card.Title>
-									Front-end developer @ 24 Consulting (2006-2018)
+									Front-end developer <span>24 Consulting (2006-2018)</span>
 								</Card.Title>
 								<Card.Body>
 									Created responsive web interfaces using self taught CSS, HTML,
@@ -61,7 +59,7 @@ export default function Experience() {
 								</Card.Body>
 							</Card.Body>
 						</Card>
-					</ScrollAnimation>
+
 				</Col>
 			</Container>
 		</>

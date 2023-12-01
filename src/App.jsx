@@ -129,7 +129,9 @@ function App() {
 				<ScrollAnimation animateIn="fadeIn" delay={500}>
 					<h2>My experience</h2>
 				</ScrollAnimation>
-				<Experience />
+				<ScrollAnimation animateIn="fadeIn" delay={1000}>
+					<Experience />
+				</ScrollAnimation>
 			</section>
 			<section id="contact">
 				<ScrollAnimation animateIn="fadeIn" delay={500}>

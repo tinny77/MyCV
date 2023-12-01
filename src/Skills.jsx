@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import skills from './assets/mySkills.js';
+import skills from './data/mySkills.js';
 
 const getSkillsGroups = () => {
 	return (
