@@ -5,6 +5,7 @@ import Contact from './Contact';
 import Experience from './Experience';
 import { BrowserRouter as Router } from 'react-router-dom';
 import ScrollAnimation from 'react-animate-on-scroll';
+import SkillsAnimation from './SkillsAnimation';
 
 function App() {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -112,6 +113,7 @@ function App() {
 						special place in my heart.
 					</p>
 				</ScrollAnimation>
+				<SkillsAnimation />
 			</section>
 			<section id="skills">
 				<ScrollAnimation animateIn="fadeIn" delay={500}>

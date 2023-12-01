@@ -52,6 +52,7 @@ body {
     background-color: var(--dark1);
 
     section {
+        position: relative;
         display: flex;
         place-items: center;
         justify-content: center;
@@ -291,7 +292,7 @@ h3 {
             --bs-progress-height: 0.25rem;
             --bs-progress-border-radius: 0;
             --bs-progress-bar-color: rgba(255, 255, 255, 0);
-            --bs-progress-bar-transition: width 1s ease;
+            --bs-progress-bar-transition: width 0.5s ease;
             margin-bottom: 0.75rem;
             margin-top: 0.25rem;
             background-color: none;
