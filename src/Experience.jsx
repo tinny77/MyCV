@@ -36,6 +36,7 @@ export default function Experience() {
 									/>
 									<i className="devicon-wordpress-plain"></i>
 									<img src="/ACF-icon.png" className="squared" />
+									<img src="/elementor-icon.svg" className="squared" />
 									<i className="devicon-php-plain colored"></i>
 									<i className="devicon-mysql-plain "></i>
 									<i className="devicon-git-plain colored"></i>

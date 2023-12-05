@@ -1,3 +1,7 @@
+@import 'https://fonts.googleapis.com/css2?family=Cairo+Play:wght@900&family=Cairo:wght@900&family=Open+Sans:wght@300;400;600&display=swap';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css';
+@import 'https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css';
+
 @mixin mobile {
     @media (max-width: 680px) {
         @content;
@@ -5,7 +9,7 @@
 }
 
 @mixin mobile-xs {
-    @media (max-width: 420px) {
+    @media (max-width: 440px) {
         @content;
     }
 }
@@ -315,6 +319,16 @@ h3 {
 
 }
 
+@media (min-height:800px) and (min-width:680.02px) {
+    #intro p.text-block.lead {
+        line-height: 4vh;
+    }
+
+    #about p.text-block {
+        line-height: 3vh;
+    }
+}
+
 /* Contact form */
 form {
     width: 100%;
@@ -324,23 +338,31 @@ form {
 
     .col-form-label {
         text-align: left;
+        user-select: none;
     }
 
     input.form-control,
     textarea.form-control {
-        border: 0;
+        border: solid 1px var(--dark2);
         background-color: var(--dark2);
 
         &::placeholder {
-            color: rgb(161, 161, 170);
+            color: rgb(161, 161, 170) !important;
         }
 
         &:user-invalid {
-            background-color: var(--accent);
+            border-bottom-color: var(--accent);
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
 
             &::placeholder {
                 color: #fff;
             }
+        }
+
+        &:focus {
+            border: solid 1px var(--dark1);
+            background-color: var(--dark2);
         }
     }
 
@@ -389,68 +411,5 @@ form {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-row-gap: 1rem;
-    }
-}
-
-
-
-/* MouseAnimation component
-Scroll down icon mouse animation */
-
-.scroll-down {
-    position: absolute;
-    right: 0;
-    bottom: 2rem;
-    left: 0;
-    margin: auto;
-    transition: opacity 2s;
-    opacity: 0.95;
-    width: 34px;
-    height: 55px;
-
-    &.hidden {
-        opacity: 0;
-    }
-
-    @media (max-height: 800px) {
-        opacity: 0;
-        display: none;
-    }
-
-    .mousey {
-        width: 3px;
-        padding: 10px 15px;
-        height: 35px;
-        border: 2px solid #fff;
-        border-radius: 25px;
-        opacity: 0.75;
-        box-sizing: content-box;
-
-        .scroller {
-            width: 3px;
-            height: 10px;
-            border-radius: 25%;
-            background-color: #fff;
-            animation-name: scroll;
-            animation-duration: 2.2s;
-            animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
-            animation-iteration-count: infinite;
-        }
-    }
-}
-
-@keyframes scroll {
-    0% {
-        opacity: 0;
-    }
-
-    10% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(15px);
-        opacity: 0;
     }
 }

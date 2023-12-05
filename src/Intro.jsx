@@ -18,11 +18,11 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 
 				<h1>Filippo Tinnirello</h1>
 
-				<h3>Front-end & Wordpress developer</h3>
+				<h3>Front-end & Wordpress Developer</h3>
 
 				<p className="text-block lead">
 					With {myExperienceYears}
-					{'+'} years in Frontend Development, I'm driven by a passion for web
+					{'+'} years in frontend development, I'm driven by a passion for web
 					development and thrive on the challenges it presents. With a strong
 					foundation in CSS, HTML, and JavaScript, coupled with solid expertise
 					in WordPress, I'm poised to bring digital projects to life with
