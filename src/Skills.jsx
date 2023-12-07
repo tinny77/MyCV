@@ -14,7 +14,7 @@ export default function Skills() {
 		progressBars.forEach((progressBar) => {
 			setTimeout(() => {
 				progressBar.classList.add('animated');
-			}, 750);
+			}, 250);
 		});
 	};
 
