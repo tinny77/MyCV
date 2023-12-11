@@ -21,11 +21,11 @@ const About = ({ myAge }) => {
 					skills in front-end technologies. From customizing (namely, turning
 					them upside-down) existing themes to developing new ones from scratch,
 					I've been deeply involved in the WordPress ecosystem for the past few
-					years.
+					years, all while staying attuned to the evolving landscape of CSS.
 				</p>
 				<p className="text-block">
 					In 2023, I halted all other engagements to commit fully to an
-					intensive period of learning. I focused solely on mastering
+					intensive period of learning. I focused solely on mastering modern
 					JavaScript, particularly delving into React and related technologies.
 					This immersive dedication allowed me to swiftly grasp the dynamic
 					landscape of web development, significantly advancing my skills and
