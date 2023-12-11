@@ -10,15 +10,15 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 			<section id="intro">
 				<div className="videoframe">
 					<video autoPlay loop muted poster="./myPic.png">
-						<source src="./myPic.gif" type="video/gif" />
 						<source src="./myPic.mp4" type="video/mp4" />
 						<source src="./myPic.webm" type="video/webm" />
+						<source src="./myPic.gif" type="video/gif" />
 					</video>
 				</div>
 
 				<h1>Filippo Tinnirello</h1>
 
-				<h3>Front-end & Wordpress Developer</h3>
+				<h3>Front-end and Wordpress Developer, CSS specialist</h3>
 
 				<p className="text-block lead">
 					With {myExperienceYears}
