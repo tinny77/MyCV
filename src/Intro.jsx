@@ -1,4 +1,3 @@
-import React from "react"
 import LinkButtons from './components/LinkButtons';
 import MouseAnimation from './components/MouseAnimation';
 
@@ -22,11 +21,11 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 
 				<p className="text-block lead">
 					With {myExperienceYears}
-					{'+'} years in frontend development, I'm driven by a passion for web
-					development and thrive on the challenges it presents. With a strong
-					foundation in CSS, HTML, and JavaScript, coupled with solid expertise
-					in WordPress, I'm poised to bring digital projects to life with
-					precision and creativity
+					{'+'} years in frontend development, I&#39;m driven by a passion for
+					web development and thrive on the challenges it presents. With a
+					strong foundation in CSS, HTML, and JavaScript, coupled with solid
+					expertise in WordPress, I&#39;m poised to bring digital projects to
+					life with precision and creativity
 				</p>
 				<LinkButtons />
 			</section>

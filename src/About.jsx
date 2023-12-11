@@ -1,4 +1,3 @@
-import React from "react"
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const About = ({ myAge }) => {
@@ -20,8 +19,8 @@ const About = ({ myAge }) => {
 					Over time, I transitioned my focus towards WordPress, while honing my
 					skills in front-end technologies. From customizing (namely, turning
 					them upside-down) existing themes to developing new ones from scratch,
-					I've been deeply involved in the WordPress ecosystem for the past few
-					years, all while staying attuned to the evolving landscape of CSS.
+					I&#39;ve been deeply involved in the WordPress ecosystem for the past
+					few years, all while staying attuned to the evolving landscape of CSS.
 				</p>
 				<p className="text-block">
 					In 2023, I halted all other engagements to commit fully to an
@@ -32,12 +31,12 @@ const About = ({ myAge }) => {
 					expertise in shaping the digital realm.
 				</p>
 				<p className="text-block">
-					Beyond the screen, you'll often find me hitting the gym, or taking
+					Beyond the screen, you&#39;ll often find me hitting the gym, or taking
 					leisurely walks while tuning into podcasts. Football and F1 are my
-					go-to sports, and I'm always eager to dive into the latest in tech,
-					especially within the Apple ecosystem. And when it comes to music, the
-					iconic sounds of Oasis and Gallagher brothers solo works hold a
-					special place in my heart.
+					go-to sports, and I&#39;m always eager to dive into the latest in
+					tech, especially within the Apple ecosystem. And when it comes to
+					music, the iconic sounds of Oasis and Gallagher brothers solo works
+					hold a special place in my heart.
 				</p>
 			</ScrollAnimation>
 		</section>

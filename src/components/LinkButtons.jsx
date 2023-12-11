@@ -1,4 +1,3 @@
-import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { GrLinkedin, GrGithub, GrDocumentPdf, GrMail } from 'react-icons/gr';
 import { Tooltip } from 'react-tooltip';
@@ -9,6 +8,7 @@ export default function LinkButtons() {
 			<a
 				href="https://www.linkedin.com/in/tinnirello/"
 				target="_blank"
+				rel="noreferrer"
 				data-tooltip-id="btn-linkedin"
 				data-tooltip-content="Visit my LinkedIn profile"
 				data-tooltip-place="bottom"
@@ -40,6 +40,7 @@ export default function LinkButtons() {
 			<a
 				target="_blank"
 				href="https://github.com/tinny77/"
+				rel="noreferrer"
 				data-tooltip-id="btn-github"
 				data-tooltip-content="Visit my GitHub"
 				data-tooltip-place="bottom"
