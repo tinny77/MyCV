@@ -19,25 +19,25 @@ export default function Skills() {
 	};
 
 	return (
-			<section id="skills">
-				<ScrollAnimation animateIn="fadeIn" delay={500}>
-					<h2>My Skills</h2>
-				</ScrollAnimation>
-				<ScrollAnimation
-					animateIn="fadeIn"
-					delay={500}
-					afterAnimatedIn={animateBars}
-				>
-					<Container fluid="lg">
-						<Row>{getSkillsGroups()}</Row>
-					</Container>
-					<p className="text-block">
-						Skills in blue are referred to topics that I have thoroughly studied
-						and deepened, but haven't had the opportunity to apply directly in a
-						work setting yet.
-					</p>
-				</ScrollAnimation>
-			</section>
+		<section id="skills">
+			<ScrollAnimation animateIn="fadeIn" delay={500}>
+				<h2>My Skills</h2>
+			</ScrollAnimation>
+			<ScrollAnimation
+				animateIn="fadeIn"
+				delay={500}
+				afterAnimatedIn={animateBars}
+			>
+				<Container fluid="lg">
+					<Row>{getSkillsGroups()}</Row>
+				</Container>
+				<p className="text-block">
+					Skills in blue are referred to topics that I have thoroughly studied
+					and deepened, but haven&#39;t had the opportunity to apply directly in
+					a work setting yet.
+				</p>
+			</ScrollAnimation>
+		</section>
 	);
 }
 

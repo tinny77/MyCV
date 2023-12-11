@@ -17,7 +17,7 @@ function App() {
 		return Math.abs(date.getUTCFullYear() - 1970);
 	};
 
-     const thisYear = new Date();
+	const thisYear = new Date();
 	const myExperienceYears = getYearsDiff(thisYear, new Date('2006-09'));
 	const myAge = getYearsDiff(thisYear, new Date('1981-07-05'));
 
@@ -44,6 +44,6 @@ function App() {
 			<Contact/>
 		</Router>
 	);
-};
+}
 
 export default App;
