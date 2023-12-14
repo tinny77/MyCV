@@ -1,4 +1,3 @@
-import React from "react";
 import style from './MouseAnimation.module.css';
 
 const MouseAnimation = ({ isScrolled, isScrollIconVisible }) => {
