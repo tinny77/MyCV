@@ -55,7 +55,10 @@ const getSkillsGroups = () => {
 									.sort((a, b) => (a.amount > b.amount ? -1 : 1))
 									.map((skill) => (
 										<span key={skill.id}>
-											<span className="label">{skill.name}</span>
+											<span className="label">
+												{skill.name}
+												{skill.sub && <small>{skill.sub}</small>}
+											</span>
 											<ProgressBar
 												now={skill.amount}
 												label={skill.name}

@@ -11,18 +11,27 @@ const skills = {
 			name: 'CSS',
 			amount: 100,
 			class: '',
+			sub: 'SCSS',
 		},
 		{
 			id: 'js',
 			name: 'JavaScript',
 			amount: 90,
 			class: '',
+			sub: 'ES6',
 		},
 		{
 			id: 'php',
 			name: 'PHP',
 			amount: 80,
 			class: '',
+		},
+		{
+			id: 'sql',
+			name: 'SQL',
+			amount: 85,
+			class: '',
+			sub: 'MySQL, SQlite',
 		},
 	],
 	Libraries_and_frameworks: [
@@ -31,6 +40,7 @@ const skills = {
 			name: 'React',
 			amount: 75,
 			class: 'success',
+			sub: 'Redux, React Router, React Query',
 		},
 		{
 			id: 'vite',
@@ -47,6 +57,12 @@ const skills = {
 			id: 'tailwind',
 			name: 'Tailwind CSS',
 			amount: 70,
+			class: 'success',
+		},
+		{
+			id: 'nextjs',
+			name: 'Next.js',
+			amount: 50,
 			class: 'success',
 		},
 	],
@@ -73,6 +89,12 @@ const skills = {
 			amount: 40,
 			class: 'success',
 		},
+		{
+			id: 'wp-api',
+			name: 'REST APIs',
+			amount: 80,
+			class: 'success',
+		},
 	],
 	Tools_and_bundlers: [
 		{
@@ -94,6 +116,11 @@ const skills = {
 			id: 'git',
 			name: 'Git',
 			amount: 85,
+		},
+		{
+			id: 'parcel',
+			name: 'Parcel',
+			amount: 75,
 		},
 	],
 	Graphic_tools: [
@@ -117,6 +144,11 @@ const skills = {
 			name: 'Sketch',
 			amount: 70,
 		},
+		{
+			id: 'invision',
+			name: 'InVision',
+			amount: 70,
+		},
 	],
 	Optimization: [
 		{
@@ -137,6 +169,11 @@ const skills = {
 		{
 			id: 'responsive',
 			name: 'Responsive design principles',
+			amount: 100,
+		},
+		{
+			id: 'image',
+			name: 'Image optimization techniques  ',
 			amount: 100,
 		},
 	],
