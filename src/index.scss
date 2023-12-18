@@ -385,9 +385,10 @@ form {
     }
 
     textarea.form-control {
-        min-height: 10rem;
-        max-height: 15rem;
+        min-height: 3lh;
+        max-height: 10lh;
         resize: vertical;
+        field-sizing: content;
     }
 
     input.btn[type='submit'] {
