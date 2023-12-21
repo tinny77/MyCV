@@ -62,8 +62,9 @@ const skills = {
 		{
 			id: 'nextjs',
 			name: 'Next.js',
-			amount: 50,
+			amount: 55,
 			class: 'success',
+			current: true,
 		},
 	],
 	Wordpress: [

@@ -59,11 +59,20 @@ const getSkillsGroups = () => {
 												{skill.name}
 												{skill.sub && <small>{skill.sub}</small>}
 											</span>
-											<ProgressBar
-												now={skill.amount}
-												label={skill.name}
-												variant={skill.class}
-											/>
+											{skill?.current===true ? (
+												<ProgressBar
+													now={skill.amount}
+													label={skill.name}
+													variant='success'
+													animated
+												/>
+											) : (
+												<ProgressBar
+													now={skill.amount}
+													label={skill.name}
+													variant={skill.class}
+												/>
+											)}
 										</span>
 									))}
 							</Card.Body>
