@@ -26,27 +26,48 @@ export default function Experience() {
 									configurations, including server-side setups.
 								</Card.Body>
 								<Card.Footer>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML" />
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS" />
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+										title="HTML"
+									/>
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+										title="CSS"
+									/>
 									<i className="devicon-sass-original colored"></i>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" title="Bootstrap" />
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+										title="Bootstrap"
+									/>
 									<img
 										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-										className="squared" title="JavaScript"
+										className="squared"
+										title="JavaScript"
 									/>
 									<i className="devicon-wordpress-plain" title="WordPress"></i>
 									<img src="/ACF-icon.png" className="squared" title="ACF" />
-									<img src="/elementor-icon.svg" className="squared" title="Elementor" />
+									<img
+										src="/elementor-icon.svg"
+										className="squared"
+										title="Elementor"
+									/>
 									<i className="devicon-php-plain colored" title="PHP"></i>
 									<i className="devicon-mysql-plain" title="MySQL"></i>
 									<i className="devicon-git-plain colored" title="Git"></i>
 									<i className="devicon-gulp-plain colored" title="Gulp"></i>
-									<i className="devicon-docker-plain colored"></i>
+									<i
+										className="devicon-docker-plain colored"
+										title="Docker"
+									></i>
 									<img
 										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
-										className="squared" title="Photoshop"
+										className="squared"
+										title="Photoshop"
 									/>
-									<i className="devicon-xd-plain colored squared" title="XD"></i>
+									<i
+										className="devicon-xd-plain colored squared"
+										title="XD"
+									></i>
 								</Card.Footer>
 							</Card.Body>
 						</Card>
@@ -70,13 +91,26 @@ export default function Experience() {
 									pixel-perfect final product.
 								</Card.Body>
 								<Card.Footer>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML" />
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS" />
-									<i className="devicon-sass-original colored colored" title="SCSS"></i>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" title="Bootstrap" />
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+										title="HTML"
+									/>
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+										title="CSS"
+									/>
+									<i
+										className="devicon-sass-original colored colored"
+										title="SCSS"
+									></i>
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+										title="Bootstrap"
+									/>
 									<img
 										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-										className="squared" title="JavaScript"
+										className="squared"
+										title="JavaScript"
 									/>
 									<i className="devicon-wordpress-plain" title="WordPress"></i>
 									<img src="/ACF-icon.png" className="squared" title="ACF" />
@@ -84,16 +118,27 @@ export default function Experience() {
 									<i className="devicon-mysql-plain" title="MySQL"></i>
 									<i className="devicon-git-plain colored" title="Git"></i>
 									<i className="devicon-gulp-plain colored" title="Gulp"></i>
-									<i className="devicon-npm-original-wordmark colored" title="Npm"></i>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" title="Webpack" />
+									<i
+										className="devicon-npm-original-wordmark colored"
+										title="Npm"
+									></i>
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg"
+										title="Webpack"
+									/>
 									<img
 										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
-										className="squared" title="Photoshop"
+										className="squared"
+										title="Photoshop"
 									/>
-									<i className="devicon-xd-plain colored squared" title="XD"></i>
+									<i
+										className="devicon-xd-plain colored squared"
+										title="XD"
+									></i>
 									<img
 										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-										className="squared" title="Figma"
+										className="squared"
+										title="Figma"
 									/>
 								</Card.Footer>
 							</Card.Body>
@@ -112,23 +157,43 @@ export default function Experience() {
 									data integration.
 								</Card.Body>
 								<Card.Footer>
-									<img src="/ASP-icon.png" />
-									<i className="devicon-ie10-original colored" title="ASP"></i>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML" />
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS" />
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" title="Bootstrap" />
+									<img src="/ASP-icon.png" title="ASP"  />
+									<i className="devicon-ie10-original colored" title="Internet Explorer"></i>
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+										title="HTML"
+									/>
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+										title="CSS"
+									/>
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+										title="Bootstrap"
+									/>
 									<img
 										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-										className="squared" title="JavaScript"
+										className="squared"
+										title="JavaScript"
 									/>
-									<i className="devicon-jquery-plain-wordmark" title="jQuery"></i>
+									<i
+										className="devicon-jquery-plain-wordmark"
+										title="jQuery"
+									></i>
 									<i className="devicon-gulp-plain colored" title="Gulp"></i>
-									<i className="devicon-grunt-line-wordmark colored" title="Grunt"></i>
+									<i
+										className="devicon-grunt-line-wordmark colored"
+										title="Grunt"
+									></i>
 									<img
 										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
-										className="squared" title="Photoshop"
+										className="squared"
+										title="Photoshop"
 									/>
-									<i className="devicon-sqlite-plain-wordmark" title="SQLite"></i>
+									<i
+										className="devicon-sqlite-plain-wordmark"
+										title="SQLite"
+									></i>
 								</Card.Footer>
 							</Card.Body>
 						</Card>
