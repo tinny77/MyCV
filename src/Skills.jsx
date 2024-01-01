@@ -30,6 +30,38 @@ export default function Skills() {
 			>
 				<Container fluid="lg">
 					<Row>{getSkillsGroups()}</Row>
+					<Row>
+						<Col xs={12} md={6}>
+							<Card>
+								<Card.Body>
+									<Card.Title>PSD to HTML Conversion Specialist</Card.Title>
+									<Card.Body>
+										Proficient in converting PSD designs or layouts to
+										high-quality, responsive HTML code. Expertise includes
+										meticulous attention to detail, ensuring pixel-perfect
+										results, and implementing various optimization techniques to
+										enhance website performance.
+									</Card.Body>
+								</Card.Body>
+							</Card>
+						</Col>
+						<Col xs={12} md={6}>
+							<Card>
+								<Card.Body>
+									<Card.Title>
+										Photo Editing & Graphic Design Proficiency
+									</Card.Title>
+									<Card.Body>
+										Possess a strong understanding of major photo editing and
+										graphic design software. Capable of making precise
+										adjustments and edits to visual assets to enhance their
+										quality and aesthetics, ensuring they align seamlessly with
+										the overall website design and branding.
+									</Card.Body>
+								</Card.Body>
+							</Card>
+						</Col>
+					</Row>
 				</Container>
 				<p className="text-block">
 					Skills in blue are referred to topics that I have thoroughly studied

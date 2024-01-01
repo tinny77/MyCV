@@ -63,9 +63,12 @@ body {
         min-height: 100%;
         flex-direction: column;
         scroll-snap-align: start;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
         padding-inline: 1vw;
 
-        &#about,
+        &#intro,
+        &#focus,
         &#experience,
         #contact {
             background-color: var(--dark2);
@@ -83,7 +86,9 @@ body {
 h1,
 h2 {
     line-height: 1.25;
-    font-family: 'Cairo', sans-serif;
+    font-family:
+        /*'Cairo Play',*/
+        'Cairo', sans-serif;
     font-weight: 900;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -284,6 +289,7 @@ h3 {
         .card-title.h5 {
             font-size: 1.15rem;
             margin-bottom: 0.85rem;
+
         }
 
         .label {
@@ -347,6 +353,35 @@ h3 {
     }
 }
 
+#focus {
+    .row .col-12 {
+        display: flex;
+    }
+
+    .card {
+        --bs-card-bg: var(--dark1);
+        margin-bottom: 1rem;
+        width: 100%;
+        border: 0;
+
+        .card-title.h5 {
+            font-size: 1.5rem;
+            //margin-bottom: 0.85rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0;
+            font-weight: 800;
+
+
+            [class*='devicon'] {
+                display: block;
+                font-size: 2.85rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+    }
+}
+
 /* Contact form */
 form {
     width: 100%;
@@ -406,12 +441,10 @@ form {
 
         #about,
         #skills,
+        #focus,
         #experience,
         #contact {
             min-height: unset;
-            padding-top: 2rem;
-            padding-bottom: 5rem;
-            ;
 
         }
 
