@@ -5,6 +5,7 @@ import Skills from './Skills';
 import Contact from './Contact';
 import Experience from './Experience';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Focus from './Focus';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
 				myExperienceYears={myExperienceYears}
 			/>
 			<About myAge={myAge} />
+			<Focus/>
 			<Skills />
 			<Experience />
 			<Contact/>
