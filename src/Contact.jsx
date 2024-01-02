@@ -11,8 +11,13 @@ export default function Contact() {
 			subject: 'Contatto da Filippotinnirello.it',
 		},
 	});
-	if (state.succeeded) {
-		return <p>Thank you for your message!</p>;
+	if (!state.succeeded) {
+		return (
+			<section id="contact">
+				<p className="text-block pt-5" style={{fontSize:'4rem'}}>👌🏼</p>
+				<p className="text-block _text-white display-6 pb-5">Thank you for your message!</p>
+			</section>
+		);
 	}
 	return (
 		<section id="contact">

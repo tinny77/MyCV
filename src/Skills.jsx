@@ -34,8 +34,8 @@ export default function Skills() {
 						<Col xs={12} md={6}>
 							<Card>
 								<Card.Body>
-									<Card.Title>PSD to HTML Conversion Specialist</Card.Title>
-									<Card.Body>
+									<Card.Title className='mb-0'>PSD to HTML Conversion Specialist</Card.Title>
+									<Card.Body className="pt-1 small">
 										Proficient in converting PSD designs or layouts to
 										high-quality, responsive HTML code. Expertise includes
 										meticulous attention to detail, ensuring pixel-perfect
@@ -48,11 +48,11 @@ export default function Skills() {
 						<Col xs={12} md={6}>
 							<Card>
 								<Card.Body>
-									<Card.Title>
+									<Card.Title className='mb-0'>
 										Photo Editing & Graphic Design Proficiency
 									</Card.Title>
-									<Card.Body>
-										Possess a strong understanding of major photo editing and
+									<Card.Body className="pt-1 small">
+										Strong understanding of major photo editing and
 										graphic design software. Capable of making precise
 										adjustments and edits to visual assets to enhance their
 										quality and aesthetics, ensuring they align seamlessly with
