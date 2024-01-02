@@ -8,7 +8,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function Skills() {
 
-
 	const animateBars = () => {
 		const progressBars = document.querySelectorAll('.progress-bar');
 		progressBars.forEach((progressBar) => {
@@ -78,7 +77,7 @@ const getSkillsGroups = () => {
 	return (
 		<>
 			{Object.keys(skills).map((category) => (
-				<Col xs={6} lg={4} key={category}>
+				<Col xs={6} lg={6} xxl={3} key={category}>
 					<Card>
 						<Card.Body>
 							<Card.Title>{category.replaceAll('_', ' ')}</Card.Title>
