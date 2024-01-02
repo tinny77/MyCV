@@ -34,7 +34,7 @@ const skills = {
 			sub: 'MySQL, SQlite',
 		},
 	],
-	Libraries_and_frameworks: [
+	Frameworks: [
 		{
 			id: 'react',
 			name: 'React',
@@ -123,7 +123,7 @@ const skills = {
 			name: 'Parcel',
 			amount: 75,
 		},
-	],
+	] /*
 	Graphic_tools: [
 		{
 			id: 'ps',
@@ -177,7 +177,7 @@ const skills = {
 			name: 'Image optimization techniques  ',
 			amount: 100,
 		},
-	],
+	],*/,
 };
 
 export default skills;
