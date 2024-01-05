@@ -14,6 +14,12 @@
     }
 }
 
+@mixin xxl {
+    @media (min-width: 1400px) {
+        @content;
+    }
+}
+
 :root {
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -25,6 +31,7 @@
     --dark1: #34376a;
     --dark2: #2E3060;
     --accent: #a43b5a;
+    --darker-accent: #7f3a60;
     --bs-body-bg: var(--dark1);
     --bs-body-color: #fff;
     --bs-success-rgb: 51, 122, 183;
@@ -35,6 +42,17 @@
     width: 100%;
     height: 100%;
     margin: 0;
+}
+
+.custom-cursor {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 99999;
+    pointer-events: none;
+    mix-blend-mode: difference;
 }
 
 html {
@@ -140,6 +158,13 @@ h3 {
     &.lead {
         font-size: 125%
     }
+
+    &.drop-cap::first-letter {
+        font-size: 2.85em;
+        font-weight: 900;
+        color: var(--accent);
+    }
+
 
 }
 
@@ -256,6 +281,11 @@ h3 {
             font-size: 14px;
             text-align: justify;
             text-overflow: ellipsis;
+
+        }
+
+        & > .card-body {
+            padding-bottom: 0.25rem;
         }
 
         .card-footer {
@@ -263,6 +293,11 @@ h3 {
             align-items: center;
             flex-wrap: wrap;
             gap: 0.65rem;
+
+            i,
+            img {
+                filter: saturate(0.75);
+            }
 
             i[class*='devicon'] {
                 font-size: 1.8rem;
@@ -357,13 +392,16 @@ h3 {
         }
 
         .progress {
-            --bs-progress-height: 0.25rem;
+            --bs-progress-height: 1.25rem;
             --bs-progress-border-radius: 0;
             --bs-progress-bar-color: rgba(255, 255, 255, 0);
             --bs-progress-bar-transition: width 0.5s ease;
+            //--bs-progress-bg: rgba(255, 255, 255, 0.25);
             margin-bottom: 0.75rem;
             margin-top: 0.25rem;
-            background-color: none;
+            border: solid 1px #fff;
+            padding: 0.2rem;
+            background: none;
 
             .progress-bar {
                 color: rgba(255, 255, 255, 0);
@@ -372,8 +410,12 @@ h3 {
                     width: 0 !important;
                 }
 
+                &.bg-success {
+                    background-color: var(--darker-accent) !important;
+                }
+
                 &:not(.bg-success) {
-                    --bs-progress-bar-bg: var(--bs-green);
+                    --bs-progress-bar-bg: var(--accent);
                 }
             }
         }
@@ -481,5 +523,12 @@ form {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-row-gap: 1rem;
+    }
+}
+
+@include xxl {
+    #skills .card .progress {
+
+        --bs-progress-height: 1.65rem;
     }
 }

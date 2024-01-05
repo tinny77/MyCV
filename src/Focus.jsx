@@ -21,23 +21,6 @@ export default function Focus() {
 							<Card>
 								<Card.Body>
 									<Card.Title className="focus">
-										<i className="devicon-react-original" title="React"></i>
-										Junior React Developer
-									</Card.Title>
-									<Card.Body>
-										Eager to apply knowledge gained in React to contribute
-										effectively to dynamic web applications. Seeking a junior
-										position where I can further enhance my skills in React
-										development, collaborate within a team, and contribute to
-										creating engaging user interfaces.
-									</Card.Body>
-								</Card.Body>
-							</Card>
-						</Col>
-						<Col xs={12} md={6}>
-							<Card>
-								<Card.Body>
-									<Card.Title className="focus">
 										<i
 											className="devicon-wordpress-plain"
 											title="WordPress"
@@ -55,13 +38,30 @@ export default function Focus() {
 								</Card.Body>
 							</Card>
 						</Col>
+						<Col xs={12} md={6}>
+							<Card>
+								<Card.Body>
+									<Card.Title className="focus">
+										<i className="devicon-react-original" title="React"></i>
+										Junior React Developer
+									</Card.Title>
+									<Card.Body>
+										Eager to apply knowledge gained in React to contribute
+										effectively to dynamic web applications. Seeking a junior
+										position where I can further enhance my skills in React
+										development, collaborate within a team, and contribute to
+										creating engaging user interfaces.
+									</Card.Body>
+								</Card.Body>
+							</Card>
+						</Col>
 					</Row>
 				</Container>
 				<p className="text-block">
-					<strong>Seeking Remote Opportunities:</strong> Focused on harnessing my talents in
-					React and WordPress development within a remote setup, I aim to thrive
-					in roles that champion remote collaboration, enabling impactful
-					contributions to diverse projects.
+					<strong>Seeking Remote Opportunities:</strong> I am committed to using my skills in WordPress and
+					React programming in a remote environment. I am looking for positions
+					that support remote collaboration and allow me to make meaningful
+					contributions to a variety of projects.
 				</p>
 			</ScrollAnimation>
 		</section>

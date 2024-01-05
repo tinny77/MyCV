@@ -18,12 +18,12 @@ export default function Experience() {
 									Wordpress Developer <span>Creativart (2023)</span>
 								</Card.Title>
 								<Card.Body>
-									Encompassed a range of WordPress-specific tasks, including
-									theme creation and customization using PHP, ACF, Elementor,
-									SEO optimization, and speed enhancement. Additionally, managed
-									the entire content transfer process from the development
-									environment to production, handling all necessary
-									configurations, including server-side setups.
+									I took on a variety of WordPress-specific responsibilities,
+									such as creating and customizing themes with PHP, ACF, and
+									Elementor, optimizing SEO, and improving speed. Furthermore,
+									oversaw the complete content transfer procedure from the
+									development to the production environments, taking care of all
+									required installations, including server-side ones.
 								</Card.Body>
 								<Card.Footer>
 									<img
@@ -80,15 +80,15 @@ export default function Experience() {
 									<span>24 Consulting (2018-2023)</span>
 								</Card.Title>
 								<Card.Body>
-									Created custom themes using PHP and ACF. Demonstrated
-									proficiency in developing static websites, leveraging bundlers
-									and generators for seamless integration. Ensured responsive
-									designs through CSS, HTML, and JavaScript, and oversaw site
-									maintenance and optimization, all seamlessly managed through
-									Git. Extensively worked with design layouts received from
-									Adobe XD and InDesign. Frequently utilized Photoshop for
-									fine-tuning and optimizing design elements, ensuring a
-									pixel-perfect final product.
+									I used ACF and PHP to create custom themes. demonstrated
+									expertise in creating static websites by utilizing generators
+									and bundlers for smooth integration. Using CSS, HTML, and
+									JavaScript, I ensured responsive designs. I also managed site
+									optimization and maintenance, all of which were easily handled
+									with Git. I worked a lot with design layouts that came from
+									InDesign and Adobe XD. used Photoshop often to optimize and
+									fine-tune design aspects, guaranteeing a final product that is
+									pixel-perfect.
 								</Card.Body>
 								<Card.Footer>
 									<img
@@ -151,14 +151,17 @@ export default function Experience() {
 									Front-end developer <span>24 Consulting (2006-2018)</span>
 								</Card.Title>
 								<Card.Body>
-									Created responsive web interfaces using self taught CSS, HTML,
-									and JavaScript. Managed multimedia elements for UX and
-									developed back-end solutions with ASP and SQL for seamless
-									data integration.
+									I used self-taught CSS, HTML, and JavaScript to create web
+									interfaces—first desktop-only, later responsive. Oversaw
+									multimedia components for user experience and created back-end
+									ASP and SQL solutions for smooth data integration.
 								</Card.Body>
 								<Card.Footer>
-									<img src="/ASP-icon.png" title="ASP"  />
-									<i className="devicon-ie10-original colored" title="Internet Explorer"></i>
+									<img src="/ASP-icon.png" title="ASP" />
+									<i
+										className="devicon-ie10-original colored"
+										title="Internet Explorer"
+									></i>
 									<img
 										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
 										title="HTML"

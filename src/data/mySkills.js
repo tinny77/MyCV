@@ -45,7 +45,7 @@ const skills = {
 		{
 			id: 'vite',
 			name: 'Vite',
-			amount: 50,
+			amount: 40,
 			class: 'success',
 		},
 		{
@@ -56,7 +56,7 @@ const skills = {
 		{
 			id: 'tailwind',
 			name: 'Tailwind CSS',
-			amount: 70,
+			amount: 65,
 			class: 'success',
 		},
 		{
@@ -64,7 +64,6 @@ const skills = {
 			name: 'Next.js',
 			amount: 55,
 			class: 'success',
-			current: true,
 		},
 	],
 	Wordpress: [
@@ -80,7 +79,7 @@ const skills = {
 		},
 		{
 			id: 'wp-gutenberg',
-			name: 'Gutenberg Editor',
+			name: 'Gutenberg Editor and FSE',
 			amount: 65,
 			class: 'success',
 		},
@@ -92,8 +91,8 @@ const skills = {
 		},
 		{
 			id: 'wp-api',
-			name: 'REST APIs',
-			amount: 80,
+			name: 'REST APIs and Headless set-up',
+			amount: 75,
 			class: 'success',
 		},
 	],
