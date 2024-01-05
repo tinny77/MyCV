@@ -33,13 +33,15 @@ export default function Skills() {
 						<Col xs={12} md={6}>
 							<Card>
 								<Card.Body>
-									<Card.Title className='mb-0'>PSD to HTML Conversion Specialist</Card.Title>
+									<Card.Title className="mb-0">
+										Specialist in converting design to code
+									</Card.Title>
 									<Card.Body className="pt-1 small">
-										Proficient in converting PSD designs or layouts to
-										high-quality, responsive HTML code. Expertise includes
-										meticulous attention to detail, ensuring pixel-perfect
-										results, and implementing various optimization techniques to
-										enhance website performance.
+										I specialise in converting designs or layouts into
+										high-quality, responsive HTML code. My expertise includes
+										meticulous attention to detail, pixel-perfect results and
+										the implementation of various optimisation techniques to
+										improve website performance.
 									</Card.Body>
 								</Card.Body>
 							</Card>
@@ -47,15 +49,15 @@ export default function Skills() {
 						<Col xs={12} md={6}>
 							<Card>
 								<Card.Body>
-									<Card.Title className='mb-0'>
-										Photo Editing & Graphic Design Proficiency
+									<Card.Title className="mb-0">
+										Photo editing & graphic design skills
 									</Card.Title>
 									<Card.Body className="pt-1 small">
-										Strong understanding of major photo editing and
-										graphic design software. Capable of making precise
-										adjustments and edits to visual assets to enhance their
-										quality and aesthetics, ensuring they align seamlessly with
-										the overall website design and branding.
+										I am well versed in the major photo editing and graphic
+										design programmes. I am able to make precise adjustments and
+										edits to visual assets to improve their quality and
+										aesthetics, ensuring they blend seamlessly with the overall
+										website design and branding.
 									</Card.Body>
 								</Card.Body>
 							</Card>
@@ -63,9 +65,8 @@ export default function Skills() {
 					</Row>
 				</Container>
 				<p className="text-block">
-					Skills in blue are referred to topics that I have thoroughly studied
-					and deepened, but haven&#39;t had the opportunity to apply directly in
-					a work setting yet.
+					Skills with a lighter bar represent topics that I have extensively
+					studied and delved into, yet not directly applied in a work setting.
 				</p>
 			</ScrollAnimation>
 		</section>
