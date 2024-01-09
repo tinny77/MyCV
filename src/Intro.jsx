@@ -2,9 +2,7 @@ import LinkButtons from './components/LinkButtons';
 import MouseAnimation from './components/MouseAnimation';
 
 const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
-
-
-  return (
+	return (
 		<>
 			<section id="intro">
 				<div className="videoframe">
