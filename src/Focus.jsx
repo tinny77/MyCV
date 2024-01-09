@@ -9,12 +9,18 @@ export default function Focus() {
 	return (
 		<section id="focus">
 			<ScrollAnimation animateIn="fadeIn" delay={500}>
-				<h2 className="mb-3">Desired Stack</h2>
-				<p className="lead mt-0 mb-5">
-					My preferred roles, areas of expertise, and professional aspirations{' '}
-				</p>
+				<h2 className="mb-3">Desired Stack and position</h2>
 			</ScrollAnimation>
 			<ScrollAnimation animateIn="fadeIn" delay={500}>
+				<p
+					className="text-block lead"
+				>
+					I&#39;m willing to apply my expertise in WordPress and React
+					development in a remote setting. I&#39;m looking for opportunities
+					that allow me to work remotely and contribute significantly to a range
+					of projects. If given the chance to develop professionally, I would be
+					willing to taking on a junior role in React.
+				</p>
 				<Container fluid="lg">
 					<Row>
 						<Col xs={12} md={6}>
@@ -57,12 +63,6 @@ export default function Focus() {
 						</Col>
 					</Row>
 				</Container>
-				<p className="text-block">
-					I am committed to using
-					my skills in WordPress and React programming in a remote environment.
-					I am looking for positions that support remote collaboration and allow
-					me to make meaningful contributions to a variety of projects.
-				</p>
 			</ScrollAnimation>
 		</section>
 	);

@@ -44,17 +44,6 @@
     margin: 0;
 }
 
-.custom-cursor {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background-color: #ffffff;
-    position: absolute;
-    z-index: 99999;
-    pointer-events: none;
-    mix-blend-mode: difference;
-}
-
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;
@@ -214,6 +203,10 @@ h3 {
 
     h2 {
         line-height: 1;
+    }
+
+    p.lead {
+        margin-bottom: max(2.5rem, 2.5vh)
     }
 
     .row .col-12 {

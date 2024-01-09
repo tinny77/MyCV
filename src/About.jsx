@@ -48,14 +48,7 @@ const About = ({ myAge }) => {
 					have a particular spot in my heart for the famous sounds of Oasis and
 					the individual efforts of the Gallagher brothers.
 				</p>
-				<p className="text-block">
-					I am committed to utilizing my skills in WordPress and React
-					programming in a <strong>remote</strong> environment. I am seeking
-					positions that support remote collaboration and enable me to make
-					meaningful contributions to a variety of projects.
-					<br />I am open to a junior role in
-					React, given the opportunity to learn and grow professionally.
-				</p>
+
 			</ScrollAnimation>
 		</section>
 	);
