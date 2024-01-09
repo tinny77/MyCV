@@ -27,7 +27,7 @@ function App() {
 			setIsScrolled(window.scrollY > 0);
 			setisScrollIconVisible(false);
 		};
-		setTimeout(() => setisScrollIconVisible(true), 6500);
+		setTimeout(() => setisScrollIconVisible(true), 5000);
 		window.addEventListener('scroll', handlescroll);
 		return () => window.removeEventListener('scroll', handlescroll);
 	}, []);

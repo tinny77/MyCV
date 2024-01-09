@@ -7,7 +7,6 @@ import skills from './data/mySkills.js';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function Skills() {
-
 	const animateBars = () => {
 		const progressBars = document.querySelectorAll('.progress-bar');
 		progressBars.forEach((progressBar) => {
@@ -73,7 +72,6 @@ export default function Skills() {
 	);
 }
 
-
 const getSkillsGroups = () => {
 	return (
 		<>
@@ -91,11 +89,11 @@ const getSkillsGroups = () => {
 												{skill.name}
 												{skill.sub && <small>{skill.sub}</small>}
 											</span>
-											{skill?.current===true ? (
+											{skill?.current === true ? (
 												<ProgressBar
 													now={skill.amount}
 													label={skill.name}
-													variant='success'
+													variant="success"
 													animated
 												/>
 											) : (

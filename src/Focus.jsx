@@ -11,8 +11,7 @@ export default function Focus() {
 			<ScrollAnimation animateIn="fadeIn" delay={500}>
 				<h2 className="mb-3">Focus and role spectrum</h2>
 				<p className="lead mt-0 mb-5">
-					My core competencies, preferred positions, and career aspirations
-				</p>
+					My desired roles, areas of expertise, and professional aspirations				</p>
 			</ScrollAnimation>
 			<ScrollAnimation animateIn="fadeIn" delay={500}>
 				<Container fluid="lg">
@@ -58,10 +57,10 @@ export default function Focus() {
 					</Row>
 				</Container>
 				<p className="text-block">
-					<strong>Seeking Remote Opportunities:</strong> I am committed to using my skills in WordPress and
-					React programming in a remote environment. I am looking for positions
-					that support remote collaboration and allow me to make meaningful
-					contributions to a variety of projects.
+					<strong>Seeking Remote Opportunities:</strong> I am committed to using
+					my skills in WordPress and React programming in a remote environment.
+					I am looking for positions that support remote collaboration and allow
+					me to make meaningful contributions to a variety of projects.
 				</p>
 			</ScrollAnimation>
 		</section>
