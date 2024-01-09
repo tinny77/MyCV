@@ -12,6 +12,7 @@ export default function Experience() {
 			<ScrollAnimation animateIn="fadeIn" delay={1000}>
 				<Container fluid="lg">
 					<Col xs={12}>
+						<ScrollAnimation animateIn="pulse" delay={1200}>
 						<Card>
 							<Card.Body>
 								<Card.Title>
@@ -70,9 +71,10 @@ export default function Experience() {
 									></i>
 								</Card.Footer>
 							</Card.Body>
-						</Card>
+						</Card></ScrollAnimation>
 					</Col>
 					<Col xs={12}>
+						<ScrollAnimation animateIn="pulse" delay={1400}>
 						<Card>
 							<Card.Body>
 								<Card.Title>
@@ -142,9 +144,10 @@ export default function Experience() {
 									/>
 								</Card.Footer>
 							</Card.Body>
-						</Card>
+						</Card></ScrollAnimation>
 					</Col>
 					<Col xs={12}>
+						<ScrollAnimation animateIn="pulse" delay={1600}>
 						<Card>
 							<Card.Body>
 								<Card.Title>
@@ -199,7 +202,7 @@ export default function Experience() {
 									></i>
 								</Card.Footer>
 							</Card.Body>
-						</Card>
+						</Card></ScrollAnimation>
 					</Col>
 				</Container>
 			</ScrollAnimation>

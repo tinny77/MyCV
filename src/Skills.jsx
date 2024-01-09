@@ -24,11 +24,11 @@ export default function Skills() {
 			</ScrollAnimation>
 			<ScrollAnimation
 				animateIn="fadeIn"
-				delay={500}
+				delay={1000}
 				afterAnimatedIn={animateBars}
 			>
 				<Container fluid="lg">
-					<Row>{getSkillsGroups()}</Row>
+					<Row><SkillsDetail/></Row>
 					<Row>
 						<Col xs={12} md={6}>
 							<Card>
@@ -73,42 +73,42 @@ export default function Skills() {
 	);
 }
 
-const getSkillsGroups = () => {
+const SkillsDetail = () => {
 	return (
 		<>
 			{Object.keys(skills).map((category) => (
 				<Col xs={6} lg={6} xxl={3} key={category}>
-					<Card>
-						<Card.Body>
-							<Card.Title>{category.replaceAll('_', ' ')}</Card.Title>
+						<Card>
 							<Card.Body>
-								{skills[category]
-									.sort((a, b) => (a.amount > b.amount ? -1 : 1))
-									.map((skill) => (
-										<span key={skill.id}>
-											<span className="label">
-												{skill.name}
-												{skill.sub && <small>{skill.sub}</small>}
+								<Card.Title>{category.replaceAll('_', ' ')}</Card.Title>
+								<Card.Body>
+									{skills[category]
+										.sort((a, b) => (a.amount > b.amount ? -1 : 1))
+										.map((skill) => (
+											<span key={skill.id}>
+												<span className="label">
+													{skill.name}
+													{skill.sub && <small>{skill.sub}</small>}
+												</span>
+												{skill?.current === true ? (
+													<ProgressBar
+														now={skill.amount}
+														label={skill.name}
+														variant="success"
+														animated
+													/>
+												) : (
+													<ProgressBar
+														now={skill.amount}
+														label={skill.name}
+														variant={skill.class}
+													/>
+												)}
 											</span>
-											{skill?.current === true ? (
-												<ProgressBar
-													now={skill.amount}
-													label={skill.name}
-													variant="success"
-													animated
-												/>
-											) : (
-												<ProgressBar
-													now={skill.amount}
-													label={skill.name}
-													variant={skill.class}
-												/>
-											)}
-										</span>
-									))}
+										))}
+								</Card.Body>
 							</Card.Body>
-						</Card.Body>
-					</Card>
+						</Card>
 				</Col>
 			))}
 		</>
