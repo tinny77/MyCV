@@ -20,6 +20,7 @@ export default function Skills() {
 		<section id="skills">
 			<ScrollAnimation animateIn="fadeIn" delay={500}>
 				<h2>My Skills</h2>
+
 			</ScrollAnimation>
 			<ScrollAnimation
 				animateIn="fadeIn"

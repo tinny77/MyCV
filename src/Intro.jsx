@@ -1,7 +1,11 @@
 import LinkButtons from './components/LinkButtons';
 import MouseAnimation from './components/MouseAnimation';
+import Typed from "react-typed";
 
 const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
+
+
+
 	return (
 		<>
 			<section id="intro">
@@ -15,7 +19,19 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 
 				<h1>Filippo Tinnirello</h1>
 
-				<h3>CSS expert, front-end and WordPress developer</h3>
+				<h3>
+					<Typed
+						strings={[
+							'Front-end developer',
+							'Full-stack WordPress developer',
+							'Junior React developer',
+							'CSS and Responsive design expert',
+						]}
+						typeSpeed={100}
+						backSpeed={10}
+						loop
+					/>
+				</h3>
 
 				<p className="text-block lead">
 					I&#39;ve been working on frontend development for more than{' '}
