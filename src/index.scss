@@ -44,6 +44,34 @@
     margin: 0;
 }
 
+.mac-bg {
+    background-image: url(../mac-bg.svg);
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: min(95vw, 60rem);
+    height: 85vw;
+    z-index: 0;
+    opacity: 0.1;
+    transition: opacity 2s;
+}
+
+
+@include mobile {
+    .mac-bg {
+        opacity: 0.05;
+    }
+}
+
+@include xxl {
+    .mac-bg {
+        opacity: 0.25;
+    }
+}
+
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;
@@ -62,6 +90,7 @@ body {
     color: rgba(161, 161, 170);
     background-color: var(--dark1);
 
+
     section {
         position: relative;
         display: flex;
@@ -73,6 +102,12 @@ body {
         padding-top: 5rem;
         padding-bottom: 5rem;
         padding-inline: 1vw;
+
+        & > * {
+            z-index: 10;
+        }
+
+        ;
 
         &#intro,
         &#focus,

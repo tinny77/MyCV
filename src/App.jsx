@@ -45,6 +45,7 @@ function App() {
 			<Skills />
 			<Experience />
 			<Contact />
+			<div className="mac-bg" />
 		</Router>
 	);
 }
