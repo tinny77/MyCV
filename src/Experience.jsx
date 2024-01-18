@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { ListGroupItem } from 'react-bootstrap';
+import { Badge, ListGroupItem } from 'react-bootstrap';
 
 export default function Experience() {
 	return (
@@ -17,7 +17,10 @@ export default function Experience() {
 						<Card>
 							<Card.Body>
 								<Card.Title>
-									Wordpress Developer <span>Creativart (2023)</span>
+									Wordpress Developer <span>Creativart (2023)</span>{' '}
+									<h6>
+										<Badge bg="secondary">Hybrid</Badge>
+									</h6>
 								</Card.Title>
 								<Card.Body>
 									<ListGroup>
@@ -104,7 +107,10 @@ export default function Experience() {
 							<Card.Body>
 								<Card.Title>
 									Front-end and Wordpress Developer{' '}
-									<span>24 Consulting (2018-2023)</span>
+									<span>24 Consulting (2018-2023)</span>{' '}
+									<h6>
+										<Badge bg="secondary">Hybrid</Badge>
+									</h6>
 								</Card.Title>
 								<Card.Body>
 									<ListGroup>
@@ -199,7 +205,10 @@ export default function Experience() {
 						<Card>
 							<Card.Body>
 								<Card.Title>
-									Front-end developer <span>24 Consulting (2006-2018)</span>
+									Front-end developer <span>24 Consulting (2006-2018)</span>{' '}
+									<h6>
+										<Badge bg="secondary">On-site</Badge>
+									</h6>
 								</Card.Title>
 								<Card.Body>
 									<ListGroup>

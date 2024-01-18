@@ -249,6 +249,7 @@ h3 {
         text-align: left;
 
         .card-title.h5 {
+            font-size: 1.35rem;
             padding-top: var(--bs-card-spacer-y);
             padding-inline: var(--bs-card-spacer-x);
             padding-bottom: 0;
@@ -256,6 +257,7 @@ h3 {
             font-weight: 800;
 
             span {
+                font-size: 1.25rem;
                 float: right;
                 opacity: 0.5;
                 font-size: 90%;
@@ -267,6 +269,11 @@ h3 {
                 span {
                     float: none;
                     display: block;
+
+                    &.badge {
+                        display: inline-block;
+                        margin-top: 0.5rem;
+                    }
                 }
             }
         }
