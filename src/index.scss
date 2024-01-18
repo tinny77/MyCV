@@ -250,7 +250,7 @@ h3 {
 
         .card-title.h5 {
             padding-top: var(--bs-card-spacer-y);
-            padding-left: var(--bs-card-spacer-x);
+            padding-inline: var(--bs-card-spacer-x);
             padding-bottom: 0;
             margin-bottom: 0;
             font-weight: 800;
@@ -276,6 +276,18 @@ h3 {
             text-align: justify;
             text-overflow: ellipsis;
 
+            .list-group-item {
+                border-color: var(--bs-card-border-color);
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                padding-inline: 0;
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+
         }
 
         & > .card-body {
@@ -285,6 +297,8 @@ h3 {
         .card-footer {
             display: flex;
             align-items: center;
+            margin-inline: var(--bs-card-spacer-x);
+            padding-inline: 0;
             flex-wrap: wrap;
             gap: 0.65rem;
 

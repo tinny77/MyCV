@@ -1,7 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { ListGroupItem } from 'react-bootstrap';
 
 export default function Experience() {
 	return (
@@ -12,19 +14,43 @@ export default function Experience() {
 			<ScrollAnimation animateIn="fadeIn" delay={1000}>
 				<Container fluid="lg">
 					<Col xs={12}>
-						<ScrollAnimation animateIn="pulse" delay={1200}>
 						<Card>
 							<Card.Body>
 								<Card.Title>
 									Wordpress Developer <span>Creativart (2023)</span>
 								</Card.Title>
 								<Card.Body>
-									I took on a variety of WordPress-specific responsibilities,
-									such as creating and customizing themes with PHP, ACF, and
-									Elementor, optimizing SEO, and improving speed. Furthermore,
-									oversaw the complete content transfer procedure from the
-									development to the production environments, taking care of all
-									required installations, including server-side ones.
+									<ListGroup>
+										<ListGroupItem>
+											Spearheaded the evolution of front-end development for
+											<strong> WordPress</strong> themes, placing a strong
+											emphasis on pre-built themes and visual development,
+											adeptly utilizing <strong>CPT</strong>s and page builders.
+										</ListGroupItem>
+										<ListGroupItem>
+											Specialized in the meticulous conversion of designs into
+											high-quality, responsive HTML code, ensuring pixel-perfect
+											results, and implementing optimization techniques for
+											elevated website performance.
+										</ListGroupItem>
+										<ListGroupItem>
+											Leveraged <strong>PHP</strong> code for direct template
+											customization, streamlining the data input process for
+											increased efficiency and customization.
+										</ListGroupItem>
+										<ListGroupItem>
+											Demonstrated expertise in photo editing and graphic design
+											programs, ensuring precise adjustments and edits for
+											visual assets, seamlessly blending with website design and
+											branding.
+										</ListGroupItem>
+										<ListGroupItem>
+											In addition to these responsibilities, oversaw the
+											complete content transfer procedure from development to
+											production environments, taking care of all required
+											installations, including server-side configurations.
+										</ListGroupItem>
+									</ListGroup>
 								</Card.Body>
 								<Card.Footer>
 									<img
@@ -71,10 +97,9 @@ export default function Experience() {
 									></i>
 								</Card.Footer>
 							</Card.Body>
-						</Card></ScrollAnimation>
+						</Card>
 					</Col>
 					<Col xs={12}>
-						<ScrollAnimation animateIn="pulse" delay={1400}>
 						<Card>
 							<Card.Body>
 								<Card.Title>
@@ -82,15 +107,39 @@ export default function Experience() {
 									<span>24 Consulting (2018-2023)</span>
 								</Card.Title>
 								<Card.Body>
-									I used ACF and PHP to create custom themes. demonstrated
-									expertise in creating static websites by utilizing generators
-									and bundlers for smooth integration. Using CSS, HTML, and
-									JavaScript, I ensured responsive designs. I also managed site
-									optimization and maintenance, all of which were easily handled
-									with Git. I worked a lot with design layouts that came from
-									InDesign and Adobe XD. used Photoshop often to optimize and
-									fine-tune design aspects, guaranteeing a final product that is
-									pixel-perfect.
+									<ListGroup>
+										<ListGroupItem>
+											Demonstrated proficiency in developing a diverse range of
+											projects, including static websites, landing pages,
+											newsletter templates, and custom{' '}
+											<strong>WordPress</strong> themes, utilizing{' '}
+											<strong>PHP</strong>, <strong>CPT</strong>s, and
+											<strong>ACF</strong>.
+										</ListGroupItem>
+										<ListGroupItem>
+											Ensured the responsiveness of designs through meticulous
+											implementation of <strong>(S)CSS</strong>,{' '}
+											<strong>HTML</strong>, and <strong>JavaScript</strong>,
+											while overseeing site maintenance and optimization
+											seamlessly managed through Git.
+										</ListGroupItem>
+										<ListGroupItem>
+											Managed end-to-end content transfer from development to
+											production, expertly handling necessary configurations,
+											including server-side setups.
+										</ListGroupItem>
+										<ListGroupItem>
+											Specialized in the meticulous conversion of designs to
+											code, prioritizing attention to detail and achieving
+											pixel-perfect results. Implemented optimization techniques
+											for enhanced performance, working extensively with design
+											layouts from <strong>InDesign</strong> and{' '}
+											<strong>Adobe XD</strong>. Utilized{' '}
+											<strong>Photoshop</strong> regularly to optimize and
+											fine-tune design aspects, ensuring a final product that
+											meets the highest standards of precision.
+										</ListGroupItem>
+									</ListGroup>
 								</Card.Body>
 								<Card.Footer>
 									<img
@@ -144,20 +193,42 @@ export default function Experience() {
 									/>
 								</Card.Footer>
 							</Card.Body>
-						</Card></ScrollAnimation>
+						</Card>
 					</Col>
 					<Col xs={12}>
-						<ScrollAnimation animateIn="pulse" delay={1600}>
 						<Card>
 							<Card.Body>
 								<Card.Title>
 									Front-end developer <span>24 Consulting (2006-2018)</span>
 								</Card.Title>
 								<Card.Body>
-									I used self-taught CSS, HTML, and JavaScript to create web
-									interfaces—first desktop-only, later responsive. Oversaw
-									multimedia components for user experience and created back-end
-									ASP and SQL solutions for smooth data integration.
+									<ListGroup>
+										<ListGroupItem>
+											I leveraged my self-taught expertise in{' '}
+											<strong>CSS</strong>, <strong>HTML</strong>, and{' '}
+											<strong>JavaScript (jQuery) </strong>
+											to develop web interfaces that evolved from desktop-only
+											to responsive designs. This encompassed a spectrum of
+											projects, predominantly websites, where I covered frontend
+											to backend development, employing <strong>
+												ASP
+											</strong> and <strong>Access/SQLite</strong>
+											databases for seamless data integration.
+										</ListGroupItem>
+
+										<ListGroupItem>
+											In this role, I not only led the creation of dynamic and
+											visually appealing user interfaces but also contributed
+											significantly to numerous web projects.
+										</ListGroupItem>
+										<ListGroupItem>
+											Furthermore, my proficiency in photo editing and graphic
+											design programs allowed me to make precise adjustments and
+											edits to visual assets. This skill set seamlessly blended
+											with website design and branding, contributing to a
+											cohesive and polished user experience.
+										</ListGroupItem>
+									</ListGroup>
 								</Card.Body>
 								<Card.Footer>
 									<img src="/ASP-icon.png" title="ASP" />
@@ -202,7 +273,7 @@ export default function Experience() {
 									></i>
 								</Card.Footer>
 							</Card.Body>
-						</Card></ScrollAnimation>
+						</Card>
 					</Col>
 				</Container>
 			</ScrollAnimation>
