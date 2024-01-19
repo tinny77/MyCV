@@ -119,7 +119,7 @@ export default function Experience() {
 											projects, including static websites, landing pages,
 											newsletter templates, and custom{' '}
 											<strong>WordPress</strong> themes, utilizing{' '}
-											<strong>PHP</strong>, <strong>CPT</strong>s, and
+											<strong>PHP</strong>, <strong>CPT</strong>s, and{' '}
 											<strong>ACF</strong>.
 										</ListGroupItem>
 										<ListGroupItem>
@@ -127,7 +127,7 @@ export default function Experience() {
 											implementation of <strong>(S)CSS</strong>,{' '}
 											<strong>HTML</strong>, and <strong>JavaScript</strong>,
 											while overseeing site maintenance and optimization
-											seamlessly managed through Git.
+											seamlessly managed through <strong>Git</strong>.
 										</ListGroupItem>
 										<ListGroupItem>
 											Managed end-to-end content transfer from development to
@@ -221,8 +221,8 @@ export default function Experience() {
 											projects, predominantly websites, where I covered frontend
 											to backend development, employing <strong>
 												ASP
-											</strong> and <strong>Access/SQLite</strong>
-											databases for seamless data integration.
+											</strong> and <strong>Access/SQLite</strong> databases for
+											seamless data integration.
 										</ListGroupItem>
 
 										<ListGroupItem>
