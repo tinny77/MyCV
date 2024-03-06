@@ -1,12 +1,10 @@
-import { useState, useEffect  } from 'react';
+import { useState, useEffect } from 'react';
 import Intro from './Intro';
 import About from './About';
-import Focus from './Focus';
 import Skills from './Skills';
 import Contact from './Contact';
 import Experience from './Experience';
 import { BrowserRouter as Router } from 'react-router-dom';
-
 
 function App() {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +30,6 @@ function App() {
 		return () => window.removeEventListener('scroll', handlescroll);
 	}, []);
 
-
 	return (
 		<Router>
 			<Intro
@@ -41,7 +38,6 @@ function App() {
 				myExperienceYears={myExperienceYears}
 			/>
 			<About myAge={myAge} />
-			<Focus />
 			<Skills />
 			<Experience />
 			<Contact />

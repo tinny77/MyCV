@@ -24,7 +24,7 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 						strings={[
 							'Front-end developer',
 							'Full-stack WordPress developer',
-							'Junior React developer',
+							'Interface developer',
 							'CSS and Responsive design expert',
 						]}
 						typeSpeed={100}
@@ -34,11 +34,15 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 				</h3>
 
 				<p className="text-block lead">
-					I&#39;ve been working on frontend development for more than{' '}
-					{myExperienceYears} years, and I love all of the challenges that come
-					with it. My passion is the development of websites. With a solid
-					background in WordPress, CSS, HTML, and JavaScript, I&#39;m able to
-					execute digital projects with accuracy and uniqueness.
+					My passion is the development of websites. I&#39;ve been working on
+					frontend development for more than {myExperienceYears} years.
+					<br />
+					{/* With a solid expertise in WordPress, PHP, HTML, CSS and JavaScript,
+					I&#39;m able to execute digital projects with accuracy and uniqueness. */}
+					I am proficient in developing dynamic websites using WordPress, with
+					expertise in frontend and backend development, theme customization,
+					plugin integration, and ensuring optimal website performance and
+					security.
 				</p>
 				<LinkButtons />
 			</section>

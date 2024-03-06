@@ -11,14 +11,14 @@ const skills = {
 			name: 'CSS',
 			amount: 100,
 			class: '',
-			sub: 'SCSS',
+			sub: 'SASS, SCSS',
 		},
 		{
 			id: 'js',
 			name: 'JavaScript',
-			amount: 90,
+			amount: 85,
 			class: '',
-			sub: 'ES6',
+			sub: 'ES6, TypeScript',
 		},
 		{
 			id: 'php',
@@ -31,7 +31,7 @@ const skills = {
 			name: 'SQL',
 			amount: 85,
 			class: '',
-			sub: 'MySQL, SQlite',
+			sub: 'MySQL, SQlite, MongoDB, PostgreSQL',
 		},
 	],
 	Frameworks: [
@@ -75,18 +75,18 @@ const skills = {
 		{
 			id: 'wp-php',
 			name: 'PHP for Wordpress',
-			amount: 80,
+			amount: 85,
 		},
 		{
 			id: 'wp-gutenberg',
-			name: 'Gutenberg Editor and FSE',
-			amount: 65,
+			name: 'Gutenberg blocks',
+			amount: 70,
 			class: 'success',
 		},
 		{
 			id: 'wp-plugin',
 			name: 'Custom plugin development',
-			amount: 40,
+			amount: 50,
 			class: 'success',
 		},
 		{

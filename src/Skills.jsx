@@ -20,7 +20,6 @@ export default function Skills() {
 		<section id="skills">
 			<ScrollAnimation animateIn="fadeIn" delay={500}>
 				<h2>My Skills</h2>
-
 			</ScrollAnimation>
 			<ScrollAnimation
 				animateIn="fadeIn"
@@ -28,7 +27,9 @@ export default function Skills() {
 				afterAnimatedIn={animateBars}
 			>
 				<Container fluid="lg">
-					<Row><SkillsDetail/></Row>
+					<Row>
+						<SkillsDetail />
+					</Row>
 					<Row>
 						<Col xs={12} md={6}>
 							<Card>

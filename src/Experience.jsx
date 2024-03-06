@@ -75,7 +75,7 @@ export default function Experience() {
 										title="JavaScript"
 									/>
 									<i className="devicon-wordpress-plain" title="WordPress"></i>
-									<img src="/ACF-icon.png" className="squared" title="ACF" />
+									<img src="/ACF-icon.png" className="squared" title="ACF" alt="ACF" />
 									<img
 										src="/elementor-icon.svg"
 										className="squared"
@@ -170,7 +170,7 @@ export default function Experience() {
 										title="JavaScript"
 									/>
 									<i className="devicon-wordpress-plain" title="WordPress"></i>
-									<img src="/ACF-icon.png" className="squared" title="ACF" />
+									<img src="/ACF-icon.png" className="squared" title="ACF" alt="ACF" />
 									<i className="devicon-php-plain colored" title="PHP"></i>
 									<i className="devicon-mysql-plain" title="MySQL"></i>
 									<i className="devicon-git-plain colored" title="Git"></i>
@@ -240,7 +240,7 @@ export default function Experience() {
 									</ListGroup>
 								</Card.Body>
 								<Card.Footer>
-									<img src="/ASP-icon.png" title="ASP" />
+									<img src="/ASP-icon.png" title="ASP" alt="ASP" />
 									<i
 										className="devicon-ie10-original colored"
 										title="Internet Explorer"

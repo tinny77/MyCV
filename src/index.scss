@@ -109,10 +109,40 @@ body {
 
         &:nth-of-type(1n) {
             background-color: var(--dark2);
+
+            .card {
+                --bs-card-bg: var(--dark1);
+            }
+
+            input.form-control,
+            textarea.form-control {
+                border: solid 1px var(--dark1);
+                background-color: var(--dark1);
+
+                &:focus {
+                    border: solid 1px var(--dark2);
+                    background-color: var(--dark1);
+                }
+            }
         }
 
         &:nth-of-type(2n) {
             background-color: var(--dark1);
+
+            .card {
+                --bs-card-bg: var(--dark2);
+            }
+
+            input.form-control,
+            textarea.form-control {
+                border: solid 1px var(--dark2);
+                background-color: var(--dark2);
+
+                &:focus {
+                    border: solid 1px var(--dark1);
+                    background-color: var(--dark2);
+                }
+            }
         }
 
 
@@ -144,6 +174,10 @@ h3 {
     color: #fff;
 }
 
+hr {
+    border-color: transparent;
+}
+
 .videoframe {
     border-radius: 55px;
     aspect-ratio: 1/1;
@@ -163,7 +197,7 @@ h3 {
 }
 
 .text-block {
-    width: min(90%, 60rem);
+    width: min(90%, 65rem);
     text-wrap: balance;
     margin-inline: auto;
     text-shadow: var(--bs-body-bg) 1px 0 5px;
@@ -267,12 +301,12 @@ h3 {
     }
 }
 
+
 /* Experience */
 
 #experience {
 
     .card {
-        --bs-card-bg: var(--dark1);
         margin-bottom: 1rem;
         width: 100%;
         border: 0;
@@ -326,7 +360,7 @@ h3 {
                     border-bottom: 0;
                 }
 
-
+                background-color: rgba(255, 255, 255, 0);
                 background-image: url('../favicon.ico');
                 background-position: 0 0.7rem;
                 background-repeat: no-repeat;
@@ -412,7 +446,6 @@ h3 {
     }
 
     .card {
-        --bs-card-bg: var(--dark2);
         margin-bottom: 1rem;
         width: 100%;
         border: 0;
@@ -497,7 +530,7 @@ form {
     width: 100%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
 
     .col-form-label {
         text-align: left;
@@ -506,9 +539,6 @@ form {
 
     input.form-control,
     textarea.form-control {
-        border: solid 1px var(--dark2);
-        background-color: var(--dark2);
-
 
 
         &::placeholder {
@@ -525,10 +555,6 @@ form {
             }
         }
 
-        &:focus {
-            border: solid 1px var(--dark1);
-            background-color: var(--dark2);
-        }
     }
 
     textarea.form-control {
