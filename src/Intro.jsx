@@ -19,7 +19,7 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 
 				<h1>Filippo Tinnirello</h1>
 
-				<h3>
+				<h3 className='font-open'>
 					<Typed
 						strings={[
 							'Front-end developer',

@@ -19,41 +19,13 @@ const About = ({ myAge }) => {
 					quality, aligning seamlessly with site design and brand aesthetics.
 				</p>
 				<p className="text-block">
-					In 2006, I started my web development journey.
-					<br />I was completely engrossed in learning the nuances of{' '}
-					<strong>HTML</strong>, <strong>CSS</strong>, and{' '}
-					<strong>JavaScript</strong> back then. My years of experience in
-					front-end programming have given me an excellent sense of detail and
-					the ability to create websites that are easy to use.
-					<br />
-					As my expertise evolved, so did my focus. I found myself drawn deeper
-					into the dynamic world of <strong>WordPress</strong>, a platform that perfectly melds
-					creativity with functionality. Over the past few years, I&#39;ve
-					immersed myself in the <strong>WordPress</strong> ecosystem, seamlessly transitioning
-					from crafting bespoke themes to fine-tuning existing ones, all while
-					staying attuned to the ever-evolving landscape of front-end
-					development and <strong>WordPress</strong> itself.
+				My expertise lies in developing and maintaining <strong>WordPress</strong> sites, crafting custom themes and plugins, and seamlessly migrating websites to the <strong>WordPress</strong> platform. I have a proven track record of integrating essential plugins like WPML and WooCommerce to enhance site functionality and implementing <strong>SEO</strong> and CRO best practices for maximum visibility and user engagement.
 				</p>
 				<p className="text-block">
-					At the close of 2023, I made the bold decision to embark on a
-					transformative learning journey, dedicating myself wholeheartedly to
-					mastering contemporary JavaScript and its applications within
-					<strong>WordPress</strong>. This intensive commitment led me to explore the
-					revolutionary <strong>Gutenberg</strong> editor and its underlying
-					technology, <strong>React</strong>. By harnessing the power of React,
-					I&#39;ve unlocked new dimensions of <strong>WordPress</strong> customization,
-					seamlessly integrating modern JavaScript functionality into the heart
-					of <strong>WordPress</strong> development.
+In addition to my technical skills, I thrive in dynamic work environments and demonstrate proficiency in managing multiple projects concurrently, even under stringent time constraints. My dedication to delivering exceptional work with a keen eye for detail is a consistent trait across all my endeavors, ensuring the highest standards of quality in every task I undertake.
 				</p>
 				<p className="text-block">
-					With a proven track record of elevating brands through intuitive,
-					visually stunning <strong>WordPress</strong> solutions powered by cutting-edge
-					technologies, I am poised to partner with forward-thinking agencies
-					seeking to push the boundaries of digital creativity. Let&#39;s
-					collaborate to transform your <strong>WordPress</strong> vision into reality,
-					leveraging the full potential of Gutenberg blocks and modern
-					JavaScript frameworks. Reach out, and let&#39;s embark on an
-					extraordinary journey together.
+				I am particularly passionate about driving design decisions and transforming intricate designs into flawless code. My deep appreciation for <strong>CSS</strong> and its role in bringing designs to life fuels my enthusiasm for creating visually stunning and responsive websites. This love for design-to-code conversion motivates me to continually hone my skills and deliver exceptional results in every project I undertake.
 				</p>
 			</ScrollAnimation>
 		</section>

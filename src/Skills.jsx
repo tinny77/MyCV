@@ -2,8 +2,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import ProgressBar from 'react-bootstrap/ProgressBar';
-import skills from './data/mySkills.js';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function Skills() {
@@ -28,90 +26,105 @@ export default function Skills() {
 			>
 				<Container fluid="lg">
 					<Row>
-						<SkillsDetail />
-					</Row>
-					<Row>
-						<Col xs={12} md={6}>
+						<Col xs={12}>
 							<Card>
 								<Card.Body>
-									<Card.Title className="mb-0">
-										Specialist in converting design to code
-									</Card.Title>
-									<Card.Body className="pt-1 small">
-										I specialise in converting designs or layouts into
-										high-quality, responsive HTML code. My expertise includes
-										meticulous attention to detail, pixel-perfect results and
-										the implementation of various optimisation techniques to
-										improve website performance.
-									</Card.Body>
-								</Card.Body>
-							</Card>
-						</Col>
-						<Col xs={12} md={6}>
-							<Card>
-								<Card.Body>
-									<Card.Title className="mb-0">
-										Photo editing & graphic design skills
-									</Card.Title>
-									<Card.Body className="pt-1 small">
-										I am well versed in the major photo editing and graphic
-										design programmes. I am able to make precise adjustments and
-										edits to visual assets to improve their quality and
-										aesthetics, ensuring they blend seamlessly with the overall
-										website design and branding.
-									</Card.Body>
+									<Row>
+										<Col xs={12} lg={6}>
+											<ul className="list-group text-left">
+												<li className="list-group-item">
+													Strong understanding of HTML and CSS, including
+													cross-browser compatibility, responsivity and performance
+												</li>
+												<li className="list-group-item">
+													Transform complex PSD layouts into pixel-perfect
+													presentation layer HTML5/CSS3 templates
+												</li>
+												<li className="list-group-item">
+													Develop custom themes and plugins
+												</li>
+												<li className="list-group-item">
+													Develop and provide maintenance support for WordPress
+													sites
+												</li>
+
+												<li className="list-group-item">
+													Migrate websites from other platforms to WordPress
+												</li>
+												<li className="list-group-item">
+													Integrate and set up plugins like WPML, WooCommerce,
+													Yoast SEO, etc.
+												</li>
+												<li className="list-group-item">
+													Experience with WordPress and Gutenberg, including
+													building custom blocks
+												</li>
+												<li className="list-group-item">
+													Optimize page speed of WordPress sites
+												</li>
+												<li className="list-group-item">
+													Implement SEO/CRO best practices in WordPress sites
+												</li>
+												<li className="list-group-item">
+													Familiar with design tools such as Sketch, Figma and
+													Adobe XD
+												</li>
+
+											</ul>
+										</Col>
+
+										<Col xs={12} lg={6}>
+											<ul className="list-group">
+												<li className="list-group-item">
+													Solid understanding of good UX and UI practices
+													for websites
+												</li>
+
+												<li className="list-group-item">
+													Work with version control systems such as Git / GitHub
+												</li>
+												<li className="list-group-item">
+													Writing modern and performant JavaScript using the
+													latest technologies
+												</li>
+												<li className="list-group-item">
+													Familiar with interpreting designs and/or
+													specifications and adapting them to code
+												</li>
+
+												<li className="list-group-item">
+													Experience with front-end building tools (such as
+													Webpack)
+												</li>
+												<li className="list-group-item">
+													Experience working remotely
+												</li>
+
+												<li className="list-group-item">
+													Work under tight deadlines and handle multiple
+													projects simultaneously
+												</li>
+												<li className="list-group-item">
+													Produce high-quality work with a strong focus on
+													detail
+												</li>
+
+												<li className="list-group-item">
+													Experience working with component systems
+												</li>
+												<li className="list-group-item">
+													Able to estimate work for a project and turn specs
+													into clearly defined, executable tasks
+												</li>
+											</ul>
+										</Col>
+									</Row>
 								</Card.Body>
 							</Card>
 						</Col>
 					</Row>
 				</Container>
-				<p className="text-block">
-					Skills with a lighter bar represent topics that I have extensively
-					studied and delved into, yet not directly applied in a work setting.
-				</p>
 			</ScrollAnimation>
 		</section>
 	);
 }
-
-const SkillsDetail = () => {
-	return (
-		<>
-			{Object.keys(skills).map((category) => (
-				<Col xs={6} lg={6} xxl={3} key={category}>
-						<Card>
-							<Card.Body>
-								<Card.Title>{category.replaceAll('_', ' ')}</Card.Title>
-								<Card.Body>
-									{skills[category]
-										.sort((a, b) => (a.amount > b.amount ? -1 : 1))
-										.map((skill) => (
-											<span key={skill.id}>
-												<span className="label">
-													{skill.name}
-													{skill.sub && <small>{skill.sub}</small>}
-												</span>
-												{skill?.current === true ? (
-													<ProgressBar
-														now={skill.amount}
-														label={skill.name}
-														variant="success"
-														animated
-													/>
-												) : (
-													<ProgressBar
-														now={skill.amount}
-														label={skill.name}
-														variant={skill.class}
-													/>
-												)}
-											</span>
-										))}
-								</Card.Body>
-							</Card.Body>
-						</Card>
-				</Col>
-			))}
-		</>
-	);
-};
