@@ -37,22 +37,22 @@ export default function Skills() {
 													cross-browser compatibility, responsivity and performance
 												</li>
 												<li className="list-group-item">
-													Transform complex PSD layouts into pixel-perfect
+													Transforming complex PSD layouts into pixel-perfect
 													presentation layer HTML5/CSS3 templates
 												</li>
 												<li className="list-group-item">
-													Develop custom themes and plugins
+													Developing custom themes and plugins
 												</li>
 												<li className="list-group-item">
-													Develop and provide maintenance support for WordPress
+													Developing and provide maintenance support for WordPress
 													sites
 												</li>
 
 												<li className="list-group-item">
-													Migrate websites from other platforms to WordPress
+													Migration of websites from other platforms to WordPress
 												</li>
 												<li className="list-group-item">
-													Integrate and set up plugins like WPML, WooCommerce,
+													Integration and set up of plugins like WPML, WooCommerce,
 													Yoast SEO, etc.
 												</li>
 												<li className="list-group-item">
@@ -60,13 +60,13 @@ export default function Skills() {
 													building custom blocks
 												</li>
 												<li className="list-group-item">
-													Optimize page speed of WordPress sites
+													Optimization of page speed of WordPress sites
 												</li>
 												<li className="list-group-item">
-													Implement SEO/CRO best practices in WordPress sites
+													Implementation of SEO/CRO best practices in WordPress sites
 												</li>
 												<li className="list-group-item">
-													Familiar with design tools such as Sketch, Figma and
+													Familiarity with design tools such as Sketch, Figma and
 													Adobe XD
 												</li>
 
@@ -81,14 +81,14 @@ export default function Skills() {
 												</li>
 
 												<li className="list-group-item">
-													Work with version control systems such as Git / GitHub
+													Working with version control systems such as Git / GitHub
 												</li>
 												<li className="list-group-item">
 													Writing modern and performant JavaScript using the
 													latest technologies
 												</li>
 												<li className="list-group-item">
-													Familiar with interpreting designs and/or
+													Familiarity in interpreting designs and/or
 													specifications and adapting them to code
 												</li>
 
@@ -101,11 +101,11 @@ export default function Skills() {
 												</li>
 
 												<li className="list-group-item">
-													Work under tight deadlines and handle multiple
+													Working under tight deadlines and handling multiple
 													projects simultaneously
 												</li>
 												<li className="list-group-item">
-													Produce high-quality work with a strong focus on
+													Producing high-quality work with a strong focus on
 													detail
 												</li>
 
@@ -113,7 +113,7 @@ export default function Skills() {
 													Experience working with component systems
 												</li>
 												<li className="list-group-item">
-													Able to estimate work for a project and turn specs
+													Ability to estimate work for a project and turn specs
 													into clearly defined, executable tasks
 												</li>
 											</ul>
