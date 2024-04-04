@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { useForm, ValidationError } from '@formspree/react';
+import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
 	const [state, handleSubmit] = useForm('mrgwojwr', {
@@ -11,11 +12,12 @@ export default function Contact() {
 			subject: 'Contatto da Filippotinnirello.it',
 		},
 	});
+	const { t } = useTranslation();
 	if (state.succeeded) {
 		return (
 			<section id="contact">
 				<p className="text-block pt-5" style={{fontSize:'4rem'}}>👌🏼</p>
-				<p className="text-block _text-white display-6 pb-5">Thank you for your message!</p>
+				<p className="text-block _text-white display-6 pb-5">{ t('contact_thank_you')}</p>
 			</section>
 		);
 	}
@@ -25,30 +27,19 @@ export default function Contact() {
 				<h2>Contact me</h2>
 			</ScrollAnimation>
 			<ScrollAnimation animateIn="fadeIn" delay={1000}>
-				<p className="text-block">
-					I&#39;m eager to apply my expertise in WordPress development to
-					freelance or part-time contract positions, ideally in a remote
-					setting. I&#39;m actively seeking opportunities that enable me to work
-					remotely and make substantial contributions to a variety of projects.
-				</p>
-				<p className="text-block mb-4">
-					Feel free to drop me a message using the form below.
-					<br />
-					Looking forward to connecting and discussing exciting opportunities
-					together!
-				</p>
+				<p className="text-block mb-4" dangerouslySetInnerHTML={{ __html: t('contact_text') }} ></p>
 				<hr/>
 				<form onSubmit={handleSubmit} className="mt-4 text-block">
 					<Form.Group as={Row} className="mb-0 mb-md-4">
 						<Form.Label column md="2" htmlFor="name">
-							First name
+							{ t('contact_label_first_name')}
 						</Form.Label>
 						<Col md="4">
 							<Form.Control id="name" type="text" name="name" required />
 						</Col>
 
 						<Form.Label column md="2" htmlFor="surname">
-							Last name
+						{ t('contact_label_last_name')}
 						</Form.Label>
 						<Col md="4">
 							<Form.Control id="surname" type="text" name="surname" required />
@@ -63,7 +54,7 @@ export default function Contact() {
 						</Col>
 
 						<Form.Label column md="2" htmlFor="company">
-							Company
+						{ t('contact_label_company')}
 						</Form.Label>
 						<Col md="4">
 							<Form.Control id="company" type="text" name="company" />
@@ -77,7 +68,7 @@ export default function Contact() {
 							id="message"
 							name="message"
 							required
-							placeholder="Your message"
+							placeholder={ t('contact_label_message')}
 						/>
 					</Form.Group>
 					<ValidationError prefix="Email" field="email" errors={state.errors} />
@@ -89,7 +80,7 @@ export default function Contact() {
 					<Button
 						as="input"
 						type="submit"
-						value="Send"
+						value={ t('contact_label_send')}
 						variant="danger"
 						className="mt-2"
 						disabled={state.submitting}

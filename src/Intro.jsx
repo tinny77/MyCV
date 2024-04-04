@@ -1,10 +1,10 @@
 import LinkButtons from './components/LinkButtons';
 import MouseAnimation from './components/MouseAnimation';
 import Typed from "react-typed";
+import { useTranslation } from 'react-i18next';
 
 const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
-
-
+	const { t } = useTranslation();
 
 	return (
 		<>
@@ -22,7 +22,7 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 				<h3 className='font-open'>
 					<Typed
 						strings={[
-							'Front-end developer',
+							'Senior Front-end developer',
 							'Full-stack WordPress developer',
 							'Interface developer',
 							'CSS and Responsive design expert',
@@ -33,17 +33,12 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 					/>
 				</h3>
 
-				<p className="text-block lead">
-					My passion is the development of websites. I&#39;ve been working on
-					frontend development for more than {myExperienceYears} years.
-					<br />
-					{/* With a solid expertise in WordPress, PHP, HTML, CSS and JavaScript,
-					I&#39;m able to execute digital projects with accuracy and uniqueness. */}
-					I am proficient in developing dynamic websites using WordPress, with
-					expertise in frontend and backend development, theme customization,
-					plugin integration, and ensuring optimal website performance and
-					security.
+				<p className='certificates'>
+					<a href='#' target='_blank' rel='noindex nofollow'><img src='https://i0.wp.com/knowledge-pillars.com/wp-content/uploads/2022/12/WordPress-Developer.png?w=512&ssl=1' alt='Certified WordPress Developer' title='Certified WordPress Developer' /><span className='sr-only'>Certified WordPress Developer</span></a>
+					<a href='#' target='_blank' rel='noindex nofollow'><img src='https://i0.wp.com/knowledge-pillars.com/wp-content/uploads/2023/02/Knowledge-Pillars-Badges-2022-12-14-PROOF_WP-WooCommerce-Specialist.png?w=2134&ssl=1' alt='Certified WooCommerce Specialist' title='Certified WooCommerce Specialist' /><span className='sr-only'>Certified WooCommerce Specialist</span></a>
 				</p>
+
+				<p className="text-block lead" dangerouslySetInnerHTML={{ __html: t('intro_text', { years: myExperienceYears }) }} ></p>
 				<LinkButtons />
 			</section>
 

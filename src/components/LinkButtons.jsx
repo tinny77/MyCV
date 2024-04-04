@@ -1,8 +1,10 @@
 import { HashLink } from 'react-router-hash-link';
 import { GrLinkedin, GrGithub, GrDocumentPdf, GrMail } from 'react-icons/gr';
 import { Tooltip } from 'react-tooltip';
+import { useTranslation } from 'react-i18next';
 
 export default function LinkButtons() {
+	const { t } = useTranslation();
 	return (
 		<div className="buttons">
 			<a
@@ -10,7 +12,7 @@ export default function LinkButtons() {
 				target="_blank"
 				rel="noreferrer"
 				data-tooltip-id="btn-linkedin"
-				data-tooltip-content="Visit my LinkedIn profile"
+				data-tooltip-content={t('tooltip_linkedin')}
 				data-tooltip-place="bottom"
 			>
 				<GrLinkedin />
@@ -20,7 +22,7 @@ export default function LinkButtons() {
 				to="/#contact"
 				smooth={true}
 				data-tooltip-id="btn-contact"
-				data-tooltip-content="Contact me"
+				data-tooltip-content={t('tooltip_contact')}
 				data-tooltip-place="bottom"
 			>
 				<GrMail />
@@ -31,7 +33,7 @@ export default function LinkButtons() {
 				target="_blank"
 				download
 				data-tooltip-id="btn-cv"
-				data-tooltip-content="Download my CV"
+				data-tooltip-content={t('tooltip_download_cv')}
 				data-tooltip-place="bottom"
 			>
 				<GrDocumentPdf />
@@ -42,7 +44,7 @@ export default function LinkButtons() {
 				href="https://github.com/tinny77/"
 				rel="noreferrer"
 				data-tooltip-id="btn-github"
-				data-tooltip-content="Visit my GitHub"
+				data-tooltip-content={t('tooltip_github')}
 				data-tooltip-place="bottom"
 			>
 				<GrGithub />
