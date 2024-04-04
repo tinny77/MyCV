@@ -1,0 +1,58 @@
+{
+	"description": "Passionate and experienced Front-end and WordPress developer specialized in crafting responsive websites from intricate designs, optimizing performance, and ensuring top-tier security. Proficient in CSS, HTML, WordPress theme customization, and plugin integration.",
+	"intro_text": "I've been working on frontend development for more than {{years}} years and, for as long as I can remember, my passion has been website development.<br />I am skilled in developing dynamic interfaces using WordPress, with expertise in turning designs into code, setting up the environment, theme customization, and plugin integration, ensuring optimal website performance and security.",
+	"about_text": "I am a Front-end and <strong>WordPress</strong> developer and I&#39;m {{age}} years old.<br/><br/>I excel in transforming designs into top-tier responsive HTML code. With a keen eye for detail, I ensure pixel-perfect outcomes and apply optimization methods for enhanced website performance. <br/>I am particularly passionate about transforming intricate designs into flawless code, and my deep appreciation for <strong>CSS</strong> and its role in bringing designs to life fuels my enthusiasm for creating visually stunning and responsive websites. This love for design-to-code conversion motivates me to continually hone my skills and deliver exceptional results in every project I undertake.<br/>Proficient in leading photo editing tools, I adeptly refine visuals to elevate quality, aligning seamlessly with site design and brand aesthetics.<br/><br/>My expertise lies in developing and maintaining <strong>WordPress</strong> sites, crafting custom themes and plugins, and seamlessly migrating websites to the <strong>WordPress</strong> platform.<br/>I have a proven track record of integrating essential plugins like WPML and WooCommerce to enhance site functionality and implementing <strong>SEO</strong> and CRO best practices for maximum visibility and user engagement.<br/><br/>I thrive in dynamic work environments and demonstrate proficiency in managing multiple projects concurrently, even under stringent time constraints.<br/>My dedication to delivering exceptional work with a keen eye for detail is a consistent trait across all my endeavors, ensuring the highest standards of quality in every task I undertake.<br/><br/>",
+	"tooltip_linkedin": "Visit my LinkedIn profile",
+	"tooltip_github": "Visit my GitHub profile",
+	"tooltip_download_cv": "Download my CV",
+	"tooltip_contact": "Contact me",
+	"skills": [
+		"Strong understanding of HTML and CSS, including cross-browser compatibility, responsivity and performance",
+		"Transforming complex PSD layouts into pixel-perfect presentation layer HTML5/CSS3 templates",
+		"Developing custom themes and plugins",
+		"Developing and provide maintenance support for WordPress sites",
+		"Migration of websites from other platforms to WordPress",
+		"Integration and set up of plugins like WPML, WooCommerce, Yoast SEO, etc.",
+		"Experience with WordPress and Gutenberg, including building custom blocks",
+		"Optimization of page speed of WordPress sites",
+		"Implementation of SEO/CRO best practices in WordPress sites",
+		"Familiarity with design tools such as Sketch, Figma and Adobe XD",
+		"Solid understanding of good UX and UI practices for websites",
+		"Working with version control systems such as Git / GitHub",
+		"Writing modern and performant JavaScript using the latest technologies",
+		"Familiarity in interpreting designs and/or specifications and adapting them to code",
+		"Experience with front-end building tools (such as Webpack)",
+		"Experience working remotely",
+		"Working under tight deadlines and handling multiple projects simultaneously",
+		"Producing high-quality work with a strong focus on detail",
+		"Experience working with component systems",
+		"Ability to estimate work for a project and turn specs into clearly defined, executable tasks"
+	],
+	"label_hybrid": "Hybrid",
+	"label_onsite": "On-site",
+	"exp_1": [
+		"I leveraged my self-taught expertise in <strong>CSS</strong>, <strong>HTML</strong>, and <strong>JavaScript (jQuery) </strong> to develop web interfaces that evolved from desktop-only to responsive designs. This encompassed a spectrum of projects, predominantly websites, where I covered frontend to backend development, employing <strong>ASP</strong> and <strong>Access/SQLite</strong> databases for seamless data integration.",
+		"In this role, I not only led the creation of dynamic and visually appealing user interfaces but also contributed significantly to numerous web-app projects.",
+		"Furthermore, my proficiency in photo editing and graphic design programs allowed me to make precise adjustments and edits to visual assets. This set of skills has been instrumental in seamlessly integrating website design and branding, contributing to a consistent and polished user experience."
+	],
+	"exp_2": [
+		"Demonstrated proficiency in developing a diverse range of projects, including static websites, landing pages, newsletter templates, and custom <strong>WordPress</strong> themes, utilizing <strong>PHP</strong>, <strong>CPT</strong>s, and <strong>ACF</strong>.",
+		"Ensured the responsiveness of designs through meticulous implementation of <strong>(S)CSS</strong>, <strong>HTML</strong>, and <strong>JavaScript</strong>, while overseeing site maintenance and optimization seamlessly managed through <strong>Git</strong>.",
+		"Managed end-to-end content transfer from development to production, expertly handling necessary configurations, including server-side setups.",
+		"Specialized in the conversion of designs to code, prioritizing attention to detail and achieving pixel-perfect results. Implemented optimization techniques for enhanced performance, working extensively with design layouts from <strong>InDesign</strong> and <strong>Adobe XD</strong>. Utilized <strong>Photoshop</strong> regularly to optimize and fine-tune design aspects, ensuring a final product that meets the highest standards of precision."
+	],
+	"exp_3": [
+		"Spearheaded the evolution of front-end development for <strong> WordPress</strong> themes, placing a strong emphasis on pre-built themes and visual development, adeptly utilizing <strong>ACF</strong>  and page builders like Elementor.",
+		"Specialized in the conversion of designs into high-quality, responsive HTML code, ensuring pixel-perfect results, and implementing optimization techniques for elevated website performance.",
+		"Leveraged <strong>PHP</strong> code for direct template customization, streamlining the data input process for increased efficiency and customization.",
+		"Demonstrated expertise in photo editing and graphic design programs, ensuring precise adjustments and edits for visual assets, seamlessly blending with website design and branding.",
+		"Oversaw the complete content transfer procedure from development to production environments, taking care of all required installations, including server-side configurations."
+	],
+	"contact_text": "Feel free to drop me a message using the form below.<br /><br/>I&#39;m actively seeking chances that enable me to make substantial contributions to a variety of projects and I&#39;m eager to apply my expertise to freelance or part-time contract positions, ideally in a remote setting.<br/><br/>Looking forward to connecting and discussing exciting opportunities together!",
+	"contact_thank_you": "Thank you for your message!",
+	"contact_label_first_name": "First name",
+	"contact_label_last_name": "Last name",
+	"contact_label_company": "Company",
+	"contact_label_message": "Your message",
+	"contact_label_send": "Send"
+}
