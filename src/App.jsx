@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { I18nextProvider, useTranslation } from 'react-i18next';
 import i18n from './data/i18n';
-import LangSwitcher from './LangSwitcher';
+import LangSwitcher from './components/LangSwitcher';
 import Intro from './Intro';
 import About from './About';
 import Skills from './Skills';
