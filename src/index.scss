@@ -3,6 +3,12 @@
 @import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css';
 @import 'https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css';
 
+@mixin tablet {
+    @media (max-width: 820px) {
+        @content;
+    }
+}
+
 @mixin mobile {
     @media (max-width: 680px) {
         @content;
@@ -391,7 +397,7 @@ hr {
                 margin-left: 2rem;
             }
 
-            @include mobile {
+            @include tablet {
                 text-align: left;
 
                 span {
