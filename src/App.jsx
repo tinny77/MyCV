@@ -1,14 +1,15 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import { I18nextProvider, useTranslation } from 'react-i18next';
 import i18n from './data/i18n';
 import LangSwitcher from './components/LangSwitcher';
 import Intro from './Intro';
 import About from './About';
-import Skills from './Skills';
-import Contact from './Contact';
-import Experience from './Experience';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+const Skills = React.lazy(() => import('./Skills'));
+const Experience = React.lazy(() => import('./Experience'));
+const Contact = React.lazy(() => import('./Contact'));
 
 function App() {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -36,25 +37,14 @@ function App() {
 
 	const { t } = useTranslation();
 
-	useEffect(() => {
-		const lng = i18n.language;
-		if (!['en', 'it'].includes(lng)) {
-			i18n.changeLanguage('en');
-		} else {
-			i18n.changeLanguage(lng);
-		}
-	}, []);
-
 	return (
-		<>
-			<LangSwitcher />
 			<I18nextProvider i18n={i18n}>
 				<Helmet>
 					<html lang={i18n.language} />
 					<meta name="description" content={t('description')} />
 				</Helmet>
 				<Router>
-
+					<LangSwitcher />
 					<Intro
 						isScrolled={isScrolled}
 						isScrollIconVisible={isScrollIconVisible}
@@ -67,7 +57,6 @@ function App() {
 					<div className="mac-bg" />
 				</Router>
 			</I18nextProvider>
-		</>
 	);
 }
 
