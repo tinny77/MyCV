@@ -26,6 +26,8 @@ $body-font: 'Rubik',
 sans-serif;
 $header-font: 'Cairo',
 sans-serif;
+$main-header-font: 'Cairo Play',
+$header-font;
 
 :root {
     font-synthesis: none;
@@ -164,7 +166,9 @@ h2 {
 }
 
 h1 {
+    font-family: $main-header-font;
     font-size: clamp(3rem, calc(3rem + ((1vw - 0.35rem) * 2)), 4rem);
+    filter: saturate(0.6) hue-rotate(348deg);
 }
 
 h2 {
@@ -388,9 +392,12 @@ hr {
             }
 
             @include mobile {
+                text-align: left;
+
                 span {
                     float: none;
                     display: block;
+                    margin-left: 0;
 
                     &.badge {
                         display: inline-block;
@@ -674,10 +681,22 @@ form {
     }
 }
 
+/* XL adaption */
+
 @include xxl {
-    #skills .card .progress {
+
+    /*#skills .card .progress {
 
         --bs-progress-height: 1.65rem;
+    }*/
+    #contact p,
+    #about p {
+        font-size: 1.1rem;
+    }
+
+    #skills .list-group-item {
+        --bs-list-group-item-padding-y: 1rem;
+        background-position-y: 1.2rem;
     }
 }
 
