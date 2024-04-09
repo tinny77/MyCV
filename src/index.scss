@@ -341,8 +341,9 @@ hr {
     top: 0;
     right: 0;
     padding: 1rem;
+    font-weight: 800;
     z-index: 999;
-
+    user-select: none;
 
 
     button {
