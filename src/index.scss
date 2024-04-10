@@ -770,3 +770,35 @@ form {
     width: 1px !important;
     white-space: nowrap !important;
 }
+
+/* ===== Custom cursor ===== */
+
+body {
+
+    &,
+    :link,
+    .dot,
+    [type=button]:not(:disabled),
+    [type=reset]:not(:disabled),
+    [type=submit]:not(:disabled),
+    button:not(:disabled),
+    input,
+    textarea {
+        cursor: none !important;
+    }
+}
+
+._12c4J {
+    display: none;
+}
+
+@media (any-pointer: fine) {
+    ._12c4J {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        pointer-events: none;
+        z-index: 100000;
+    }
+}

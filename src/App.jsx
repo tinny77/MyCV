@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { I18nextProvider, useTranslation } from 'react-i18next';
+import CustomCursor from 'custom-cursor-react';
 import i18n from './data/i18n';
 import LangSwitcher from './components/LangSwitcher';
 import Intro from './Intro';
@@ -38,6 +39,21 @@ function App() {
 	const { t } = useTranslation();
 
 	return (
+		<>
+			<CustomCursor
+				targets={['a', 'input', 'textarea', 'select']}
+				customClass="custom-cursor"
+				dimensions={50}
+				fill="#a43b5a"
+				smoothness={{
+					movement: 0.4,
+					scale: 0.2,
+					opacity: 0.65,
+				}}
+				targetOpacity={0.25}
+				targetScale={1.65}
+			/>
+
 			<I18nextProvider i18n={i18n}>
 				<Helmet>
 					<html lang={i18n.language} />
@@ -57,6 +73,7 @@ function App() {
 					<div className="mac-bg" />
 				</Router>
 			</I18nextProvider>
+		</>
 	);
 }
 
