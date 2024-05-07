@@ -7,7 +7,7 @@ import { Badge, ListGroupItem } from 'react-bootstrap';
 import { Carousel } from 'react-responsive-carousel';
 import { useTranslation } from 'react-i18next';
 
-export default function Experience() {
+export default function Experience({ myExperienceYears}) {
 	const { t } = useTranslation();
 	const exp_3 = t('exp_3', { returnObjects: true });
 	const exp_2 = t('exp_2', { returnObjects: true });
@@ -19,6 +19,12 @@ export default function Experience() {
 			</ScrollAnimation>
 
 				<Container fluid="lg"><ScrollAnimation animateIn="fadeIn" delay={1000}>
+				<p
+					className="text-block _lead"
+					dangerouslySetInnerHTML={{
+						__html: t('exp_intro_text', { years: myExperienceYears }),
+					}}
+				></p>
 					<Carousel showThumbs={false} showStatus={false}>
 
 							<Col xs={12}>

@@ -68,7 +68,7 @@ function App() {
 					/>
 					<About myAge={myAge} />
 					<Skills />
-					<Experience />
+					<Experience myExperienceYears={myExperienceYears} />
 					<Contact />
 					<div className="mac-bg" />
 				</Router>
