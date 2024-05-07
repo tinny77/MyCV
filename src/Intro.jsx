@@ -1,10 +1,15 @@
 import LinkButtons from './components/LinkButtons';
 import MouseAnimation from './components/MouseAnimation';
-import Typed from "react-typed";
+import Typed from 'react-typed';
 import { useTranslation } from 'react-i18next';
+import { useState, useEffect } from 'react';
 
 const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 	const { t } = useTranslation();
+	const [isAnimated, setIsAnimated] = useState(false);
+	useEffect(() => {
+		setIsAnimated(true);
+	}, []);
 
 	return (
 		<>
@@ -17,9 +22,9 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 					</video>
 				</div>
 
-				<h1>Filippo Tinnirello</h1>
+				<h1 className={isAnimated ? 'animated' : ''}>Filippo Tinnirello</h1>
 
-				<h3 className='font-open'>
+				<h3 className="font-open">
 					<Typed
 						strings={[
 							'Senior Front-end developer',
@@ -33,9 +38,13 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 					/>
 				</h3>
 
-				<p className="text-block lead" dangerouslySetInnerHTML={{ __html: t('intro_text', { years: myExperienceYears }) }} ></p>
+				<p
+					className="text-block lead"
+					dangerouslySetInnerHTML={{
+						__html: t('intro_text', { years: myExperienceYears }),
+					}}
+				></p>
 				<LinkButtons />
-
 			</section>
 
 			<MouseAnimation

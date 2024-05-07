@@ -205,7 +205,12 @@ h2 {
 h1 {
     font-family: $main-header-font;
     font-size: clamp(3rem, calc(3rem + ((1vw - 0.35rem) * 2)), 4rem);
-    filter: saturate(0.6) hue-rotate(348deg);
+    filter: brightness(10) saturate(0.6) hue-rotate(348deg);
+    transition: filter 500ms;
+
+    &.animated {
+        filter: brightness(1) saturate(0.6) hue-rotate(348deg);
+    }
 }
 
 h2 {
@@ -548,13 +553,29 @@ hr {
         width: 100%;
         border: 0;
 
-        .card-title.h5 {
-            font-size: 1.15rem;
-            margin-bottom: 0.85rem;
+        .card-title {
 
+            &.h5 {
+                font-size: 1.15rem;
+                margin-bottom: 0.5rem;
+
+            }
+
+            svg.skills-icon {
+                height: 2.5rem;
+                width: auto;
+                color: var(--accent);
+                margin-block: 1.5rem;
+                display: block;
+                margin-inline: auto;
+            }
         }
 
-        .label {
+        .card-body {
+            padding-top: 0;
+        }
+
+        /*.label {
             display: block;
             text-align: left;
             font-size: 0.9rem;
@@ -576,36 +597,36 @@ hr {
                     display: none
                 }
             }
-        }
+    }*/
 
-        .progress {
-            --bs-progress-height: 1.25rem;
-            --bs-progress-border-radius: 0;
-            --bs-progress-bar-color: rgba(255, 255, 255, 0);
-            --bs-progress-bar-transition: width 0.5s ease;
-            //--bs-progress-bg: rgba(255, 255, 255, 0.25);
-            margin-bottom: 0.75rem;
-            margin-top: 0.25rem;
-            border: solid 1px #fff;
-            padding: 0.2rem;
-            background: none;
+        /*.progress {
+        --bs-progress-height: 1.25rem;
+        --bs-progress-border-radius: 0;
+        --bs-progress-bar-color: rgba(255, 255, 255, 0);
+        --bs-progress-bar-transition: width 0.5s ease;
+        //--bs-progress-bg: rgba(255, 255, 255, 0.25);
+        margin-bottom: 0.75rem;
+        margin-top: 0.25rem;
+        border: solid 1px #fff;
+        padding: 0.2rem;
+        background: none;
 
-            .progress-bar {
-                color: rgba(255, 255, 255, 0);
+        .progress-bar {
+            color: rgba(255, 255, 255, 0);
 
-                &:not(.animated) {
-                    width: 0 !important;
-                }
+            &:not(.animated) {
+                width: 0 !important;
+            }
 
-                &.bg-success {
-                    background-color: var(--darker-accent) !important;
-                }
+            &.bg-success {
+                background-color: var(--darker-accent) !important;
+            }
 
-                &:not(.bg-success) {
-                    --bs-progress-bar-bg: var(--accent);
-                }
+            &:not(.bg-success) {
+                --bs-progress-bar-bg: var(--accent);
             }
         }
+    }*/
 
         .two-cols {
             columns: 2;
