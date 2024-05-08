@@ -71,7 +71,7 @@ const SkillsDetail = ({ id, title, iconName, description_en, description_it}) =>
 			<IconContext.Provider value={{ className: 'skills-icon' }}>
 						<Card>
 							<Card.Body>
-								<Card.Title>{IconComponent && <IconComponent />}{title}</Card.Title>
+								<Card.Title data-icon={iconName}>{IconComponent && <IconComponent />}{title}</Card.Title>
 						<Card.Body>
 									<small>{description}</small>
 								</Card.Body>

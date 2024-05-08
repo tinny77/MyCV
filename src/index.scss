@@ -205,11 +205,12 @@ h2 {
 h1 {
     font-family: $main-header-font;
     font-size: clamp(3rem, calc(3rem + ((1vw - 0.35rem) * 2)), 4rem);
-    filter: brightness(10) saturate(0.6) hue-rotate(348deg);
+    filter: brightness(10) saturate(0.6) hue-rotate(348deg) blur(2px);
     transition: filter 500ms;
+    transition-delay: 250ms;
 
     &.animated {
-        filter: brightness(1) saturate(0.6) hue-rotate(348deg);
+        filter: brightness(1) saturate(0.6) hue-rotate(348deg) blur(0);
     }
 }
 
@@ -568,6 +569,13 @@ hr {
                 margin-block: 1.5rem;
                 display: block;
                 margin-inline: auto;
+            }
+
+            &[data-icon='php'] {
+                svg {
+                    height: 3.5rem;
+                    margin-block: 1rem;
+                }
             }
         }
 

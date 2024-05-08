@@ -7,7 +7,7 @@ import CustomCursor from 'custom-cursor-react';
 import i18n from './data/i18n';
 import LangSwitcher from './components/LangSwitcher';
 import Intro from './Intro';
-import About from './About';
+const About = React.lazy(() => import('./About'));
 const Skills = React.lazy(() => import('./Skills'));
 const Experience = React.lazy(() => import('./Experience'));
 const Contact = React.lazy(() => import('./Contact'));
@@ -36,6 +36,7 @@ function App() {
 		return () => window.removeEventListener('scroll', handlescroll);
 	}, []);
 
+
 	const { t } = useTranslation();
 
 	return (
@@ -53,7 +54,6 @@ function App() {
 				targetOpacity={0.25}
 				targetScale={1.65}
 			/>
-
 			<I18nextProvider i18n={i18n}>
 				<Helmet>
 					<html lang={i18n.language} />
