@@ -11,6 +11,9 @@ import { useTranslation } from 'react-i18next';
 
 export default function Skills() {
 
+	const animateIcons = () => {
+return;
+	}
 
 	return (
 		<section id="skills">
@@ -20,6 +23,7 @@ export default function Skills() {
 			<ScrollAnimation
 				animateIn="fadeIn"
 				delay={1000}
+				afterAnimatedIn={animateIcons}
 			>
 				<Container fluid="lg">
 					<Row>

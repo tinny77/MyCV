@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 import LinkButtons from './components/LinkButtons';
 import MouseAnimation from './components/MouseAnimation';
 import Typed from 'react-typed';
@@ -32,7 +33,7 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 							'Interface developer',
 							'CSS and Responsive design expert',
 						]}
-						typeSpeed={100}
+						typeSpeed={25}
 						backSpeed={10}
 						loop
 					/>
@@ -44,6 +45,7 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 						__html: t('intro_text', { years: myExperienceYears }),
 					}}
 				></p>
+
 				<LinkButtons />
 			</section>
 

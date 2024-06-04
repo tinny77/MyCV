@@ -251,7 +251,7 @@ hr {
 
 .text-block {
     width: min(90%, 85rem);
-    text-wrap: balance;
+    text-wrap: balance !important;
     margin-inline: auto;
     text-shadow: var(--bs-body-bg) 1px 0 5px;
 
@@ -577,12 +577,19 @@ hr {
                     margin-block: 1rem;
                 }
             }
+
+            &[data-icon='code'] {
+                svg {
+                    margin-top: 1.65rem;
+                    margin-bottom: 1.35rem;
+                }
+            }
         }
 
         .card-body {
             padding-top: 0;
             line-height: 1;
-            ;
+            text-wrap: balance;
         }
 
         /*.label {
@@ -659,6 +666,39 @@ hr {
 }
 
 
+/* ===== Skills ===== */
+
+#portfolio {
+    .row .col-6 {
+        display: flex;
+    }
+
+    .card {
+        margin-block: 1rem;
+
+        .card-body {
+            .card-title {
+                margin-bottom: 0;
+            }
+
+            a {
+                color: var(--accent);
+                text-decoration: none;
+                font-weight: 700;
+            }
+
+            img {
+                max-width: 100%;
+                aspect-ratio: 4/3;
+                margin-block: 0.5rem;
+                border-radius: var(--bs-border-radius);
+            }
+        }
+    }
+
+}
+
+
 /* ===== Lists ===== */
 
 .list-group-item {
@@ -675,6 +715,7 @@ hr {
     background-image: url('../favicon.ico');
     background-position: 0 0.7rem;
     background-repeat: no-repeat;
+    text-wrap: pretty;
 
     &:last-child {
         border-bottom: 0;
@@ -698,6 +739,7 @@ form {
     input.form-control,
     textarea.form-control {
 
+        caret-color: var(--accent);
 
         &::placeholder {
             color: rgb(161, 161, 170) !important;

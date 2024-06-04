@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { I18nextProvider, useTranslation } from 'react-i18next';
 import CustomCursor from 'custom-cursor-react';
@@ -10,6 +10,7 @@ import Intro from './Intro';
 const About = React.lazy(() => import('./About'));
 const Skills = React.lazy(() => import('./Skills'));
 const Experience = React.lazy(() => import('./Experience'));
+const Portfolio = React.lazy(() => import('./Portfolio'));
 const Contact = React.lazy(() => import('./Contact'));
 
 function App() {
@@ -35,7 +36,6 @@ function App() {
 		window.addEventListener('scroll', handlescroll);
 		return () => window.removeEventListener('scroll', handlescroll);
 	}, []);
-
 
 	const { t } = useTranslation();
 
@@ -69,6 +69,10 @@ function App() {
 					<About myAge={myAge} />
 					<Skills />
 					<Experience myExperienceYears={myExperienceYears} />
+					<Routes>
+						<Route path="/portfolio" element={<Portfolio />} />
+						<Route path="*" element={<></>} />
+					</Routes>
 					<Contact />
 					<div className="mac-bg" />
 				</Router>
