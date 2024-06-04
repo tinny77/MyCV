@@ -33,8 +33,8 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 							'Interface developer',
 							'CSS and Responsive design expert',
 						]}
-						typeSpeed={25}
-						backSpeed={10}
+						typeSpeed={85}
+						backSpeed={20}
 						loop
 					/>
 				</h3>
