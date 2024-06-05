@@ -34,9 +34,9 @@ const Portfolio = () => {
 										<img src={`/previews/${item.image}`} alt={item.title || 'Click to visit'} loading='lazy' /></a>
 
 										<small>
-											{i18n.language === 'it'
-												? item.description_it
-												: item.description_en}
+											{i18n.language === 'en'
+												? item.description_en
+												: item.description_it}
 										</small>
 									</Card.Body>
 								</Card>
