@@ -13,6 +13,7 @@ export default function Contact() {
 		},
 	});
 	const { t } = useTranslation();
+	const actively_seeking = false;
 	if (state.succeeded) {
 		return (
 			<section id="contact">
@@ -26,10 +27,10 @@ export default function Contact() {
 			<ScrollAnimation animateIn="fadeIn" delay={500}>
 				<h2>Contact me</h2>
 			</ScrollAnimation>
-			<ScrollAnimation animateIn="fadeIn" delay={1000}>
-				<p className="text-block mb-4" dangerouslySetInnerHTML={{ __html: t('contact_text') }} ></p>
+			<ScrollAnimation animateIn="fadeIn" delay={1000} className='container-md'>
+				<p className="text-block mb-4" dangerouslySetInnerHTML={{ __html: actively_seeking ? t('contact_text_open') : t('contact_text') }} ></p>
 				<hr/>
-				<form onSubmit={handleSubmit} className="mt-4 text-block">
+				<form onSubmit={handleSubmit} className="mt-4 text-block w-100" >
 					<Form.Group as={Row} className="mb-0 mb-md-4">
 						<Form.Label column md="2" htmlFor="name">
 							{ t('contact_label_first_name')}
