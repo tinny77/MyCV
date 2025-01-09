@@ -9,7 +9,7 @@ import LangSwitcher from './components/LangSwitcher';
 import Intro from './Intro';
 const About = React.lazy(() => import('./About'));
 const Skills = React.lazy(() => import('./Skills'));
-const Experience = React.lazy(() => import('./Experience'));
+//const Experience = React.lazy(() => import('./Experience'));
 const Portfolio = React.lazy(() => import('./Portfolio'));
 const Contact = React.lazy(() => import('./Contact'));
 
@@ -68,7 +68,9 @@ function App() {
 					/>
 					<About myAge={myAge} />
 					<Skills />
-					<Experience myExperienceYears={myExperienceYears} />
+					{
+						/* <Experience myExperienceYears={myExperienceYears} /> */
+					}
 					<Routes>
 						<Route path="/portfolio" element={<Portfolio />} />
 						<Route path="*" element={<></>} />
