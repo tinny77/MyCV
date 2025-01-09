@@ -734,6 +734,7 @@ form {
     .col-form-label {
         text-align: left;
         user-select: none;
+        align-content: center;
     }
 
     input.form-control,
@@ -745,16 +746,15 @@ form {
             color: rgb(161, 161, 170) !important;
         }
 
-        &:user-invalid {
-            border-bottom-color: var(--accent);
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
+    }
 
-            &::placeholder {
-                color: #fff;
-            }
+    input.form-control:user-invalid {
+        background: color-mix(in srgb, var(--darker-accent), var(--dark1)) !important;
+
+
+        &::placeholder {
+            color: #fff;
         }
-
     }
 
     textarea.form-control {
