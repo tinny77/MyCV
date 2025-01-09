@@ -13,7 +13,7 @@ export default function Experience({ myExperienceYears}) {
 	const exp_2 = t('exp_2', { returnObjects: true });
 	const exp_1 = t('exp_1', { returnObjects: true });
 	return (
-		<section id="experience">
+		<section id="experience" hidden>
 			<ScrollAnimation animateIn="fadeIn" delay={500}>
 				<h2>My experience</h2>
 			</ScrollAnimation>
