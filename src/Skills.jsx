@@ -6,6 +6,7 @@ import skills from './data/mySkills.js';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { IconContext } from 'react-icons';
 import { FaHtml5, FaCss3, FaJs, FaPhp, FaDatabase, FaWordpress, FaCode, FaGitAlt, FaFigma,  FaPalette, FaServer, FaBug, FaShieldAlt, FaTachometerAlt, FaPuzzlePiece } from 'react-icons/fa';
+import { SiGoogletagmanager } from "react-icons/si";
 import { useTranslation } from 'react-i18next';
 
 
@@ -65,6 +66,7 @@ const SkillsDetail = ({ id, title, iconName, description_en, description_it}) =>
 		debug: FaBug,
 		security: FaShieldAlt,
 		performance: FaTachometerAlt,
+		events: SiGoogletagmanager,
 	};
 	const IconComponent = iconComponents[iconName];
 

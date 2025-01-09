@@ -31,7 +31,7 @@ export default function Experience({ myExperienceYears}) {
 								<Card>
 									<Card.Body>
 										<Card.Title>
-											Wordpress Developer <span>Creativart (2023)</span>{' '}
+											WordPress Developer <span>Creativart (2023)</span>{' '}
 											<h6>
 												<Badge bg="secondary">{t('label_hybrid')}</Badge>
 											</h6>
@@ -109,7 +109,7 @@ export default function Experience({ myExperienceYears}) {
 								<Card>
 									<Card.Body>
 										<Card.Title>
-											Front-end and Wordpress Developer{' '}
+											Front-end and WordPress Developer{' '}
 											<span>24 Consulting (2018-2023)</span>{' '}
 											<h6>
 												<Badge bg="secondary">{t('label_hybrid')}</Badge>

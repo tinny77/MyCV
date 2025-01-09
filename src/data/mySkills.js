@@ -4,27 +4,9 @@ const skills = [
 		title: 'WordPress Development',
 		iconName: 'wordpress',
 		description_en:
-			'Extensive experience in developing custom WordPress themes and plugins. Proficiency in utilizing WordPress APIs and hooks for extending functionality.',
+			'Extensive experience in developing custom WordPress themes. Proficiency in utilizing WordPress APIs and hooks for extending functionality. Skilled in working with popular visual builders like Elementor, WPBakery, and Divi.',
 		description_it:
-			"Ampia esperienza nello sviluppo di temi e plugin personalizzati per WordPress. Competenza nell'utilizzo delle API e degli hook di WordPress per estendere le funzionalità.",
-	},
-	{
-		id: 'php',
-		title: 'PHP',
-		iconName: 'php',
-		description_en:
-			'Strong proficiency in PHP programming language. Ability to write clean, efficient, and secure code following best practices.',
-		description_it:
-			'Forte competenza nel linguaggio di programmazione PHP. Capacità di scrivere codice pulito, efficiente e sicuro seguendo le migliori pratiche.',
-	},
-	{
-		id: 'mysql',
-		title: 'MySQL',
-		iconName: 'database',
-		description_en:
-			'Solid understanding of MySQL database management, including database design, optimization, and querying.',
-		description_it:
-			"Solida comprensione della gestione del database MySQL, inclusa la progettazione del database, l'ottimizzazione e l'interrogazione.",
+			"Ampia esperienza nello sviluppo di temi personalizzati per WordPress. Competenza nell'utilizzo delle API e degli hook di WordPress per estendere le funzionalità. Esperto nell'utilizzo di builder visivi come Elementor, WPBakery e Divi.",
 	},
 	{
 		id: 'frontend',
@@ -40,36 +22,36 @@ const skills = [
 		title: 'Theme Development',
 		iconName: 'code',
 		description_en:
-			'Expertise in creating custom WordPress themes from scratch, including designing responsive layouts, implementing custom post types and taxonomies, and integrating with popular front-end frameworks or libraries.',
+			'Expertise in creating custom WordPress themes from scratch, implementing plugins, cpts and taxonomies, Also skilled at adapting and customizing pre-built templates to match project requirements and deliver efficient, tailored solutions.',
 		description_it:
-			"Competenza nella creazione di temi WordPress personalizzati da zero, inclusa la progettazione di layout responsive, l'implementazione di tipi di post personalizzati e tassonomie, e l'integrazione con framework o librerie front-end popolari.",
+			"Competenza nella creazione di temi WordPress personalizzati da zero, con l'implementazione di tipi di plugin, cpt e tassonomie. Abile inoltre nell'adattare e personalizzare template già esistenti per soddisfare le esigenze del progetto e offrire soluzioni su misura.",
 	},
 	{
 		id: 'plugin',
 		title: 'Plugin Development',
 		iconName: 'plugin',
 		description_en:
-			'Ability to develop custom WordPress plugins to extend the functionality of WordPress core or third-party plugins. This includes integrating with external APIs, implementing custom features, and ensuring compatibility with different WordPress versions.',
+			'Ability to develop custom WordPress plugins to extend the functionality of WordPress core or third-party plugins. This includes integrating with external APIs and  implementing custom features.',
 		description_it:
-			"Capacità di sviluppare plugin personalizzati per estendere la funzionalità di WordPress o di plugin di terze parti. Questo include l'integrazione con API esterne, l'implementazione di funzionalità personalizzate e la garanzia di compatibilità con diverse versioni di WordPress.",
+			"Capacità di sviluppare plugin personalizzati per estendere la funzionalità di WordPress o di plugin di terze parti. Questo include l'integrazione con API esterne e l'implementazione di funzionalità personalizzate.",
 	},
 	{
-		id: 'git',
-		title: 'Version Control',
-		iconName: 'git',
+		id: 'figma',
+		title: 'Assets Management',
+		iconName: 'figma',
 		description_en:
-			'Proficient in using version control systems like Git for managing codebase changes, collaborating with team members, and ensuring code integrity and versioning.',
+			'Familiarity with design tools like Figma, XD, and Photoshop for managing UI/UX assets. Skilled at resizing, cropping, and making simple adjustments to images using tools like Photoshop, ensuring designers can focus on creative tasks.',
 		description_it:
-			"Competenza nell'uso di sistemi di controllo versione come Git per gestire le modifiche al codice, collaborare con i membri del team e garantire l'integrità e il versionamento del codice.",
+			'Familiarità con gli strumenti di design come Figma, XD e Photoshop per la gestione degli asset UI/UX. Abilità nel ridimensionare, ritagliare e apportare semplici modifiche alle immagini utilizzando strumenti come Photoshop, permettendo ai designer di concentrarsi sui compiti creativi.',
 	},
 	{
-		id: 'hosting',
-		title: 'Hosting Environment',
-		iconName: 'hosting',
+		id: 'events',
+		title: 'Tracking and Analytics',
+		iconName: 'events',
 		description_en:
-			'Familiarity with various hosting environments and server configurations commonly used for WordPress hosting. Knowledge of server management, security practices, and performance optimization techniques.',
+			'Experience in implementing tracking and analytics solutions for WordPress sites. Skilled in configuring Google Tag Manager, Google Analytics, and similar tools to monitor website performance, user behavior, and conversion metrics.',
 		description_it:
-			"Familiarità con vari ambienti di hosting e configurazioni del server comunemente utilizzati per l'hosting di WordPress. Conoscenza della gestione del server, delle pratiche di sicurezza e delle tecniche di ottimizzazione delle prestazioni.",
+			"Esperienza nell'implementazione di soluzioni di tracciamento e analisi per siti WordPress. Competenza nella configurazione di Google Tag Manager, Google Analytics e strumenti simili per monitorare le prestazioni del sito, il comportamento degli utenti e le metriche di conversione.",
 	},
 	{
 		id: 'debug',
@@ -99,13 +81,49 @@ const skills = [
 			"Capacità di ottimizzare i siti WordPress per velocità e prestazioni, inclusa la riduzione dei tempi di caricamento delle pagine, l'ottimizzazione delle immagini e degli asset, l'implementazione di meccanismi di caching e l'utilizzo di tecniche come il lazy loading e il caricamento asincrono.",
 	},
 	{
-		id: 'figma',
-		title: 'Asset Management with Figma',
-		iconName: 'figma',
+		id: 'php',
+		title: 'Backend Development',
+		iconName: 'php',
 		description_en:
-			'Familiarity with design tools like Figma, XD and Photoshop for managing UI/UX assets. Ability to collaborate with designers and integrate design assets seamlessly into WordPress themes and interfaces.',
+			'Proficiency in PHP programming and MySQL database management. Skilled in writing clean, efficient, and secure PHP code, designing optimized databases, and querying data effectively. ',
 		description_it:
-			' Familiarità con gli strumenti di design come Figma, XD e Photoshop per la gestione degli asset UI/UX. Capacità di collaborare con i designer e integrare gli asset di design in modo trasparente nei temi e nelle interfacce WordPress.',
+			'Competenza nella programmazione PHP e nella gestione di database MySQL. Abilità nel scrivere codice PHP pulito, efficiente e sicuro, progettare database ottimizzati e interrogare i dati in modo efficace. ',
+	},
+	/*{
+		id: 'php',
+		title: 'PHP',
+		iconName: 'php',
+		description_en:
+			'Strong proficiency in PHP programming language. Ability to write clean, efficient, and secure code following best practices.',
+		description_it:
+			'Forte competenza nel linguaggio di programmazione PHP. Capacità di scrivere codice pulito, efficiente e sicuro seguendo le migliori pratiche.',
+	},
+	{
+		id: 'mysql',
+		title: 'MySQL',
+		iconName: 'database',
+		description_en:
+			'Solid understanding of MySQL database management, including database design, optimization, and querying.',
+		description_it:
+			"Solida comprensione della gestione del database MySQL, inclusa la progettazione del database, l'ottimizzazione e l'interrogazione.",
+	},*/
+	{
+		id: 'git',
+		title: 'Version Control',
+		iconName: 'git',
+		description_en:
+			'Proficient in using version control systems like Git for managing codebase changes, collaborating with team members, and ensuring code integrity and versioning.',
+		description_it:
+			"Competenza nell'uso di sistemi di controllo versione come Git per gestire le modifiche al codice, collaborare con i membri del team e garantire l'integrità e il versionamento del codice.",
+	},
+	{
+		id: 'hosting',
+		title: 'Hosting Environment',
+		iconName: 'hosting',
+		description_en:
+			'Familiarity with various hosting environments and server configurations commonly used for WordPress hosting. Knowledge of server management, security practices, and performance optimization techniques.',
+		description_it:
+			"Familiarità con vari ambienti di hosting e configurazioni del server comunemente utilizzati per l'hosting di WordPress. Conoscenza della gestione del server, delle pratiche di sicurezza e delle tecniche di ottimizzazione delle prestazioni.",
 	},
 ];
 
