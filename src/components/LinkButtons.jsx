@@ -1,5 +1,5 @@
 import { HashLink } from 'react-router-hash-link';
-import { GrLinkedin, GrGithub, GrDocumentPdf, GrMail } from 'react-icons/gr';
+import { GrLinkedin, GrGithub, GrDocumentPdf, GrMail, GrSkype } from 'react-icons/gr';
 import { Tooltip } from 'react-tooltip';
 import { useTranslation } from 'react-i18next';
 
@@ -27,6 +27,17 @@ export default function LinkButtons() {
 			>
 				<GrMail />
 			</HashLink>
+			<Tooltip id="btn-skype" />
+			<a
+				href="https://join.skype.com/invite/LXTqopFPWpvV"
+				target="_blank"
+				rel="noreferrer"
+				data-tooltip-id="btn-skype"
+				data-tooltip-content={t('tooltip_skype')}
+				data-tooltip-place="bottom"
+			>
+				<GrSkype />
+			</a>
 			<Tooltip id="btn-contact" />
 			<a
 				href="./Filippo_Tinnirello_Resume.pdf"

@@ -6,7 +6,8 @@
 	"tooltip_linkedin": "Visita il mio profilo LinkedIn",
 	"tooltip_github": "Visita il mio profilo GitHub",
 	"tooltip_download_cv": "Scarica il mio CV",
-	"tooltip_contact": "Contattami",
+	"tooltip_contact": "Contattami via email",
+	"tooltip_skype": "Contattami su Skype",
 	"skills": [
 		"Lunga esperienza con HTML e CSS, inclusa la compatibilità cross-browser, la responsività e le prestazioni",
 		"Trasformazione di layout PSD complessi in template HTML5/CSS3 perfetti al pixel",

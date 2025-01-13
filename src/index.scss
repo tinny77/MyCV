@@ -279,7 +279,7 @@ hr {
     margin-top: 0.5rem;
     //margin-bottom: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: clamp(2rem, calc(2rem + ((1vw - 0.85rem) * 6.6667)), 3rem);
 
@@ -800,13 +800,7 @@ form {
     }
 }
 
-@include mobile-xs {
-    .buttons {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-row-gap: 1rem;
-    }
-}
+
 
 /* ===== Desktop XL ===== */
 
