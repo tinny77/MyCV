@@ -8,9 +8,18 @@ import { useState, useEffect } from 'react';
 const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 	const { t } = useTranslation();
 	const [isAnimated, setIsAnimated] = useState(false);
+	const [isClient, setIsClient] = useState(false);
 	useEffect(() => {
 		setIsAnimated(true);
+		setIsClient(true);
 	}, []);
+
+	const titles = [
+		'Senior Front-end developer a Verona',
+		'Sviluppatore WordPress Full-stack',
+		'Interface developer',
+		'Esperto CSS e Responsive design',
+	];
 
 	return (
 		<>
@@ -25,26 +34,13 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 
 				<h1 className={isAnimated ? 'animated' : ''}>Filippo Tinnirello</h1>
 
-				<div className="seo-text" aria-hidden="true">
-					<p>Sviluppatore Freelance Front-end a Verona</p>
-					<p>Full-stack WordPress developer</p>
-					<p>Design to template development</p>
-					<p>CSS and Responsive design</p>
-				</div>
+				{!isClient && <h2 className="seo-text">{titles.join(' • ')}</h2>}
 
-				<h3 className="font-open">
-					<Typed
-						strings={[
-							'Senior Front-end developer',
-							'Full-stack WordPress developer',
-							'Interface developer',
-							'CSS and Responsive design expert',
-						]}
-						typeSpeed={85}
-						backSpeed={20}
-						loop
-					/>
-				</h3>
+				{isClient && (
+					<h3 className="font-open">
+						<Typed strings={titles} typeSpeed={85} backSpeed={20} loop />
+					</h3>
+				)}
 
 				<p
 					className="text-block lead"
