@@ -180,6 +180,7 @@ body {
                 --bs-card-bg: var(--dark1);
             }
 
+            button.form-control,
             input.form-control,
             textarea.form-control {
                 border: solid 1px var(--dark1);
@@ -189,6 +190,21 @@ body {
                     border: solid 1px var(--dark2);
                     background-color: var(--dark1);
                 }
+
+                .text-sm {
+                    font-weight: 300;
+                    font-size: 80%;
+                    color: var(--body-color);
+                }
+
+                .font-medium {
+                    color: var(--body-color);
+                }
+            }
+
+            button.form-control {
+                background-color: var(--dark2);
+                paddinng: .375rem .75rem;
             }
         }
 
@@ -773,9 +789,19 @@ form {
 
     }
 
+    button.form-control {
+        border: none;
+        background-color: var(--dark2);
+        display: flex;
+        align-items: center;
+        text-align: left;
+        align-content: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
     input.form-control:user-invalid {
         background: color-mix(in srgb, var(--darker-accent), var(--dark1)) !important;
-
 
         &::placeholder {
             color: #fff;
@@ -789,10 +815,21 @@ form {
         field-sizing: content;
     }
 
+    .select-label {
+        color: rgb(171, 171, 180);
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #fff;
+        }
+    }
+
     @media(min-height:800px) {
 
         input.form-control,
-        textarea.form-control {
+        textarea.form-control,
+        select.form-control {
             padding-top: 1vh;
             padding-bottom: 1vh;
         }
@@ -805,6 +842,102 @@ form {
     input.btn[type='submit'] {
         background-color: var(--accent);
         border-color: var(--accent);
+    }
+
+}
+
+
+/* Popup select servizi contatto */
+.select-content[data-state='open'] {
+    animation: fadeIn 0.2s ease-out, scaleIn 0.2s ease-out;
+}
+
+.popup_cont {
+
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000 !important;
+    border: 0;
+
+}
+
+.popup {
+    background: var(--dark2);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90vw;
+    width: auto;
+    max-height: 90vh;
+    overflow-y: auto;
+    border: 0;
+    z-index: 99 !important;
+
+    .space-y-2 {
+        height: min(80vh, 320px);
+        overflow-y: auto;
+    }
+
+    div[role='option'] {
+        background-color: var(--dark1);
+
+        &:focus {
+            outline: none;
+        }
+
+        .text-sm {
+            font-weight: 300;
+            font-size: 90%;
+            color: var(--body-color);
+        }
+
+        .font-medium {
+            color: var(--body-color);
+        }
+
+        &[data-state='checked'] {
+            background: var(--accent);
+        }
+    }
+}
+
+
+@layer components {
+    .select-content {
+        animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .select-content[data-state='closed'] {
+        animation: contentHide 150ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+}
+
+@keyframes contentShow {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -48%) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes contentHide {
+    from {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(-50%, -48%) scale(0.96);
     }
 }
 
@@ -893,4 +1026,15 @@ body {
         pointer-events: none;
         z-index: 100000;
     }
+}
+
+/* ------------------------------------------------------------------ */
+
+#root > pre {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: var(--dark1);
+    clip: rect(1, 1, 1, 1);
+    font-size: 10px;
 }

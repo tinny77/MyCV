@@ -58,5 +58,49 @@
 	"contact_label_company": "Company",
 	"contact_label_message": "Your message",
 	"contact_label_send": "Send",
-	"portfolio_intro": "The sites you see here represent my most recent works. Some were made starting from a pre-purchased template, others were created from scratch. In addition to developing the layout, I handled plugin configuration, custom post types, ACF when necessary, and server-side management. These projects highlight my skills in HTML, CSS, JavaScript, PHP, and my deep understanding of the WordPress ecosystem."
+	"portfolio_intro": "The sites you see here represent my most recent works. Some were made starting from a pre-purchased template, others were created from scratch. In addition to developing the layout, I handled plugin configuration, custom post types, ACF when necessary, and server-side management. These projects highlight my skills in HTML, CSS, JavaScript, PHP, and my deep understanding of the WordPress ecosystem.",
+	"contact_service_placeholder": "Select a service you're interested in",
+	"contact_services_label": "Service",
+	"services": {
+		"wp_conversion": {
+			"title": "Conversion of static layouts into dynamic WordPress templates",
+			"description": "Transform static designs into fully functional WordPress themes"
+		},
+		"custom_dev": {
+			"title": "Development of custom WordPress themes and plugins",
+			"description": "Creation of tailored solutions for your specific needs"
+		},
+		"seo": {
+			"title": "Website optimization for SEO",
+			"description": "Improve your visibility on search engines"
+		},
+		"plugins": {
+			"title": "Integration and configuration of essential plugins",
+			"description": "Setup of WooCommerce, WPML and other core plugins"
+		},
+		"maintenance": {
+			"title": "Maintenance and regular updates",
+			"description": "Ongoing management and security updates for your site"
+		},
+		"migration": {
+			"title": "Website migration to WordPress platform",
+			"description": "Safe transfer of your website to WordPress"
+		},
+		"landing": {
+			"title": "Development of landing pages optimized for CRO",
+			"description": "Creation of high-converting pages"
+		},
+		"support": {
+			"title": "WordPress technical support and training",
+			"description": "Assistance and training for optimal platform usage"
+		},
+		"multilingual": {
+			"title": "Creation of multilingual websites with WPML",
+			"description": "Implementation of multi-language websites"
+		},
+		"consulting": {
+			"title": "Web design and development strategy consulting",
+			"description": "Strategic support for your digital project"
+		}
+	}
 }

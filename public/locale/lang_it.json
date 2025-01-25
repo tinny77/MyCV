@@ -58,5 +58,49 @@
 	"contact_label_company": "Azienda",
 	"contact_label_message": "Il tuo messaggio",
 	"contact_label_send": "Invia",
-	"portfolio_intro": "I siti che vedete qui rappresentano i miei lavori più recenti. Alcuni sono stati realizzati partendo da un template pre-acquistato, altri sono stati creati da zero. Oltre alla realizzazione del layout, mi sono occupato della configurazione di plugin, custom post type, ACF quando necessario, e della gestione lato server. Questi progetti evidenziano le mie competenze in HTML, CSS, JavaScript, PHP, e la mia profonda conoscenza dell'ecosistema WordPress."
+	"portfolio_intro": "I siti che vedete qui rappresentano i miei lavori più recenti. Alcuni sono stati realizzati partendo da un template pre-acquistato, altri sono stati creati da zero. Oltre alla realizzazione del layout, mi sono occupato della configurazione di plugin, custom post type, ACF quando necessario, e della gestione lato server. Questi progetti evidenziano le mie competenze in HTML, CSS, JavaScript, PHP, e la mia profonda conoscenza dell'ecosistema WordPress.",
+	"contact_service_placeholder": "Seleziona il servizio di interesse",
+	"contact_services_label": "Servizio",
+	"services": {
+		"wp_conversion": {
+			"title": "Conversione layout statici in template WordPress dinamici",
+			"description": "Trasformazione di design statici in temi WordPress completamente funzionali"
+		},
+		"custom_dev": {
+			"title": "Sviluppo di temi e plugin personalizzati per WordPress",
+			"description": "Creazione di soluzioni su misura per le tue esigenze specifiche"
+		},
+		"seo": {
+			"title": "Ottimizzazione siti web per SEO",
+			"description": "Miglioramento della visibilità sui motori di ricerca"
+		},
+		"plugins": {
+			"title": "Integrazione e configurazione di plugin essenziali",
+			"description": "Setup di WooCommerce, WPML e altri plugin fondamentali"
+		},
+		"maintenance": {
+			"title": "Manutenzione e aggiornamenti regolari",
+			"description": "Gestione continua e aggiornamenti di sicurezza del tuo sito"
+		},
+		"migration": {
+			"title": "Migrazione siti web su piattaforma WordPress",
+			"description": "Trasferimento sicuro del tuo sito su WordPress"
+		},
+		"landing": {
+			"title": "Sviluppo di landing page ottimizzate per CRO",
+			"description": "Creazione di pagine ad alta conversione"
+		},
+		"support": {
+			"title": "Supporto tecnico e formazione WordPress",
+			"description": "Assistenza e training per l'utilizzo ottimale della piattaforma"
+		},
+		"multilingual": {
+			"title": "Creazione di siti multilingua con WPML",
+			"description": "Implementazione di siti web in più lingue"
+		},
+		"consulting": {
+			"title": "Consulenza su strategie di design e sviluppo web",
+			"description": "Supporto strategico per il tuo progetto digitale"
+		}
+	}
 }

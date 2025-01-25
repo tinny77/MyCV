@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { useForm, ValidationError } from '@formspree/react';
 import { useTranslation } from 'react-i18next';
+import ServiceSelect from './components/ServiceSelect';
 
 export default function Contact() {
 	const [state, handleSubmit] = useForm('mrgwojwr', {
@@ -17,8 +18,12 @@ export default function Contact() {
 	if (state.succeeded) {
 		return (
 			<section id="contact">
-				<p className="text-block pt-5" style={{fontSize:'4rem'}}>👌🏼</p>
-				<p className="text-block _text-white display-6 pb-5">{ t('contact_thank_you')}</p>
+				<p className="text-block pt-5" style={{ fontSize: '4rem' }}>
+					👌🏼
+				</p>
+				<p className="text-block _text-white display-6 pb-5">
+					{t('contact_thank_you')}
+				</p>
 			</section>
 		);
 	}
@@ -27,20 +32,27 @@ export default function Contact() {
 			<ScrollAnimation animateIn="fadeIn" delay={500}>
 				<h2>Contact me</h2>
 			</ScrollAnimation>
-			<ScrollAnimation animateIn="fadeIn" delay={1000} className='container-md'>
-				<p className="text-block mb-4" dangerouslySetInnerHTML={{ __html: actively_seeking ? t('contact_text_open') : t('contact_text') }} ></p>
-				<hr/>
-				<form onSubmit={handleSubmit} className="mt-4 text-block w-100" >
+			<ScrollAnimation animateIn="fadeIn" delay={1000} className="container-md">
+				<p
+					className="text-block mb-4"
+					dangerouslySetInnerHTML={{
+						__html: actively_seeking
+							? t('contact_text_open')
+							: t('contact_text'),
+					}}
+				></p>
+				<hr />
+				<form onSubmit={handleSubmit} className="mt-4 text-block w-100">
 					<Form.Group as={Row} className="mb-0 mb-md-4">
 						<Form.Label column md="2" htmlFor="name">
-							{ t('contact_label_first_name')}
+							{t('contact_label_first_name')}
 						</Form.Label>
 						<Col md="4">
 							<Form.Control id="name" type="text" name="name" required />
 						</Col>
 
 						<Form.Label column md="2" htmlFor="surname">
-						{ t('contact_label_last_name')}
+							{t('contact_label_last_name')}
 						</Form.Label>
 						<Col md="4">
 							<Form.Control id="surname" type="text" name="surname" required />
@@ -55,10 +67,16 @@ export default function Contact() {
 						</Col>
 
 						<Form.Label column md="2" htmlFor="company">
-						{ t('contact_label_company')}
+							{t('contact_label_company')}
 						</Form.Label>
 						<Col md="4">
 							<Form.Control id="company" type="text" name="company" />
+						</Col>
+					</Form.Group>
+					<Form.Group as={Row} className="mb-t mt-md-4">
+						<Form.Label></Form.Label>
+						<Col md="12">
+							<ServiceSelect />
 						</Col>
 					</Form.Group>
 					<Form.Group className="mb-4">
@@ -69,7 +87,7 @@ export default function Contact() {
 							id="message"
 							name="message"
 							required
-							placeholder={ t('contact_label_message')}
+							placeholder={t('contact_label_message')}
 						/>
 					</Form.Group>
 					<ValidationError prefix="Email" field="email" errors={state.errors} />
@@ -81,7 +99,7 @@ export default function Contact() {
 					<Button
 						as="input"
 						type="submit"
-						value={ t('contact_label_send')}
+						value={t('contact_label_send')}
 						variant="danger"
 						className="mt-2"
 						disabled={state.submitting}
