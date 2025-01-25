@@ -810,7 +810,7 @@ form {
 
     textarea.form-control {
         min-height: 3lh;
-        max-height: 12lh;
+        max-height: 8lh;
         resize: vertical;
         field-sizing: content;
     }
@@ -885,6 +885,7 @@ form {
 
     div[role='option'] {
         background-color: var(--dark1);
+        padding-inline: 15px;
 
         &:focus {
             outline: none;

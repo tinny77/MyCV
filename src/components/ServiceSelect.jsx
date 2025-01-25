@@ -76,7 +76,7 @@ const ServiceSelect = () => {
 						<SelectLabel className="text-lg font-semibold mb-2 block text-center _text-white">
 							{t('contact_service_placeholder')}
 						</SelectLabel>
-						<div className="space-y-2  ">
+						<div className="space-y-2">
 							{services.map((service) => (
 								<SelectItem key={service.value} value={service.value}>
 									<div>

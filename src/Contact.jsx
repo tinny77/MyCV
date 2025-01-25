@@ -1,8 +1,10 @@
+import { useEffect } from 'react';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import ScrollAnimation from 'react-animate-on-scroll';
+import confetti from 'canvas-confetti';
 import { useForm, ValidationError } from '@formspree/react';
 import { useTranslation } from 'react-i18next';
 import ServiceSelect from './components/ServiceSelect';
@@ -15,14 +17,52 @@ export default function Contact() {
 	});
 	const { t } = useTranslation();
 	const actively_seeking = false;
+
+	useEffect(() => {
+		if (state.succeeded) {
+			// Create a more elaborate confetti celebration
+			const duration = 2000; // 3 seconds
+			const end = Date.now() + duration;
+
+			// Create a confetti animation frame
+			const frame = () => {
+				confetti({
+					particleCount: 50,
+					angle: 90,
+					spread: 100,
+					origin: { y: 0 },
+					//colors: ['#ff0000', '#00ff00', '#0000ff'],
+				});
+
+				if (Date.now() < end) {
+					requestAnimationFrame(frame);
+				}
+			};
+
+			// Start the animation
+			frame();
+
+			// Add a final burst after the rain
+			setTimeout(() => {
+				confetti({
+					particleCount: 150,
+					spread: 150,
+					origin: { y: 0.5 },
+					gravity: 0.65,
+					startVelocity: 20,
+					scalar: 0.75,
+				});
+			}, duration);
+		}
+	}, [state.succeeded]);
 	if (state.succeeded) {
 		return (
 			<section id="contact">
 				<p className="text-block pt-5" style={{ fontSize: '4rem' }}>
-					👌🏼
+					{t('contact_thank_you_title')}
 				</p>
 				<p className="text-block _text-white display-6 pb-5">
-					{t('contact_thank_you')}
+					{t('contact_thank_you_message')}
 				</p>
 			</section>
 		);
