@@ -25,6 +25,13 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 
 				<h1 className={isAnimated ? 'animated' : ''}>Filippo Tinnirello</h1>
 
+				<div className="seo-text" aria-hidden="true">
+					<p>Sviluppatore Freelance Front-end a Verona</p>
+					<p>Full-stack WordPress developer</p>
+					<p>Design to template development</p>
+					<p>CSS and Responsive design</p>
+				</div>
+
 				<h3 className="font-open">
 					<Typed
 						strings={[
