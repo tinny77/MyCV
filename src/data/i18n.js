@@ -8,10 +8,17 @@ i18n
 	.use(LanguageDetector)
 	.use(initReactI18next)
 	.init({
+		supportedLngs: ['it', 'en'],
+		fallbackLng: 'it',
+		defaultNS: 'translation',
+
 		backend: {
 			loadPath: '/locale/lang_{{lng}}.json',
 		},
-		fallbackLng: 'en',
+		detection: {
+			order: ['path'],
+			lookupFromPathIndex: 0,
+		},
 		interpolation: {
 			escapeValue: false,
 		},
