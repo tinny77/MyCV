@@ -37,6 +37,7 @@ function App() {
 				const opacity = Math.max(1 - (scrolled / window.innerHeight) * 1.5, 0.1);
 				intro.style.opacity = opacity;
 				intro.style.filter = 'blur(' + (scrolled / 100) * 0.5 + 'px)';
+				intro.style.pointerEvents = scrolled > 100 ? 'none' : 'auto';
 			}
 		};
 
