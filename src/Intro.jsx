@@ -14,23 +14,21 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 		setIsClient(true);
 	}, []);
 
-	const titles = [
-    'Senior Front-end developer',
-    'Sviluppatore WordPress Full-stack',
-    'Esperto CSS e Responsive design',
-    'Interface developer specializzato in UI/UX',
-];
+	const titles = t('titles', { returnObjects: true });
 
 	return (
 		<>
 			<section id="intro">
-				<div className="videoframe">
-					<video autoPlay loop muted poster="./myPic.png">
+
+				<img src="./myPic.png" alt="Filippo Tinnirello" className='myPic' width={250} />
+
+{/* 		<div className="videoframe">			<video autoPlay loop muted poster="./myPic.png">
 						<source src="./myPic.mp4" type="video/mp4" />
 						<source src="./myPic.webm" type="video/webm" />
 						<source src="./myPic.gif" type="video/gif" />
-					</video>
-				</div>
+					</video> </div>*/}
+
+
 
 				<h1 className={isAnimated ? 'animated' : ''}>Filippo Tinnirello</h1>
 

@@ -291,8 +291,9 @@ hr {
     aspect-ratio: 1/1;
     position: relative;
     overflow: hidden;
-    width: min(250px, 45vh);
-    object-fit: cover;
+    width: 200px;
+    height: 250px;
+    margin: 0 auto;
 
     video {
         object-fit: cover;
@@ -301,6 +302,17 @@ hr {
         top: 50%;
         left: 0;
         transform: translateY(-50%);
+    }
+}
+
+img.myPic {
+    max-width: 65vw;
+    height: auto;
+}
+
+@media(height<=750px) {
+    img.myPic {
+        display: none
     }
 }
 
@@ -331,7 +343,7 @@ hr {
 }
 
 .buttons {
-    margin-top: 0.5rem;
+    margin-top: max(10vh, 1rem);
     //margin-bottom: 1.5rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
