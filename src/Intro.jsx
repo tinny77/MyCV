@@ -15,11 +15,11 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 	}, []);
 
 	const titles = [
-		'Senior Front-end developer a Verona',
-		'Sviluppatore WordPress Full-stack',
-		'Interface developer',
-		'Esperto CSS e Responsive design',
-	];
+    'Senior Front-end developer',
+    'Sviluppatore WordPress Full-stack',
+    'Esperto CSS e Responsive design',
+    'Interface developer specializzato in UI/UX',
+];
 
 	return (
 		<>

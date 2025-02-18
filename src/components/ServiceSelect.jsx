@@ -24,11 +24,6 @@ const ServiceSelect = () => {
 			description: t('services.custom_dev.description'),
 		},
 		{
-			value: 'seo',
-			label: t('services.seo.title'),
-			description: t('services.seo.description'),
-		},
-		{
 			value: 'plugins',
 			label: t('services.plugins.title'),
 			description: t('services.plugins.description'),
@@ -42,16 +37,6 @@ const ServiceSelect = () => {
 			value: 'migration',
 			label: t('services.migration.title'),
 			description: t('services.migration.description'),
-		},
-		{
-			value: 'landing-pages',
-			label: t('services.landing.title'),
-			description: t('services.landing.description'),
-		},
-		{
-			value: 'support',
-			label: t('services.support.title'),
-			description: t('services.support.description'),
 		},
 		{
 			value: 'multilingual',
