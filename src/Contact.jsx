@@ -21,7 +21,7 @@ export default function Contact() {
 	useEffect(() => {
 		if (state.succeeded) {
 			// Create a more elaborate confetti celebration
-			const duration = 2000; // 3 seconds
+			const duration = 4000; // 3 seconds
 			const end = Date.now() + duration;
 
 			// Create a confetti animation frame
@@ -48,9 +48,9 @@ export default function Contact() {
 					particleCount: 150,
 					spread: 150,
 					origin: { y: 0.5 },
-					gravity: 0.65,
+					gravity: 0.25,
 					startVelocity: 20,
-					scalar: 0.75,
+					scalar: 0.8,
 				});
 			}, duration);
 		}

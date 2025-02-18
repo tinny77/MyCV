@@ -86,6 +86,20 @@ $header-font;
     border: 0;
 }
 
+/* ===== Sections ===== */
+
+#intro {
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+#about {
+    margin-top: 100dvh;
+}
+
 /* ===== Scrollbar ===== */
 
 * {
@@ -594,6 +608,7 @@ hr {
         margin-bottom: 1rem;
         width: 100%;
         border: 0;
+        height: calc(100% - 1.5rem);
 
         .card-title {
 

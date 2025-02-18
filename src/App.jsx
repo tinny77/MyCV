@@ -28,13 +28,21 @@ function App() {
 	const myAge = getYearsDiff(thisYear, new Date('1981-07-05'));
 
 	useEffect(() => {
-		const handlescroll = () => {
+		const handleScroll = () => {
+			const scrolled = window.scrollY;
+			const intro = document.getElementById('intro');
 			setIsScrolled(window.scrollY > 0);
 			setisScrollIconVisible(false);
+			if (intro) {
+				const opacity = Math.max(1 - (scrolled / window.innerHeight) * 1.5, 0.1);
+				intro.style.opacity = opacity;
+				intro.style.filter = 'blur(' + (scrolled / 100) * 0.5 + 'px)';
+			}
 		};
+
+		window.addEventListener('scroll', handleScroll);
 		setTimeout(() => setisScrollIconVisible(true), 5000);
-		window.addEventListener('scroll', handlescroll);
-		return () => window.removeEventListener('scroll', handlescroll);
+		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
 	const { t } = useTranslation();

@@ -28,14 +28,15 @@ return;
 			>
 				<Container fluid="lg">
 					<Row>
-					{skills.map((skill) => (
+					{skills.map((skill,index) => (
 						<SkillsDetail
 						key={skill.id}
 						id={skill.id}
 						title={skill.title}
 						iconName={skill.iconName}
 						description_it={skill.description_it}
-						description_en={skill.description_en}
+							description_en={skill.description_en}
+							index={index}
 						/>
 						))}
 					</Row>
@@ -45,10 +46,11 @@ return;
 	);
 }
 
-const SkillsDetail = ({ id, title, iconName, description_en, description_it}) => {
+const SkillsDetail = ({ id, title, iconName, description_en, description_it,index}) => {
 
 	const { i18n } = useTranslation();
 	const description = i18n.language === 'it' ? description_it : description_en;
+	const baseDelay = 250;
 
 	const iconComponents = {
 		html: FaHtml5,
@@ -73,8 +75,13 @@ const SkillsDetail = ({ id, title, iconName, description_en, description_it}) =>
 	return (
 		<>
 
-			<Col xs={6} lg={4} xxl={3} key={id}>
-			<IconContext.Provider value={{ className: 'skills-icon' }}>
+			<Col xs={12} sm={6} lg={4} xxl={3} key={id}>
+					<IconContext.Provider value={{ className: 'skills-icon' }}>
+						<ScrollAnimation
+								animateIn="flipInX"
+								delay={baseDelay * index}
+								offset={50}
+							>
 						<Card>
 							<Card.Body>
 								<Card.Title data-icon={iconName}>{IconComponent && <IconComponent />}{title}</Card.Title>
@@ -82,7 +89,8 @@ const SkillsDetail = ({ id, title, iconName, description_en, description_it}) =>
 									<small>{description}</small>
 								</Card.Body>
 							</Card.Body>
-					</Card>
+						</Card>
+					</ScrollAnimation>
 					</IconContext.Provider>
 				</Col>
 
