@@ -286,25 +286,6 @@ hr {
     border-color: transparent;
 }
 
-.videoframe {
-    border-radius: 55px;
-    aspect-ratio: 1/1;
-    position: relative;
-    overflow: hidden;
-    width: 200px;
-    height: 250px;
-    margin: 0 auto;
-
-    video {
-        object-fit: cover;
-        position: absolute;
-        width: 100%;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-    }
-}
-
 img.myPic {
     max-width: 65vw;
     height: auto;

@@ -22,14 +22,6 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 
 				<img src="./myPic.png" alt="Filippo Tinnirello" className='myPic' width={250} />
 
-{/* 		<div className="videoframe">			<video autoPlay loop muted poster="./myPic.png">
-						<source src="./myPic.mp4" type="video/mp4" />
-						<source src="./myPic.webm" type="video/webm" />
-						<source src="./myPic.gif" type="video/gif" />
-					</video> </div>*/}
-
-
-
 				<h1 className={isAnimated ? 'animated' : ''}>Filippo Tinnirello</h1>
 
 				{!isClient && <h2 className="seo-text">{titles.join(' • ')}</h2>}
