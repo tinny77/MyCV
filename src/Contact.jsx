@@ -8,7 +8,7 @@ import confetti from 'canvas-confetti';
 import { useForm, ValidationError } from '@formspree/react';
 import { useTranslation } from 'react-i18next';
 import ServiceSelect from './components/ServiceSelect';
-
+import Title from './components/Title';
 export default function Contact() {
 	const [state, handleSubmit] = useForm('mrgwojwr', {
 		data: {
@@ -69,9 +69,7 @@ export default function Contact() {
 	}
 	return (
 		<section id="contact">
-			<ScrollAnimation animateIn="fadeIn" delay={500}>
-				<h2>Contact me</h2>
-			</ScrollAnimation>
+			<Title title="Contact me" />
 			<ScrollAnimation animateIn="fadeIn" delay={1000} className="container-md">
 				<p
 					className="text-block mb-4"

@@ -6,6 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { Badge, ListGroupItem } from 'react-bootstrap';
 import { Carousel } from 'react-responsive-carousel';
 import { useTranslation } from 'react-i18next';
+import Title from './components/Title';
 
 export default function Experience({ myExperienceYears}) {
 	const { t } = useTranslation();
@@ -14,9 +15,7 @@ export default function Experience({ myExperienceYears}) {
 	const exp_1 = t('exp_1', { returnObjects: true });
 	return (
 		<section id="experience">
-			<ScrollAnimation animateIn="fadeIn" delay={500}>
-				<h2>My experience</h2>
-			</ScrollAnimation>
+			<Title title="My experience" />
 
 				<Container fluid="lg"><ScrollAnimation animateIn="fadeIn" delay={1000}>
 				<p

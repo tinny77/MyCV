@@ -11,6 +11,7 @@
 	},
 	"dependencies": {
 		"@formspree/react": "^2.5.1",
+		"@jdion/tilt-react": "^1.0.0",
 		"@radix-ui/react-select": "^2.1.5",
 		"bootstrap": "^5.3.2",
 		"canvas-confetti": "^1.9.3",

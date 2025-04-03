@@ -1,22 +1,32 @@
 const portfolioItems = [
 	{
-		title: 'Domotex Studio',
+		title: 'Just Italia',
 		description_it:
-			'Un sito web a pagina singola elegante che presenta soluzioni di design innovative. Realizzato con ACF e template custom',
+			'Una piattaforma che facilita la gestione di prodotti e offerte secondo un calendario strutturato. Realizzato su template custom con ACF',
 		description_en:
-			'An elegant single-page website showcasing innovative design solutions. Made with ACF and custom template',
-		url: 'https://www.domotexstudio.it',
-		image: 'domotex.webp',
+			'A platform that facilitates the management of products and offers according to a structured calendar. Made with custom template with ACF',
+		url: 'https://www.just.it',
+		image: 'just.webp',
 	},
 	{
-		title: 'Repro Ufficio',
+		title: 'Prix',
 		description_it:
-			"Un sito completo per un'azienda locale, che illustra l'offerta di prodotti e servizi. Realizzato con template pre-acquistato e personalizzato via Elementor e PHP",
+			'Interfaccia intuitiva per gestire le offerte di prodotti e facilitare la ricerca nei negozi. Realizzato su template custom con ACF',
 		description_en:
-			'A comprehensive website for a local company, showcasing its products and services. Made with a pre-purchased template customized via Elementor and PHP',
-		url: 'https://www.reproufficio.it',
-		image: 'repro.webp',
+			'Intuitive interface to manage product offers and facilitate search in stores. Made with custom template with ACF',
+		url: 'https://www.prixquality.com',
+		image: 'prix.webp',
 	},
+	{
+		title: 'EnJoy Energia',
+		description_it:
+			'Template custom per azienda fornitrice di servizi di fornitura, consulenza e manutenzione nel settore energetico. Realizzato con Elementor',
+		description_en:
+			'Custom template for a company providing supply, consulting, and maintenance services in the energy sector. Built with Elementor ',
+		url: 'https://www.enjoyenergia.it',
+		image: 'enjoy.png',
+	},
+
 	{
 		title: 'Vini Nicolis',
 		description_it:
@@ -44,23 +54,15 @@ const portfolioItems = [
 		url: 'https://www.trevisani-impianti.it',
 		image: 'trevisani.webp',
 	},
+
 	{
-		title: 'Just Italia',
+		title: 'Domotex Studio',
 		description_it:
-			'Una piattaforma che facilita la gestione di prodotti e offerte secondo un calendario strutturato. Realizzato su template custom con ACF',
+			'Un sito web a pagina singola elegante che presenta soluzioni di design innovative. Realizzato con ACF e template custom',
 		description_en:
-			'A platform that facilitates the management of products and offers according to a structured calendar. Made with custom template with ACF',
-		url: 'https://www.just.it',
-		image: 'just.webp',
-	},
-	{
-		title: 'Prix',
-		description_it:
-			'Interfaccia intuitiva per gestire le offerte di prodotti e facilitare la ricerca nei negozi. Realizzato su template custom con ACF',
-		description_en:
-			'Intuitive interface to manage product offers and facilitate search in stores. Made with custom template with ACF',
-		url: 'https://www.prixquality.com',
-		image: 'prix.webp',
+			'An elegant single-page website showcasing innovative design solutions. Made with ACF and custom template',
+		url: 'https://www.domotexstudio.it',
+		image: 'domotex.webp',
 	},
 	{
 		title: 'Consiglio Notarile',
@@ -80,14 +82,24 @@ const portfolioItems = [
 		url: 'https://www.variscopumps.com',
 		image: 'varisco.webp',
 	},
+
 	{
-		title: 'Varisco Wellpoint',
+		title: 'VeronaLamiere',
 		description_it:
-			'Sito che evidenzia prodotti e servizi del settore wellpoint',
+			"Sito locale per un'azienda specializzata nella lavorazione delle lamiere",
 		description_en:
-			'Site highlighting products and services in the wellpoint sector',
-		url: 'https://www.variscowellpoint.it',
-		image: 'variscowell.webp',
+			'Informative site for a company specialized in sheet metal processing',
+		url: 'https://www.veronalamiere.it',
+		image: 'vrlamiere.webp',
+	},
+	{
+		title: 'Repro Ufficio',
+		description_it:
+			"Un sito completo per un'azienda locale, che illustra l'offerta di prodotti e servizi. Realizzato con template pre-acquistato e personalizzato via Elementor e PHP",
+		description_en:
+			'A comprehensive website for a local company, showcasing its products and services. Made with a pre-purchased template customized via Elementor and PHP',
+		url: 'https://www.reproufficio.it',
+		image: 'repro.webp',
 	},
 	{
 		title: 'Martinica Belts',
@@ -97,15 +109,6 @@ const portfolioItems = [
 			'E-commerce platform (WooCommerce) for a curated selection of belts and accessories',
 		url: 'https://www.martinicabelts.it',
 		image: 'martinica.webp',
-	},
-	{
-		title: 'VeronaLamiere',
-		description_it:
-			"Sito locale per un'azienda specializzata nella lavorazione delle lamiere",
-		description_en:
-			'Informative site for a company specialized in sheet metal processing',
-		url: 'https://www.veronalamiere.it',
-		image: 'vrlamiere.webp',
 	},
 ];
 

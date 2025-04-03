@@ -8,7 +8,7 @@ import { IconContext } from 'react-icons';
 import { FaHtml5, FaCss3, FaJs, FaPhp, FaDatabase, FaWordpress, FaCode, FaGitAlt, FaFigma,  FaPalette, FaServer, FaBug, FaShieldAlt, FaTachometerAlt, FaPuzzlePiece } from 'react-icons/fa';
 import { SiGoogletagmanager } from "react-icons/si";
 import { useTranslation } from 'react-i18next';
-
+import Title from './components/Title';
 
 export default function Skills() {
 
@@ -18,9 +18,7 @@ return;
 
 	return (
 		<section id="skills">
-			<ScrollAnimation animateIn="fadeIn" delay={500}>
-				<h2>My Skills</h2>
-			</ScrollAnimation>
+			<Title title="My skills" />
 			<ScrollAnimation
 				animateIn="fadeIn"
 				delay={1000}
@@ -82,14 +80,13 @@ const SkillsDetail = ({ id, title, iconName, description_en, description_it,inde
 								delay={baseDelay * index}
 								offset={50}
 							>
-						<Card>
+							<Card>
 							<Card.Body>
 								<Card.Title data-icon={iconName}>{IconComponent && <IconComponent />}{title}</Card.Title>
-						<Card.Body>
 									<small>{description}</small>
-								</Card.Body>
+
 							</Card.Body>
-						</Card>
+							</Card>
 					</ScrollAnimation>
 					</IconContext.Provider>
 				</Col>

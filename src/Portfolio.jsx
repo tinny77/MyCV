@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import ScrollAnimation from 'react-animate-on-scroll';
 import portfolioItems from './data/myPortfolio.js';
-
+import Title from './components/Title';
 import { useTranslation } from 'react-i18next';
 
 const Portfolio = () => {
@@ -12,10 +12,7 @@ const Portfolio = () => {
 
 	return (
 		<section id="portfolio">
-			<ScrollAnimation animateIn="fadeIn" delay={500}>
-				<h2>My Works</h2>
-				<p className="text-block _lead">{t('portfolio_intro')}</p>
-			</ScrollAnimation>
+			<Title title="My works" description={t('portfolio_intro')} />
 			<ScrollAnimation animateIn="fadeIn" delay={1000}>
 				<Container fluid="lg">
 					<Row>
@@ -24,14 +21,19 @@ const Portfolio = () => {
 								<Card className="portfolio-item">
 									<Card.Body>
 										<Card.Title>{item.title}</Card.Title>
-                                                  <a
-                                                       href={`${item.url}`}
+										<a
+											href={`${item.url}`}
 											target="_blank"
 											rel="noreferrer noopener"
 										>
 											{item.url.replace('https://www.', '')}
 
-										<img src={`/previews/${item.image}`} alt={item.title || 'Click to visit'} loading='lazy' /></a>
+											<img
+												src={`/previews/${item.image}`}
+												alt={item.title || 'Click to visit'}
+												loading="lazy"
+											/>
+										</a>
 
 										<small>
 											{i18n.language === 'en'
