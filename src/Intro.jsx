@@ -20,7 +20,7 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 		<>
 			<section id="intro">
 
-				<img src="./myPic.png" alt="Filippo Tinnirello" className='myPic' width={250} />
+				<img src="/myPic.png" alt="Filippo Tinnirello WordPress Developer" className='myPic' width={250} />
 
 				<h1 className={isAnimated ? 'animated' : ''}>Filippo Tinnirello</h1>
 
@@ -40,12 +40,14 @@ const Intro = ({ isScrolled, isScrollIconVisible, myExperienceYears }) => {
 				></p>
 
 				<LinkButtons />
-			</section>
 
 			<MouseAnimation
 				isScrolled={isScrolled}
 				isScrollIconVisible={isScrollIconVisible}
 			/>
+			</section>
+
+
 		</>
 	);
 };

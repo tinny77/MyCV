@@ -59,19 +59,20 @@ $header-font;
     margin: 0;
 }
 
-.mac-bg {
+body {
     background-image: url(../mac-bg.svg);
     background-size: contain;
     background-position: bottom right;
     background-repeat: no-repeat;
-    position: fixed;
+    background-attachment: fixed;
+    /*position: fixed;
     bottom: 0;
     right: 0;
     width: min(95vw, 60rem);
     height: 85vw;
     z-index: -10;
     opacity: 0.1;
-    transition: opacity 2s;
+    transition: opacity 2s;*/
 }
 
 .seo-text {
@@ -94,6 +95,7 @@ $header-font;
     z-index: 5;
     opacity: 1;
     transition: opacity 1s ease-out;
+    background-color: rgba(46, 48, 96, 0.95);
 }
 
 #about {
@@ -137,7 +139,7 @@ $header-font;
 
 html {
     scroll-behavior: smooth;
-    //scroll-snap-type: y proximity;
+    scroll-snap-type: y proximity;
 }
 
 @include mobile {
@@ -167,8 +169,8 @@ body {
         min-height: 100dvh;
         flex-direction: column;
         scroll-snap-align: start;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
         padding-inline: 2vw;
 
         & > * {
@@ -188,7 +190,7 @@ body {
         }
 
         &:nth-of-type(1n) {
-            background-color: var(--dark2);
+            background-color: rgba(46, 48, 96, .95);
 
             .card {
                 --bs-card-bg: var(--dark1);
@@ -197,8 +199,9 @@ body {
             button.form-control,
             input.form-control,
             textarea.form-control {
-                border: solid 1px var(--dark1);
-                background-color: var(--dark1);
+                border: solid 1px var(--dark2);
+                box-shadow: var(--darker-accent) 2px 2px 2px;
+                background-color: var(--dark2);
 
                 &:focus {
                     border: solid 1px var(--dark2);
@@ -223,7 +226,7 @@ body {
         }
 
         &:nth-of-type(2n) {
-            background-color: var(--dark1);
+            background-color: rgba(52, 55, 106, 0.95);
 
             .card {
                 --bs-card-bg: var(--dark2);
@@ -292,7 +295,8 @@ hr {
 
 img.myPic {
     max-width: 65vw;
-    height: auto;
+    width: auto;
+    height: max(250px, 25vh);
 }
 
 @media(height<=750px) {
@@ -328,7 +332,7 @@ img.myPic {
 }
 
 .buttons {
-    margin-top: max(10vh, 1rem);
+    margin-top: max(5vh, 1rem);
     //margin-bottom: 1.5rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -750,7 +754,20 @@ img.myPic {
                 aspect-ratio: 4/3;
                 margin-block: 0.5rem;
                 border-radius: var(--bs-border-radius);
+                filter: saturate(0.25) hue-rotate(180deg);
+                transition: all 0.5s ease-in-out;
             }
+
+
+        }
+
+        &:is(:focus, :hover, :active) {
+            img {
+                filter: saturate(1) hue-rotate(0);
+            }
+
+            background-color: var(--dark1);
+
         }
     }
 

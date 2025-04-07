@@ -82,6 +82,7 @@ function App() {
 					}
 					<Routes>
 						<Route path="/portfolio" element={<Portfolio />} />
+						<Route path="/en/portfolio" element={<Portfolio />} />
 						<Route path="*" element={<></>} />
 					</Routes>
 					<Contact />

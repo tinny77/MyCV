@@ -1,7 +1,7 @@
 .scroll-down {
 	 position: absolute;
 	 right: 0;
-	 bottom: 2rem;
+	 bottom: calc(2rem + 4vh);
 	 left: 0;
 	 margin: auto;
 	 transition: opacity 2s;
@@ -20,16 +20,16 @@
 	}
 }
  .scroll-down .mousey {
-	 width: 3px;
+	 width: 4px;
 	 padding: 10px 15px;
 	 height: 35px;
-	 border: 2px solid #fff;
+	 border: 3px solid #fff;
 	 border-radius: 25px;
 	 opacity: 0.75;
 	 box-sizing: content-box;
 }
  .scroll-down .mousey .scroller {
-	 width: 3px;
+	 width: 4px;
 	 height: 10px;
 	 border-radius: 25%;
 	 background-color: #fff;
@@ -48,6 +48,6 @@
 	}
 	 100% {
 		 transform: translateY(15px);
-		 opacity: 0;
+		 opacity: 0.2;
 	}
 }
